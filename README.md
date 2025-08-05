@@ -8,8 +8,16 @@ Developer: Louise Skinner ([Louiseskinner01](https://www.github.com/Louiseskinne
 [![badge](https://img.shields.io/badge/deployment-GitHub Pages-purple)](https://louiseskinner01.github.io/project2-the-countdown)
 
 ⚠️ PROJECT INTRODUCTION AND RATIONALE⚠️
+The Countdown Game is a web-based recreation of the classic British TV quiz show Countdown, designed for both desktop and mobile browsers. The game challenges players by generating a set of random numbers along with a target number. The player must use their arithmetic problem-solving skills to reach the target, using the given numbers only once. It’s a time-based, single-player experience that combines fun with cognitive skill-building.
 
-In this section, include a few paragraphs providing an overview of your project. Essentially, this part is your "sales pitch". Describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience. Also, assessors lately have been asking that students explain "why" they opted to do a project about this particular topic/subject, so be sure to explain what made you choose this particular theme/concept/subject/idea. This is the project "rationale".
+
+The project aims to deliver a sleek, responsive interface with an engaging user experience, complete with a real-time countdown timer, score tracking, and validation of answers. The game is ideal for casual play and educational purposes alike.
+
+The rationale behind this project is to develop a browser-based game that encourages mental agility, problem-solving, and quick thinking — skills that are often underrepresented in typical casual games. Inspired by the enduring popularity of the Countdown show, this web app provides an accessible version of the game without requiring installation or login.
+
+From a development perspective, this project serves as a practical application of web development fundamentals, including DOM manipulation, timers, responsive design, and user input validation. It also presents features like device orientation handling — bettering the user experience.
+
+
 
 ⚠️ --- END --- ⚠️
 
