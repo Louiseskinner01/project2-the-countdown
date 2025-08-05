@@ -1,13 +1,11 @@
-# project2-the-countdown
-
-# [project2-the-countdown](https://louiseskinner01.github.io/project2-lskinner)
+# [project2-the-countdown](https://louiseskinner01.github.io/project2-the-countdown)
 
 Developer: Louise Skinner ([Louiseskinner01](https://www.github.com/Louiseskinner01))
 
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Louiseskinner01/project1-lskinner)](https://www.github.com/Louiseskinner01/project1-lskinner/commits/main)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Louiseskinner01/project1-lskinner)](https://www.github.com/Louiseskinner01/project1-lskinner/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/Louiseskinner01/project1-lskinner)](https://www.github.com/Louiseskinner01/project1-lskinner)
-[![badge](https://img.shields.io/badge/deployment-GitHub_Pages-purple)](https://louiseskinner01.github.io/project1-lskinner)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown)
+[![badge](https://img.shields.io/badge/deployment-GitHub Pages-purple)](https://louiseskinner01.github.io/project2-the-countdown)
 
 ⚠️ PROJECT INTRODUCTION AND RATIONALE⚠️
 
@@ -15,19 +13,33 @@ In this section, include a few paragraphs providing an overview of your project.
 
 ⚠️ --- END --- ⚠️
 
+🛑 README NOTES 🛑
 
+Do not add a **Table of Contents** to your Markdown files. GitHub has these built-in automatically using the headers/hashtags.
 
+Don't add screenshots for the README/TESTING into your `assets` or `static` folders. Create a new folder at the root-level called `documentation`. Consider creating sub-directories within `documentation` to handle things like `wireframes`, `features`, `validation`, `responsiveness`, etc.
+
+Learn about Markdown Alerts (aka Callouts), a fairly new feature for GitHub Markdown files.
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts
+Note: these are not visible within your README Previewer, and are only visible once you push the code to GitHub.
 
 **Site Mockups**
-*([amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project1-lskinner), [techsini](https://techsini.com/multi-mockup), etc.)*
+*([amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown), [techsini](https://techsini.com/multi-mockup), etc.)*
 Having issues generating site mockups? This is likely due to security policies with your deployed site.
 If you open up your DevTools, there may be an error referencing `X-Frame-Options`.
 
-<-----
-source: [project1-lskinner amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-lskinner)
------->
+For Chrome users, head over to http://bit.ly/3iRPn4u and install the extension within your browser. Once installed, navigate back to the mockup site of your choice. You should find your site rendering in the various devices now.
 
+Alternatively, open your project in Gitpod and run the server. Once the site is running, click the `Ports` tab from your Gitpod Terminal. Click the padlock on the appropriate port for your project (`Flask: 5000`, `Django: 8000`). This will make your local page public temporarily. Now, copy the URL of your live-preview page into the responsive tool above. You should find your site rendering in the various devices.
 
+🛑 --- END ---- 🛑
+
+![screenshot](documentation/mockup.png)
+
+source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
+
+> [!IMPORTANT]  
+> The examples in these templates are strongly influenced by the Code Institute walkthrough project called "Love Maths".
 
 ## UX
 
@@ -38,43 +50,44 @@ source: [project1-lskinner amiresponsive](https://ui.dev/amiresponsive?url=https
 #### 1. Strategy
 
 **Purpose**
-- Encourage users to join the running club by showcasing its mission, community spirit, and benefits.
-- Provide a seamless user experience to keep users informed and engaged.
+- Provide users with a simple and accessible way to perform basic mathematical operations.
+- Deliver instant feedback to improve usability and encourage learning.
+- Support accessibility and user-friendly interactions.
 
 **Primary User Needs**
-- Learn about the club’s purpose and events.
-- Join the club and stay updated.
-- Access responsive, user-friendly content.
+- Perform calculations quickly and accurately.
+- Understand errors and correct them easily.
+- Track performance to motivate self-improvement.
 
 **Business Goals**
-- Increase club membership.
-- Boost participation in events and social media engagement.
+- Encourage users to engage with the app for educational and recreational purposes.
+- Showcase a well-designed, accessible tool that supports learning.
 
 #### 2. Scope
 
 **[Features](#features)** (see below)
 
 **Content Requirements**
-- Clear, motivational text about the club’s mission.
-- Photos showcasing the community.
-- Event schedules and descriptions.
-- Forms for membership sign-up.
+- Clear labels and instructions for input and operator buttons.
+- Error messages for invalid inputs.
+- Instant calculation results.
+- Statistics display for tracking correct/incorrect equations.
 
 #### 3. Structure
 
 **Information Architecture**
 - **Navigation Menu**:
-  - Accessible links in the navbar.
+  - Simple navbar with accessible links.
 - **Hierarchy**:
-  - Clear call-to-action buttons.
-  - Prominent placement of social media links in the footer.
+  - Clear and prominent placement of the input fields and operator buttons.
+  - Visible results area and error messages.
 
 **User Flow**
-1. User lands on the home page → learns about the club’s mission.
-2. Navigates to the schedule/timetable → sees sessions they can join.
-3. Views the events → checks upcoming/past event details.
-4. Signs up via the membership page.
-5. Browses the gallery → explores the community spirit.
+1. User lands on the home page → reads brief instructions.
+2. Inputs two numbers → selects an operator.
+3. Sees instant results or an error message if input is invalid.
+4. Views correct/incorrect equation feedback.
+5. Starts fresh with the next calculation.
 
 #### 4. Skeleton
 
@@ -100,8 +113,8 @@ I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to ge
 
 - `#000000` primary text.
 - `#3772FF` primary highlights.
-- `D4A373` secondary text.
-- `CCD5AE` secondary highlights.
+- `#DF2935` secondary text.
+- `#FDCA40` secondary highlights.
 
 ![screenshot](documentation/coolors.png)
 
@@ -131,9 +144,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Page | Mobile | Tablet | Desktop |
 | --- | --- | --- | --- |
 | Home | ![screenshot](documentation/wireframes/mobile-home.png) | ![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
-| Gallery | ![screenshot](documentation/wireframes/mobile-gallery.png) | ![screenshot](documentation/wireframes/tablet-gallery.png) | ![screenshot](documentation/wireframes/desktop-gallery.png) |
-| Signup | ![screenshot](documentation/wireframes/mobile-signup.png) | ![screenshot](documentation/wireframes/tablet-signup.png) | ![screenshot](documentation/wireframes/desktop-signup.png) |
-| Confirmation | ![screenshot](documentation/wireframes/mobile-confirmation.png) | ![screenshot](documentation/wireframes/tablet-confirmation.png) | ![screenshot](documentation/wireframes/desktop-confirmation.png) |
 | 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## User Stories
@@ -146,13 +156,14 @@ In this section, list all of your possible user stories for the project. Samples
 
 | Target | Expectation | Outcome |
 | --- | --- | --- |
-| As a user | I would like to see examples of why I should join | so that I can learn about the club’s mission and purpose before deciding to join. |
-| As a user | I would like to view the running schedule/timetable | so that I can decide when to join a session. |
-| As a user | I would like to see the details of different running events | so that I can prepare accordingly. |
-| As an user | I would like to view a gallery of past events | so that I can see photos of myself and others from previous runs. |
-| As a user | I would like to sign up for the running club | so that I can join the community and participate in events. |
-| As a user | I would like to follow the club on various platforms (e.g., Instagram, Facebook, Twitter) | so that I can stay updated with club news and events. |
-| As a user | I would like the website to be fully responsive | so that I can easily navigate and access information from my phone, tablet, or desktop. |
+| As a user | I would like to input two numbers and select an operator (`+`, `-`, `*`, `/`) | so that I can calculate a result. |
+| As a user | I would like the application to show me an error message if I enter empty input (`NaN`) | so that I understand what went wrong. |
+| As a user | I would like the calculation to happen instantly after I select an operator | so that I get my result quickly without waiting. |
+| As a user | I would like the application to have clear and large buttons for each operator | so that I can easily select the correct one on any device. |
+| As a user | I would like the application to have high-contrast colors and accessible fonts | so that I can easily read and interact with it. |
+| As a user | I would like clear labels and instructions | so that I understand how to use the app without confusion. |
+| As a user | I would like the app to show me the correct result if my equation was incorrect | so that I understand how the answer was calculated. |
+| As a user |  I would like to see how many equations I get correct or incorrect | so I can push myself to improve my math skills. |
 | As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
 
 ## Features
@@ -169,15 +180,12 @@ In this section, you should go over the different parts of your project, and des
 
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
-| Navbar | Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery, and Signup page, and is identical in each page to allow for easy navigation. On the smallest screens, a burger icon is used to toggle the navbar so it doesn't take up too much space. This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the "back" button. The navbar is also `fixed`, so it stays in view even if the user has scrolled to the bottom of the page. | ![screenshot](documentation/features/navbar.png) |
-| Hero Image | The landing includes a photo with text-overlay to allow the user to see exactly which location this site would be applicable to. This section introduces the user to *Love Running* with an eye-catching animation to grab their attention. | ![screenshot](documentation/features/hero-image.png) |
-| Club Ethos | The club ethos section will allow the user to see the benefits of joining the *Love Running* meetups, as well as the benefits of running overall. The user will see the value of signing up for the *Love Running* meetups. This should encourage the user to consider running as their form of exercise. | ![screenshot](documentation/features/club-ethos.png) |
-| Schedule | This section will allow the user to see exactly when the meetups will happen, where they will be located, and how long the run will be (in kilometers). The type of run (trail or road) is also shown, to help runners choose the meetups that best match their preference. This section will be updated as these times change to keep the user up to date. | ![screenshot](documentation/features/schedule.png) |
-| Footer | The footer includes links to the relevant social media sites for *Love Running*. The links will open in a new tab to allow easy navigation for the user. The footer is valuable to the user, as it encourages them to keep connected via social media. | ![screenshot](documentation/features/footer.png) |
-| Gallery | The gallery will provide the user with supporting images to see what the meet-ups look like. This section is valuable to the user, as they will be able to easily identify the types of events that the organization puts together. It's responsive so no images stretch or skew, showing images stacked by 1 on mobile, by 2 on smaller tablets, by 3 on desktop, and by 4 on larger screens. | ![screenshot](documentation/features/gallery.png) |
-| Signup | This page will allow the user to sign up to *Love Running* and start their running journey with the community. The user will be able specify if they would like to take part in road, trail, or both types of running. The user will be asked to submit their full name and email address. | ![screenshot](documentation/features/singup.png) |
-| Confirmation | The confirmation page will give the illusion that the signup form was submitted successfully to the *Love Running* club. Due to the lack of a database or email system so far, this is a fake confirmation page, and will automatically redirect the user back to the home page after 10 seconds. | ![screenshot](documentation/features/confirmation.png) |
-| 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Running* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
+| Operators | The mathematical operators (`+`, `-`, `*`, `/`) are large and colorful to allow users to easily select their preferred method of testing their calculation skills. Each operator is color-coded, and has the text name as well for easy identification. | ![screenshot](documentation/features/operators.png) |
+| Equation | This section visibly displays the current equation to be calculated, dynamically updated to use the specific operator that the user has selected above. The empty `<input>` field allows users to enter valid numerical values to test their math skills. | ![screenshot](documentation/features/equation.png) |
+| Submit Answer | This button allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
+| Scores | This section tallies the total number of *correct* and *incorrect* answers that the user has calculated. Green to represent *correct*, and red to represent *incorrect*. | ![screenshot](documentation/features/scores.png) |
+| Alerts | Depending on whether or not the user gets the calculation correct or incorrect, alerts are used to provide simple feedback to the user. This showcases if they got it correct, or if they've gotten it incorrect, therefore also showing the correct answer. | ![screenshot](documentation/features/alerts.png) |
+| 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Maths* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
 
 ### Future Features
 
@@ -189,22 +197,22 @@ A few examples are listed below to align with possible ways to improve on the sa
 
 ⚠️ --- END ---⚠️
 
-- **Personalized User Profiles**: Allow users to create accounts where they can track their running progress, view personal stats, and share their achievements.
-- **Training Plans**: Offer customizable training plans for runners of all levels (beginner, intermediate, advanced) with notifications and reminders.
-- **Event Registration & Payment**: Integrate an option for runners to register and pay for upcoming events or races directly through the site.
-- **Achievements & Badges**: Introduce a gamification system where users earn badges or achievements for reaching milestones (e.g., number of runs, personal bests, attending events).
-- **Interactive Maps**: Display interactive running route maps, complete with distance markers, elevation data, and difficulty ratings.
-- **Live Event Tracking**: Provide real-time tracking for major club events so users can follow along or support friends running in real-time.
-- **Runner's Blog**: Include a blog section for members to share their running experiences, tips, and stories, fostering community engagement.
-- **Leaderboards**: Add a feature where users can compare their running stats with others in the club via leaderboards (e.g., most kilometers run, fastest times).
-- **Weekly Challenges**: Implement weekly running challenges or group challenges to keep users motivated and engaged.
-- **Weather Integration**: Show local weather conditions for Dublin and suggest the best times for a run, based on user preferences.
-- **Social Sharing**: Enable users to share their runs, achievements, or event participation directly on social media from the site.
-- **Club Merchandise Store**: Introduce an online store where users can purchase branded running gear like shirts, jackets, or water bottles.
-- **Push Notifications**: Allow users to opt-in for mobile push notifications for schedule updates, new events, or motivational reminders.
-- **Virtual Runs**: Create a platform for virtual runs where members can participate remotely and still receive medals or rewards.
-- **Member Forums or Groups**: Introduce discussion boards or group chats for runners to connect, discuss upcoming events, or share training tips.
-- **Charity Partnerships**: Offer integration with local charities where club members can run to raise money or awareness for specific causes.
+- **Advanced Calculations**: Add support for more complex mathematical operations, like square roots, powers, logarithms, trigonometry (sin, cos, tan), etc.
+- **Equation History**: Display a running log of previous calculations with the ability to recall or reuse past results.
+- **Multi-Step Equations**: Allow users to input multi-step calculations (e.g., `5 + 3 * 2 - 4`) with proper order of operations.
+- **Graphing Capabilities**: Integrate a graphing feature where users can plot functions or equations visually.
+- **Fraction Support**: Add functionality to handle calculations with fractions, including simplifications and conversions between fractions and decimals.
+- **Unit Conversions**: Introduce a feature to convert between different units of measurement (e.g., meters to feet, Celsius to Fahrenheit).
+- **Equation Solver**: Add the ability to solve algebraic equations for a given variable (e.g., `2x + 5 = 13`).
+- **Memory Functions**: Include memory functions (`M+`, `M-`, `MR`) so users can store, add to, and recall values during their calculations.
+- **Input Validation**: Provide real-time feedback for invalid inputs, such as attempting to divide by zero or using incorrect syntax.
+- **Dark Mode**: Add a dark mode option to enhance user experience and reduce eye strain during extended use.
+- **Customizable Themes**: Allow users to choose different themes, colors, or layouts for personalizing their experience.
+- **Calculation Explanations**: Display step-by-step explanations of how the solution is derived, useful for educational purposes or beginners.
+- **Statistical Functions**: Introduce basic statistical operations such as mean, median, mode, and standard deviation.
+- **Save & Share Calculations**: Allow users to save or share their results via a link or social media, especially for complex equations or useful outputs.
+- **Voice Input**: Add a voice input option for users to dictate their calculations instead of typing.
+- **Educational Quizzes**: Implement math-based quizzes or games to help users improve their arithmetic skills while using the app.
 
 ## Tools & Technologies
 
@@ -216,8 +224,10 @@ A few examples are listed below to align with possible ways to improve on the sa
 | [![badge](https://img.shields.io/badge/VSCode-grey?logo=htmx&logoColor=007ACC)](https://code.visualstudio.com) | Local IDE for development. |
 | [![badge](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) | Main site content and layout. |
 | [![badge](https://img.shields.io/badge/CSS-grey?logo=css&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) | Design and layout. |
+| [![badge](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) | User interaction on the site. |
 | [![badge](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) | Hosting the deployed front-end site. |
 | [![badge](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) | Front-end CSS framework for modern responsiveness and pre-built components. |
+| [![badge](https://img.shields.io/badge/Jest-grey?logo=jest&logoColor=c21325)](https://jestjs.io) | Automated JavaScript testing. |
 | [![badge](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) | Creating wireframes. |
 | [![badge](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) | Icons. |
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
@@ -243,18 +253,18 @@ Consider adding screenshots of your Projects Board(s), Issues (open and closed),
 
 ⚠️ --- END ---⚠️
 
-[GitHub Projects](https://www.github.com/Louiseskinner01/project1-lskinner/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
+[GitHub Projects](https://www.github.com/Louiseskinner01/project2-the-countdown/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
 ![screenshot](documentation/gh-projects.png)
 
 ### GitHub Issues
 
-[GitHub Issues](https://www.github.com/Louiseskinner01/project1-lskinner/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
+[GitHub Issues](https://www.github.com/Louiseskinner01/project2-the-countdown/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
 
 | Link | Screenshot |
 | --- | --- |
-| [![GitHub issues](https://img.shields.io/github/issues/Louiseskinner01/project1-lskinner)](https://www.github.com/Louiseskinner01/project1-lskinner/issues) | ![screenshot](documentation/gh-issues-open.png) |
-| [![GitHub closed issues](https://img.shields.io/github/issues-closed/Louiseskinner01/project1-lskinner)](https://www.github.com/Louiseskinner01/project1-lskinner/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) |
+| [![GitHub issues](https://img.shields.io/github/issues/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/issues) | ![screenshot](documentation/gh-issues-open.png) |
+| [![GitHub closed issues](https://img.shields.io/github/issues-closed/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) |
 
 ### MoSCoW Prioritization
 
@@ -276,13 +286,46 @@ I've decomposed my Epics into User Stories for prioritizing and implementing the
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
-- In the [GitHub repository](https://www.github.com/Louiseskinner01/project1-lskinner), navigate to the "Settings" tab.
+- In the [GitHub repository](https://www.github.com/Louiseskinner01/project2-the-countdown), navigate to the "Settings" tab.
 - In Settings, click on the "Pages" link from the menu on the left.
 - From the "Build and deployment" section, click the drop-down called "Branch", and select the **main** branch, then click "Save".
 - The page will be automatically refreshed with a detailed message display to indicate the successful deployment.
 - Allow up to 5 minutes for the site to fully deploy.
 
-The live link can be found on [GitHub Pages](https://louiseskinner01.github.io/project1-lskinner).
+The live link can be found on [GitHub Pages](https://louiseskinner01.github.io/project2-the-countdown).
+
+### EmailJS API
+
+This application uses [EmailJS](https://www.emailjs.com/docs) to handle sending emails from the live site.
+
+Instructions on how to connect EmailJS to this project:
+
+- [Sign Up](https://dashboard.emailjs.com/sign-up) for an EmailJS account on their website.
+- Create an **Email Service** from your EmailJS dashboard.
+- In your EmailJS dashboard, navigate to the **API Keys** section, and copy your *API Key*.
+- Add the following code snippet into the `head` of your HTML file at the top.
+    - Make sure you have added your own `API Key`.
+
+```js
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init({
+        publicKey: "YOUR_PUBLIC_KEY",
+      });
+   })();
+</script>
+```
+
+- Create an "Email Template" in your EmailJS dashboard. This template will define the content and structure of the emails you'll send.
+- Write JavaScript functionality to send emails using EmailJS. Below is very basic syntax for the code example, but check the EmailJS docs for further code:
+
+```js
+emailjs.send(serviceID, templateID, templateParams, options);
+```
+
+- Call your function whenever you want to send an email.
+
 
 ### Local Development
 
@@ -292,18 +335,18 @@ This project can be cloned or forked in order to make a local copy on your own s
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://www.github.com/Louiseskinner01/project1-lskinner).
+1. Go to the [GitHub repository](https://www.github.com/Louiseskinner01/project2-the-countdown).
 2. Locate and click on the green "Code" button at the very top, above the commits and files.
 3. Select whether you prefer to clone using "HTTPS", "SSH", or "GitHub CLI", and click the "copy" button to copy the URL to your clipboard.
 4. Open "Git Bash" or "Terminal".
 5. Change the current working directory to the location where you want the cloned directory.
 6. In your IDE Terminal, type the following command to clone the repository:
-	- `git clone https://www.github.com/Louiseskinner01/project1-lskinner.git`
+	- `git clone https://www.github.com/Louiseskinner01/project2-the-countdown.git`
 7. Press "Enter" to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://www.github.com/Louiseskinner01/project1-lskinner)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://www.github.com/Louiseskinner01/project2-the-countdown)
 
 **Please Note**: in order to directly open the project in Gitpod, you should have the browser extension installed. A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
@@ -311,7 +354,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 By forking the GitHub Repository, you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://www.github.com/Louiseskinner01/project1-lskinner).
+1. Log in to GitHub and locate the [GitHub Repository](https://www.github.com/Louiseskinner01/project2-the-countdown).
 2. At the top of the Repository, just below the "Settings" button on the menu, locate and click the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
@@ -347,7 +390,10 @@ Eventually you'll want to learn how to use Git branches. Here's a helpful tutori
 | --- | --- |
 | [Markdown Builder](https://markdown.2bn.dev) | Help generating Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | "How to Write a Git Commit Message" |
-| [Rosie Resumé](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
+| [Interactive Frontend Development](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
+| [WebDevSimplified](https://www.youtube.com/watch?v=riDzcEQbX6k) | Inspiration for a quiz app |
+| [WebDevSimplified](https://www.youtube.com/watch?v=1yS-JV4fWqY) | Inspiration for Rock Paper Scissors |
+| [JavaScript30](https://javascript30.com) | Additional JS help |
 | [Bootstrap](https://getbootstrap.com) | Various components / responsive front-end framework |
 | [ChatGPT](https://chatgpt.com) | Help with code logic and explanations |
 
@@ -385,11 +431,11 @@ A few examples have been provided below to give you some ideas on how to do your
 | Source | Notes |
 | --- | --- |
 | [favicon.io](https://favicon.io) | Generating the favicon |
-| [Rosie CV](https://codeinstitute.net) | Sample images provided from the walkthrough projects |
 | [Font Awesome](https://fontawesome.com) | Icons used throughout the site |
 | [Pexels](https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg) | Hero image |
 | [Wallhere](https://c.wallhere.com/images/9c/c8/da4b4009f070c8e1dfee43d25f99-2318808.jpg!d) | Background wallpaper |
 | [Pixabay](https://cdn.pixabay.com/photo/2017/09/04/16/58/passport-2714675_1280.jpg) | Background wallpaper |
+| [Mixkit](https://mixkit.co/free-sound-effects/game) | Royalty-free sound effects for the game |
 | [DALL-E 3](https://openai.com/index/dall-e-3) | AI generated artwork |
 | [TinyPNG](https://tinypng.com) | Compressing images < 5MB |
 | [CompressPNG](https://compresspng.com) | Compressing images > 5MB |
