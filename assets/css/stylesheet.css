@@ -1,0 +1,53 @@
+:root{
+    --main-font-color:  #4d05f6;
+    --sub-font-color: #ffef08;
+    --feauture-color: #e2f6e7;
+    --calm-color: #fff5f8; 
+
+}
+
+html, body{
+    height: 100vw;
+    max-height: 100%;
+    background: linear-gradient(
+        to bottom,
+       var(--calm-color) 19%,   /* lightest at top */
+        #a871d8 30%,   /* lighter grey */
+        #f98a03 73%,   /* #ba2626 */
+        #190649 90%   /* darkest at bottom */
+      ) !important;
+}
+
+#console-play{
+    color: var(--sub-font-color);
+}
+
+h1{
+    color: var(--main-font-color) !important;
+}
+
+.feature{
+    background-color: var(--feauture-color); 
+    border: 1px solid var(--calm-color);
+    color: var(--main-font-color);
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#timer-area{
+    border-radius: 25px;
+    height: 220px;
+    font-size: x-large;
+    padding: 60px;
+}
+
+.difficulty-btn{
+    border-radius: 15px;
+    height: 75px;
+    font-size: larger;
+}

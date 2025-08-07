@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
-    <link rel="stylesheet" href="assets/css/countdown.css">
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+        <nav class="navbar navbar-expand-lg mb-5 feature">
             <div class="container-fluid ">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="assets/images/the-countdown-logo.png">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
         <div class="container-fluid m-0 px-3">
             <div class="row m-0 p-0">
                 <div class="col-12 text-center">
-                    <h1 class="main-header text-wrap">the <br> countdown</h1>
+                    <h1 class="text-wrap">THE COUNTDOWN</h1>
                 </div>
             </div>
 
@@ -65,9 +65,9 @@
                 <!-- Buttons -->
                 <div class="col-3">
                   <div id="difficulty-btn-area" class="d-flex flex-column gap-3 difficulty-btn-area">
-                    <button class="difficulty-btn" onclick="setDifficulty(90)">Easy</button>
-                    <button class="difficulty-btn" onclick="setDifficulty(60)">Medium</button>
-                    <button class="difficulty-btn" onclick="setDifficulty(45)">Hard</button>
+                    <button class="difficulty-btn feature" onclick="setDifficulty(90)">Easy</button>
+                    <button class="difficulty-btn feature" onclick="setDifficulty(60)">Medium</button>
+                    <button class="difficulty-btn feature" onclick="setDifficulty(45)">Hard</button>
                   </div>
                 </div>
 
@@ -80,7 +80,7 @@
               
         <!-- Timer -->
     <div class="col-3">
-        <div id="timer-area"> 
+        <div id="timer-area" class="feature"> 
           <span id="timer-title">Timer</span>
           <br>
           <span id="timer-digits">00:00</span>
@@ -101,9 +101,11 @@
         <!--end of container-->
     </main>
 
-    <footer>
-
-    </footer>
+<footer class="feature">
+    <span>Ig</span>
+    <span>FACEBOOK</span>
+    <span>X</span>
+</footer>
 
 
 
