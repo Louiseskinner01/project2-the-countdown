@@ -10,21 +10,20 @@
     --main-font-style: "Sour Gummy", sans-serif;
     --sub-font-color: #ffef08;
     --sub-font-style: "Scope One", serif;
-    --feauture-color: #bfffa4;
+    --feauture-color: #eefae9;
     --calm-color: #fcfaf7; 
-
 }
 
 html, body{
-    height: 100vw;
+    height: 100vh;
     max-height: 100%;
-    background: linear-gradient(
-        to bottom,
-       var(--calm-color) 19%,   /* lightest at top */
-        #a871d8 30%,   /* lighter grey */
-        #f98a03 73%,   /* #ba2626 */
-        #190649 90%   /* darkest at bottom */
+    background: linear-gradient(to bottom,
+       var(--calm-color) 19%,   
+        #a871d8 47%,   
+        #e99105 73%,   
+        #190649 90%   
       ) !important;
+      background-blend-mode: overlay;
       font-family: var(--main-font-style) !important;
 }
 
@@ -56,6 +55,7 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+ 
 }
 
 #timer-area{
@@ -63,10 +63,20 @@ footer{
     height: 220px;
     font-size: x-large;
     padding: 60px;
+
 }
 
 .difficulty-btn{
     border-radius: 15px;
     height: 75px;
     font-size: larger;
+}
+
+nav img{
+    height: 80px;
+}
+
+.nav-link{
+    color: var(--main-font-color) !important;
+  
 }
