@@ -2,6 +2,7 @@ let confirmDifficultyBtn;
 let difficultyBtns;
 let timerDisplay;
 let playSpan;
+
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 
@@ -15,7 +16,11 @@ function displayControllers() {
     
 }
 
-//Create the confirm level button and add an event that calls the dissableDifficultyBtns function
+/** 
+ * Create a DOM element to allow the user to confirm level. 
+ * Add an event listener to call the dissableDifficultyBtns function when the button is clicked.
+ */
+ 
 function createConfirmBtn() {
     confirmDifficultyBtn = document.createElement("button");
     confirmDifficultyBtn.innerText = "Confirm difficulty level";
@@ -35,7 +40,7 @@ let countdownInterval;
 let startTime;
 let selectedDifficulty = 00; // Timer digits are set to 00:00 as default
 
-// Update timer display 
+// Displays seconds on the timer element
 function updateTimerDisplay(seconds) {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
