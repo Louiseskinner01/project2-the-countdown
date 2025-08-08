@@ -111,3 +111,8 @@ footer a i {
 footer a i:hover {
 color: var(--sub-font-color);
 }
+
+
+.console-styling-class {
+    background-color: #ffef08;
+}
