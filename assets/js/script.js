@@ -22,6 +22,10 @@ function displayControllers() {
  */
  
 function createConfirmBtn() {
+     // Check if the confirm button already exists
+     if (document.getElementById("confirm-difficulty-btn")) {
+        return; // If it exists, don't create another
+    }
     confirmDifficultyBtn = document.createElement("button");
     confirmDifficultyBtn.classList.add("controller-btn-styling");
     confirmDifficultyBtn.innerText = "Confirm difficulty level";
@@ -60,3 +64,20 @@ function setDifficulty(seconds) {
 }
 //This line assigns the setDifficulty function as a property on the global window object so it can be accessed anywhere
 window.setDifficulty = setDifficulty;
+
+//let timeConfirmed = false; //not in use yet
+
+
+/**
+ * Disable the difficulty buttons 
+ */
+function disableDifficultyBtns() {
+    const difficultyButtons = document.querySelectorAll("#difficulty-btn-area .difficulty-btn");
+    difficultyButtons.forEach(button => {
+        button.disabled = true;
+        button.classList.add("disabled"); 
+    });
+    confirmDifficultyBtn.remove();
+    
+    createRandomNumbersBtn();
+}
