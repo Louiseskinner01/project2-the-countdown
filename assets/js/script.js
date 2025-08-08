@@ -11,7 +11,7 @@ function displayControllers() {
     document.getElementById("difficulty-btn-area").style.visibility = "visible";
     document.getElementById("timer-area").style.visibility = "visible";
     document.getElementById("console-play").style.visibility = "hidden";
-    gamesConsole.classList.add("console-styling-class");
+    gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
     
 }
@@ -23,6 +23,7 @@ function displayControllers() {
  
 function createConfirmBtn() {
     confirmDifficultyBtn = document.createElement("button");
+    confirmDifficultyBtn.classList.add("controller-btn-styling");
     confirmDifficultyBtn.innerText = "Confirm difficulty level";
     confirmDifficultyBtn.id = "confirm-difficulty-btn";
     confirmDifficultyBtn.addEventListener("click", disableDifficultyBtns);
