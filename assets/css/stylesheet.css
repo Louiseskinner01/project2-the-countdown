@@ -27,14 +27,6 @@ html, body {
       font-family: var(--main-font-style) !important;
 }
 
-#console-play {
-    color: var(--sub-font-color);
-    font-size: 45px;
-}
-
-#console-play:hover {
-    color: var(--main-font-color);
-  }
 
 h1 {
     color: var(--main-font-color) !important;
@@ -49,27 +41,15 @@ h2 {
     text-transform: lowercase;
 }
 
-.feature {
-    background-color: var(--feauture-color); 
-    border: 1px solid var(--calm-color);
+
+#console-play {
+    color: var(--sub-font-color);
+    font-size: 45px;
+}
+
+#console-play:hover {
     color: var(--main-font-color);
-  
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;  
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;
-    padding: 1rem;
-}
-
+  }
 
 
 #timer-area {
@@ -94,6 +74,7 @@ footer {
     height: 200px;
 }
 
+/*Navigation styling*/
 nav img {
     height: 80px;
 }
@@ -101,6 +82,21 @@ nav img {
 .nav-link {
     color: var(--main-font-color) !important;
   
+}
+
+/*Footer Styling*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;  
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 1rem;
 }
 
 footer a i {
@@ -113,6 +109,21 @@ color: var(--sub-font-color);
 }
 
 
-.console-styling-class {
+/*Other styling*/
+.console-styling {
     background-color: #ffef08;
+}
+
+.controller-btns-styling {
+background-color: rgb(252, 29, 189);
+border-radius: 15px;
+    height: 40px;
+    font-size: medium;
+}
+
+.feature {
+    background-color: var(--feauture-color); 
+    border: 1px solid var(--calm-color);
+    color: var(--main-font-color);
+  
 }
