@@ -14,3 +14,13 @@ function displayControllers() {
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
     
 }
+
+//Create the confirm level button and add an event that calls the dissableDifficultyBtns function
+function createConfirmBtn() {
+    confirmDifficultyBtn = document.createElement("button");
+    confirmDifficultyBtn.innerText = "Confirm difficulty level";
+    confirmDifficultyBtn.id = "confirm-difficulty-btn";
+    confirmDifficultyBtn.addEventListener("click", disableDifficultyBtns);
+    controllersArea.append(confirmDifficultyBtn);
+    
+}
