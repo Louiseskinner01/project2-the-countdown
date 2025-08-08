@@ -5,7 +5,7 @@
 /*sub-font-style*/
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 
-:root{
+:root {
     --main-font-color:  #4d05f6;
     --main-font-style: "Sour Gummy", sans-serif;
     --sub-font-color: #ffef08;
@@ -14,7 +14,7 @@
     --calm-color: #fcfaf7; 
 }
 
-html, body{
+html, body {
     height: 100vh;
     max-height: 100%;
     background: linear-gradient(to bottom,
@@ -27,32 +27,36 @@ html, body{
       font-family: var(--main-font-style) !important;
 }
 
-#console-play{
+#console-play {
     color: var(--sub-font-color);
     font-size: 45px;
 }
 
-h1{
+#console-play:hover {
+    color: var(--main-font-color);
+  }
+
+h1 {
     color: var(--main-font-color) !important;
     font-family: var(--main-font-style);
     letter-spacing: 0.5em;
    
 }
 
-h2{
+h2 {
     color: var(--sub-font-color) !important;
     font-family: var(--sub-font-style);
     text-transform: lowercase;
 }
 
-.feature{
+.feature {
     background-color: var(--feauture-color); 
     border: 1px solid var(--calm-color);
     color: var(--main-font-color);
   
 }
 
-footer{
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -66,32 +70,41 @@ footer{
     padding: 1rem;
 }
 
-:any-link{
-    color: var(--main-font-color);}
 
-#timer-area{
+
+#timer-area {
     border-radius: 25px;
     height: 220px;
     font-size: x-large;
     padding: 60px;
-
+    visibility: hidden;
 }
 
-.difficulty-btn{
+.difficulty-btn {
     border-radius: 15px;
     height: 75px;
     font-size: larger;
+    visibility: hidden;
 }
 
-#controllers-area{
+#controllers-area {
     height: 200px;
 }
 
-nav img{
+nav img {
     height: 80px;
 }
 
-.nav-link{
+.nav-link {
     color: var(--main-font-color) !important;
   
+}
+
+footer a i {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+footer a i:hover {
+color: var(--sub-font-color);
 }
