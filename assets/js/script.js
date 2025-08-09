@@ -98,7 +98,7 @@ function disableDifficultyBtns() {
 
 //2 sets of arrays (one for small numbers and one for larger numbers) which be used to for generating random numbers
 const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const largeNumbers = [33, 66, 99, 132];
+const largeNumbers = [25, 33, 50, 66, 75, 99, 115, 132, 150];
 
 function generateRandomNumbers() {
     // Shuffle copies of the arrays
@@ -111,7 +111,9 @@ function generateRandomNumbers() {
 
     // Combine selected numbers from each array and display them into the console
     const numbers = selectedSmall.concat(selectedLarge);
-    gamesConsole.innerText = numbers.join(" ");
+    gamesConsole.innerHTML = numbers.map(num => `<span class="generated-number">${num}</span>`)
+  .join("");
+ 
     createGetTargetBtn();
 }
 
