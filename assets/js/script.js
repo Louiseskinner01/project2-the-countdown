@@ -67,6 +67,19 @@ window.setDifficulty = setDifficulty;
 
 //let timeConfirmed = false; //not in use yet
 
+/** 
+ * Create a button to generate a random set of numbers
+ * Apply a class for styling and assign an ID 
+ * Append the button and give it an event listener to call the generateRandomNumbers function
+ */
+function createRandomNumbersBtn() {
+    const randomNumbersBtn = document.createElement("button");
+    randomNumbersBtn.classList.add("controller-btn-styling")
+    randomNumbersBtn.innerText = "Generate Numbers";
+    randomNumbersBtn.id = "generate-random-numbers-btn";
+    controllersArea.append(randomNumbersBtn);
+    randomNumbersBtn.addEventListener("click", generateRandomNumbers);
+}
 
 /**
  * Disable the difficulty buttons 
@@ -78,6 +91,7 @@ function disableDifficultyBtns() {
         button.classList.add("disabled"); 
     });
     confirmDifficultyBtn.remove();
-    
     createRandomNumbersBtn();
 }
+
+
