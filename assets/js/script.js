@@ -82,7 +82,9 @@ function createRandomNumbersBtn() {
 }
 
 /**
- * Disable the difficulty buttons 
+ * Disable the difficulty buttons which will naturally lock the timer
+ * Remove the confirmDifficultyBtn 
+ * Call the createRandomNumbersBtn function which will append a button allowing the user to generate random numbers
  */
 function disableDifficultyBtns() {
     const difficultyButtons = document.querySelectorAll("#difficulty-btn-area .difficulty-btn");
@@ -93,5 +95,34 @@ function disableDifficultyBtns() {
     confirmDifficultyBtn.remove();
     createRandomNumbersBtn();
 }
+
+//2 sets of arrays (one for small numbers and one for larger numbers) which be used to for generating random numbers
+const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const largeNumbers = [33, 66, 99, 132];
+
+function generateRandomNumbers() {
+    // Shuffle copies of the arrays
+    const shuffleSmall = shuffle([...smallNumbers]);
+    const shuffleLarge = shuffle([...largeNumbers]);
+
+    // Select the first 4 numbers from the small numbers array and the first 2 numbers from the large numbers array
+    const selectedSmall = shuffleSmall.slice(0, 4);
+    const selectedLarge = shuffleLarge.slice(0, 2);
+
+    // Combine selected numbers from each array and display them into the console
+    const numbers = selectedSmall.concat(selectedLarge);
+    gamesConsole.innerText = numbers.join(" ");
+    createGetTargetBtn();
+}
+
+// ✅ Fisher–Yates shuffle method
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; 
+    }
+    return array;
+}
+
 
 
