@@ -73,13 +73,25 @@ window.setDifficulty = setDifficulty;
  * Append the button and give it an event listener to call the generateRandomNumbers function
  */
 function createRandomNumbersBtn() {
+  // Check if button already exists, if yes, do nothing
+  if (document.getElementById("generate-random-numbers-btn")) {
+    return;
+  }
+
+   
     const randomNumbersBtn = document.createElement("button");
     randomNumbersBtn.classList.add("controller-btn-styling")
     randomNumbersBtn.innerText = "Generate Numbers";
     randomNumbersBtn.id = "generate-random-numbers-btn";
     controllersArea.append(randomNumbersBtn);
+
     randomNumbersBtn.addEventListener("click", generateRandomNumbers);
 }
+
+
+
+
+
 
 /**
  * Disable the difficulty buttons which will naturally lock the timer
@@ -99,6 +111,12 @@ function disableDifficultyBtns() {
 
 //Create a button to generate a target number that the user will try to solve
 function createGetTargetBtn() {
+
+    // If button already exists, don’t create another
+  if (document.getElementById("get-target-num-btn")) {
+    return;
+  }
+
     const getTargetBtn = document.createElement("button");
     getTargetBtn.classList.add("controller-btn-styling");
     getTargetBtn.innerText = "Get Target Number";
@@ -130,10 +148,11 @@ const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const largeNumbers = [25, 33, 50, 66, 75, 99, 115, 132, 150];
 
 function generateRandomNumbers() {
+
+     
     // Shuffle copies of the arrays
     const shuffleSmall = shuffle([...smallNumbers]);
     const shuffleLarge = shuffle([...largeNumbers]);
-
     // Select the first 4 numbers from the small numbers array and the first 2 numbers from the large numbers array
     const selectedSmall = shuffleSmall.slice(0, 4);
     const selectedLarge = shuffleLarge.slice(0, 2);
@@ -147,12 +166,8 @@ function generateRandomNumbers() {
     const numbers = selectedSmall.concat(selectedLarge);
     gamesConsole.innerHTML = numbers.map(num => `<span class="generated-number">${num}</span>`).join("");
     
-    randomNumbersBtn.disabled = true;
-    
     createGetTargetBtn();
 }
-
-
 
 // Fisher–Yates shuffle method
 function shuffle(array) {
