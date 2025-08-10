@@ -96,6 +96,35 @@ function disableDifficultyBtns() {
     createRandomNumbersBtn();
 }
 
+
+//Create a button to generate a target number that the user will try to solve
+function createGetTargetBtn() {
+    const getTargetBtn = document.createElement("button");
+    getTargetBtn.classList.add("controller-btn-styling");
+    getTargetBtn.innerText = "Get Target Number";
+    getTargetBtn.id = "get-target-num-btn";
+    controllersArea.append(getTargetBtn);
+    generateNumbersBtn.hidden = true;
+}
+
+
+
+
+    /*
+    function generateTargetNumber(){
+    const targetDiv = document.createElement("div");
+    gamesConsole.append(targetDiv);
+    targetDiv.classList.add("target-div-styling");
+    targetDiv.innerText = "helllllllllo bitch!"
+    
+}
+
+    */
+
+
+
+
+
 //2 sets of arrays (one for small numbers and one for larger numbers) which be used to for generating random numbers
 const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const largeNumbers = [25, 33, 50, 66, 75, 99, 115, 132, 150];
@@ -109,15 +138,23 @@ function generateRandomNumbers() {
     const selectedSmall = shuffleSmall.slice(0, 4);
     const selectedLarge = shuffleLarge.slice(0, 2);
 
-    // Combine selected numbers from each array and display them into the console
+    /** 
+     * Combine selected numbers from each array
+     * Place each item into a span element
+     * Display into the gamesConsole
+     * Using map here to place each item into its own span element for styling
+     */  
     const numbers = selectedSmall.concat(selectedLarge);
-    gamesConsole.innerHTML = numbers.map(num => `<span class="generated-number">${num}</span>`)
-  .join("");
- 
+    gamesConsole.innerHTML = numbers.map(num => `<span class="generated-number">${num}</span>`).join("");
+    
+    randomNumbersBtn.disabled = true;
+    
     createGetTargetBtn();
 }
 
-// ✅ Fisher–Yates shuffle method
+
+
+// Fisher–Yates shuffle method
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
