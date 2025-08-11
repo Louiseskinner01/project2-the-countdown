@@ -4,6 +4,7 @@ let timerDisplay;
 let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
+const timerDigits =  document.getElementById("timer-digits");
 
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
@@ -64,7 +65,7 @@ function setDifficulty(seconds) {
 //This line assigns the setDifficulty function as a property on the global window object so it can be accessed anywhere
 window.setDifficulty = setDifficulty;
 
-//let timeConfirmed = false; //not in use yet
+
 
 /** 
  * Create a button to generate a random set of numbers
@@ -115,7 +116,6 @@ function createStartBtns() {
 }
 
 function startCountdown(durationInSeconds) {
-   
         clearInterval(countdownInterval);
         let timeLeft = durationInSeconds;
         startTime = Date.now();
