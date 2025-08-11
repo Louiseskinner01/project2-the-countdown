@@ -2,7 +2,6 @@ let confirmDifficultyBtn;
 let difficultyBtns;
 let timerDisplay;
 let playSpan;
-
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 
@@ -13,17 +12,15 @@ function displayControllers() {
     document.getElementById("console-play").style.visibility = "hidden";
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
-    
 }
 
 /** 
  * Create a DOM element to allow the user to confirm level. 
  * Add an event listener to call the dissableDifficultyBtns function when the button is clicked.
  */
- 
 function createConfirmBtn() {
-     // Check if the confirm button already exists
-     if (document.getElementById("confirm-difficulty-btn")) {
+    // Check if the confirm button already exists
+    if (document.getElementById("confirm-difficulty-btn")) {
         return; // If it exists, don't create another
     }
     confirmDifficultyBtn = document.createElement("button");
@@ -32,15 +29,17 @@ function createConfirmBtn() {
     confirmDifficultyBtn.id = "confirm-difficulty-btn";
     confirmDifficultyBtn.addEventListener("click", disableDifficultyBtns);
     controllersArea.append(confirmDifficultyBtn);
-    
+
 }
+
+
+
 
 /**
  * This two functions below allow the user to select a difficulty level.
  * The first function (updateTimerDisplay(seconds)) takes seconds as it value and siaplys the value in 00:00 format
  * The second function updates the timer and confirm the level.
  */
-
 let countdownInterval;
 let startTime;
 let selectedDifficulty = 00; // Timer digits are set to 00:00 as default
@@ -57,7 +56,7 @@ function updateTimerDisplay(seconds) {
 function setDifficulty(seconds) {
     selectedDifficulty = seconds;
     updateTimerDisplay(seconds);
-    function appendConfirmButton(){
+    function appendConfirmButton() {
         createConfirmBtn();
     }
     appendConfirmButton();
@@ -73,12 +72,10 @@ window.setDifficulty = setDifficulty;
  * Append the button and give it an event listener to call the generateRandomNumbers function
  */
 function createRandomNumbersBtn() {
-  // Check if button already exists, if yes, do nothing
-  if (document.getElementById("generate-random-numbers-btn")) {
-    return;
-  }
-
-   
+    // Check if button already exists, if yes, do nothing
+    if (document.getElementById("generate-random-numbers-btn")) {
+        return;
+    }
     const randomNumbersBtn = document.createElement("button");
     randomNumbersBtn.classList.add("controller-btn-styling")
     randomNumbersBtn.innerText = "Generate Numbers";
@@ -87,11 +84,6 @@ function createRandomNumbersBtn() {
 
     randomNumbersBtn.addEventListener("click", generateRandomNumbers);
 }
-
-
-
-
-
 
 /**
  * Disable the difficulty buttons which will naturally lock the timer
@@ -102,7 +94,7 @@ function disableDifficultyBtns() {
     const difficultyButtons = document.querySelectorAll("#difficulty-btn-area .difficulty-btn");
     difficultyButtons.forEach(button => {
         button.disabled = true;
-        button.classList.add("disabled"); 
+        button.classList.add("disabled");
     });
     confirmDifficultyBtn.remove();
     createRandomNumbersBtn();
@@ -113,43 +105,31 @@ function disableDifficultyBtns() {
 function createGetTargetBtn() {
 
     // If button already exists, don’t create another
-  if (document.getElementById("get-target-num-btn")) {
-    return;
-  }
-
+    if (document.getElementById("get-target-num-btn")) {
+        return;
+    }
     const getTargetBtn = document.createElement("button");
     getTargetBtn.classList.add("controller-btn-styling");
     getTargetBtn.innerText = "Get Target Number";
     getTargetBtn.id = "get-target-num-btn";
     controllersArea.append(getTargetBtn);
-    generateNumbersBtn.hidden = true;
+  
+    generateTargetNumber();
 }
 
-
-
-
-    /*
-    function generateTargetNumber(){
+function generateTargetNumber() {
     const targetDiv = document.createElement("div");
     gamesConsole.append(targetDiv);
     targetDiv.classList.add("target-div-styling");
-    targetDiv.innerText = "helllllllllo bitch!"
-    
+    const targetNum = Math.floor(Math.random * (100));
+    console.log(targetNum);
 }
-
-    */
-
-
-
-
 
 //2 sets of arrays (one for small numbers and one for larger numbers) which be used to for generating random numbers
 const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const largeNumbers = [25, 33, 50, 66, 75, 99, 115, 132, 150];
 
 function generateRandomNumbers() {
-
-     
     // Shuffle copies of the arrays
     const shuffleSmall = shuffle([...smallNumbers]);
     const shuffleLarge = shuffle([...largeNumbers]);
@@ -162,10 +142,9 @@ function generateRandomNumbers() {
      * Place each item into a span element
      * Display into the gamesConsole
      * Using map here to place each item into its own span element for styling
-     */  
+     */
     const numbers = selectedSmall.concat(selectedLarge);
     gamesConsole.innerHTML = numbers.map(num => `<span class="generated-number">${num}</span>`).join("");
-    
     createGetTargetBtn();
 }
 
@@ -173,7 +152,7 @@ function generateRandomNumbers() {
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; 
+        [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
 }
