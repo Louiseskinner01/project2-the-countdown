@@ -101,22 +101,70 @@ function disableDifficultyBtns() {
     createRandomNumbersBtn();
 }
 
+// Countdown logic
+
+
+function createStartBtns() {
+    const startGameBtn = document.createElement("button");
+    startGameBtn.id = "start-game-btn";
+    startGameBtn.classList.add("controller-btn-styling");
+    startGameBtn.innerText = "Start Game!"
+    controllersArea.append(startGameBtn);
+    startGameBtn.addEventListener("click", () => startCountdown(selectedDifficulty));
+    console.log("selectedDifficulty is:", selectedDifficulty);
+}
+
+function startCountdown(durationInSeconds) {
+   
+        clearInterval(countdownInterval);
+        let timeLeft = durationInSeconds;
+        startTime = Date.now();
+    
+        function updateDisplay() {
+            updateTimerDisplay(timeLeft);
+    
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                alert("Take more practice!");
+                solvePuzzleBtn.disabled = true;
+            }
+    
+            timeLeft--;
+        }
+    
+        updateDisplay();
+        countdownInterval = setInterval(updateDisplay, 1000);
+    }
+    
+
 function generateTargetNumber() {
     const targetNum = Math.floor(Math.random() * (1000));
     const targetDiv = document.createElement("div");
+    targetDiv.id = "target-div";
     gamesConsole.append(targetDiv);
     targetDiv.classList.add("target-div-styling");
     targetDiv.append(targetNum); 
-    getTargetBtn.remove();
-    randomNumbersBtn.remove(); 
+
+    getTargetBtn.addEventListener("click", createStartBtns);
+      // If button already exists, don’t create another
+      if (document.getElementById("target-div")) {
+        randomNumbersBtn.remove(); 
+        getTargetBtn.remove();
+        createStartBtns();
+     
+    }
+
+    
 }
+
+
 
 
 
 //Create a button to generate a target number that the user will try to solve
 const getTargetBtn = document.createElement("button");
 function createGetTargetBtn() {
-    // If button already exists, don’t create another
+    // If target already exists, don’t create another
     if (document.getElementById("get-target-num-btn")) {
         return;
     }
