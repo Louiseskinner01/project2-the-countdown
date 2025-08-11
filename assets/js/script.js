@@ -71,12 +71,13 @@ window.setDifficulty = setDifficulty;
  * Apply a class for styling and assign an ID 
  * Append the button and give it an event listener to call the generateRandomNumbers function
  */
+const randomNumbersBtn = document.createElement("button");
 function createRandomNumbersBtn() {
     // Check if button already exists, if yes, do nothing
     if (document.getElementById("generate-random-numbers-btn")) {
         return;
     }
-    const randomNumbersBtn = document.createElement("button");
+    
     randomNumbersBtn.classList.add("controller-btn-styling")
     randomNumbersBtn.innerText = "Generate Numbers";
     randomNumbersBtn.id = "generate-random-numbers-btn";
@@ -100,30 +101,32 @@ function disableDifficultyBtns() {
     createRandomNumbersBtn();
 }
 
+function generateTargetNumber() {
+    const targetNum = Math.floor(Math.random() * (1000));
+    const targetDiv = document.createElement("div");
+    gamesConsole.append(targetDiv);
+    targetDiv.classList.add("target-div-styling");
+    targetDiv.append(targetNum); 
+    getTargetBtn.remove();
+    randomNumbersBtn.remove(); 
+}
+
+
 
 //Create a button to generate a target number that the user will try to solve
+const getTargetBtn = document.createElement("button");
 function createGetTargetBtn() {
-
     // If button already exists, don’t create another
     if (document.getElementById("get-target-num-btn")) {
         return;
     }
-    const getTargetBtn = document.createElement("button");
     getTargetBtn.classList.add("controller-btn-styling");
     getTargetBtn.innerText = "Get Target Number";
     getTargetBtn.id = "get-target-num-btn";
     controllersArea.append(getTargetBtn);
-  
-    generateTargetNumber();
+    getTargetBtn.addEventListener("click", generateTargetNumber);
 }
 
-function generateTargetNumber() {
-    const targetDiv = document.createElement("div");
-    gamesConsole.append(targetDiv);
-    targetDiv.classList.add("target-div-styling");
-    const targetNum = Math.floor(Math.random * (100));
-    console.log(targetNum);
-}
 
 //2 sets of arrays (one for small numbers and one for larger numbers) which be used to for generating random numbers
 const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -145,6 +148,7 @@ function generateRandomNumbers() {
      */
     const numbers = selectedSmall.concat(selectedLarge);
     gamesConsole.innerHTML = numbers.map(num => `<span class="generated-number">${num}</span>`).join("");
+
     createGetTargetBtn();
 }
 
