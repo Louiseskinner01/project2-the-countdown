@@ -4,7 +4,6 @@ let timerDisplay;
 let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
-const timerDigits =  document.getElementById("timer-digits");
 
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
@@ -32,9 +31,6 @@ function createConfirmBtn() {
     controllersArea.append(confirmDifficultyBtn);
 
 }
-
-
-
 
 /**
  * This two functions below allow the user to select a difficulty level.
@@ -65,8 +61,6 @@ function setDifficulty(seconds) {
 //This line assigns the setDifficulty function as a property on the global window object so it can be accessed anywhere
 window.setDifficulty = setDifficulty;
 
-
-
 /** 
  * Create a button to generate a random set of numbers
  * Apply a class for styling and assign an ID 
@@ -78,7 +72,7 @@ function createRandomNumbersBtn() {
     if (document.getElementById("generate-random-numbers-btn")) {
         return;
     }
-    
+
     randomNumbersBtn.classList.add("controller-btn-styling")
     randomNumbersBtn.innerText = "Generate Numbers";
     randomNumbersBtn.id = "generate-random-numbers-btn";
@@ -103,8 +97,6 @@ function disableDifficultyBtns() {
 }
 
 // Countdown logic
-
-
 function createStartBtns() {
     const startGameBtn = document.createElement("button");
     startGameBtn.id = "start-game-btn";
@@ -116,26 +108,25 @@ function createStartBtns() {
 }
 
 function startCountdown(durationInSeconds) {
-        clearInterval(countdownInterval);
-        let timeLeft = durationInSeconds;
-        startTime = Date.now();
-    
-        function updateDisplay() {
-            updateTimerDisplay(timeLeft);
-    
-            if (timeLeft <= 0) {
-                clearInterval(countdownInterval);
-                alert("Take more practice!");
-                solvePuzzleBtn.disabled = true;
-            }
-    
-            timeLeft--;
+    clearInterval(countdownInterval);
+    let timeLeft = durationInSeconds;
+    startTime = Date.now();
+
+    function updateDisplay() {
+        updateTimerDisplay(timeLeft);
+
+        if (timeLeft <= 0) {
+            clearInterval(countdownInterval);
+            alert("Take more practice!");
+            solvePuzzleBtn.disabled = true;
         }
-    
-        updateDisplay();
-        countdownInterval = setInterval(updateDisplay, 1000);
+        timeLeft--;
     }
-    
+
+    updateDisplay();
+    countdownInterval = setInterval(updateDisplay, 1000);
+
+}
 
 function generateTargetNumber() {
     const targetNum = Math.floor(Math.random() * (1000));
@@ -143,23 +134,19 @@ function generateTargetNumber() {
     targetDiv.id = "target-div";
     gamesConsole.append(targetDiv);
     targetDiv.classList.add("target-div-styling");
-    targetDiv.append(targetNum); 
+    targetDiv.append(targetNum);
 
     getTargetBtn.addEventListener("click", createStartBtns);
-      // If button already exists, don’t create another
-      if (document.getElementById("target-div")) {
-        randomNumbersBtn.remove(); 
+    // If button already exists, don’t create another
+    if (document.getElementById("target-div")) {
+        randomNumbersBtn.remove();
         getTargetBtn.remove();
         createStartBtns();
-     
+
     }
 
-    
+
 }
-
-
-
-
 
 //Create a button to generate a target number that the user will try to solve
 const getTargetBtn = document.createElement("button");
