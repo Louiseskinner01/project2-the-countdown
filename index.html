@@ -79,10 +79,12 @@
 
                <!-- Console -->
                <div class="col-sm-6">
-                <div id="games-console" class="console">
+                <div id="games-console">
                   <span id="console-play" onclick="displayControllers()">PLAY?</span>
                 </div>
               </div>
+
+            
               
         <!-- Timer -->
     <div class="col-3">
@@ -126,8 +128,10 @@ const isPortrait = window.innerHeight > window.innerWidth;
 if (orientationMessage) {
     if (isMobile && isPortrait) {
         orientationMessage.style.display = "flex";
+        document.getElementById("console-play").style.display = "none";
     } else {
         orientationMessage.style.display = "none";
+        document.getElementById("console-play").style.display = "block"
     }
 }
 }
