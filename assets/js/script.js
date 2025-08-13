@@ -5,6 +5,10 @@ let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 
+// Store available numbers for validation in workingout-grid.js
+let availableNumbers = [];
+let targetNum = null;
+
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
     document.getElementById("difficulty-btn-area").style.visibility = "visible";
@@ -29,7 +33,6 @@ function createConfirmBtn() {
     confirmDifficultyBtn.id = "confirm-difficulty-btn";
     confirmDifficultyBtn.addEventListener("click", disableDifficultyBtns);
     controllersArea.append(confirmDifficultyBtn);
-
 }
 
 /**
@@ -58,7 +61,6 @@ function setDifficulty(seconds) {
     }
     appendConfirmButton();
 }
-//This line assigns the setDifficulty function as a property on the global window object so it can be accessed anywhere
 window.setDifficulty = setDifficulty;
 
 /** 
@@ -68,7 +70,6 @@ window.setDifficulty = setDifficulty;
  */
 const randomNumbersBtn = document.createElement("button");
 function createRandomNumbersBtn() {
-    // Check if button already exists, if yes, do nothing
     if (document.getElementById("generate-random-numbers-btn")) {
         return;
     }
@@ -103,8 +104,10 @@ function createStartBtns() {
     startGameBtn.classList.add("controller-btn-styling");
     startGameBtn.innerText = "Start Game!"
     controllersArea.append(startGameBtn);
-    startGameBtn.addEventListener("click", () => startCountdown(selectedDifficulty));
-    console.log("selectedDifficulty is:", selectedDifficulty);
+    startGameBtn.addEventListener("click", () => {
+        startCountdown(selectedDifficulty);
+        createEquationRow(); // Start the working grid when game starts
+    });
 }
 
 function startCountdown(durationInSeconds) {
@@ -119,17 +122,34 @@ function startCountdown(durationInSeconds) {
             clearInterval(countdownInterval);
             alert("Take more practice!");
             solvePuzzleBtn.disabled = true;
+            //endGame(false);
         }
         timeLeft--;
     }
 
     updateDisplay();
     countdownInterval = setInterval(updateDisplay, 1000);
-
 }
 
+/*
+function endGame(win) {
+    clearInterval(countdownInterval);
+    const inputs = document.querySelectorAll(".equation-input");
+    inputs.forEach(input => input.disabled = true);
+
+    if (win) {
+        alert("🎉 Congratulations! You hit the target!");
+    } else {
+        alert("⏰ Time's up! Better luck next time!");
+    }
+}
+*/
+
 function generateTargetNumber() {
-    const targetNum = Math.floor(Math.random() * (1000));
+    let max = 1000;
+    let min = 131;
+    targetNum = Math.floor(Math.random() * (max - min)) + min;
+
     const targetDiv = document.createElement("div");
     targetDiv.id = "target-div";
     gamesConsole.append(targetDiv);
@@ -137,21 +157,15 @@ function generateTargetNumber() {
     targetDiv.append(targetNum);
 
     getTargetBtn.addEventListener("click", createStartBtns);
-    // If button already exists, don’t create another
     if (document.getElementById("target-div")) {
         randomNumbersBtn.remove();
         getTargetBtn.remove();
         createStartBtns();
-
     }
-
-
 }
 
-//Create a button to generate a target number that the user will try to solve
 const getTargetBtn = document.createElement("button");
 function createGetTargetBtn() {
-    // If target already exists, don’t create another
     if (document.getElementById("get-target-num-btn")) {
         return;
     }
@@ -162,32 +176,22 @@ function createGetTargetBtn() {
     getTargetBtn.addEventListener("click", generateTargetNumber);
 }
 
-
-//2 sets of arrays (one for small numbers and one for larger numbers) which be used to for generating random numbers
-const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const largeNumbers = [25, 33, 50, 66, 75, 99, 115, 132, 150];
+const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const largeNumbers = [25, 33, 66, 75, 84, 91];
 
 function generateRandomNumbers() {
-    // Shuffle copies of the arrays
     const shuffleSmall = shuffle([...smallNumbers]);
     const shuffleLarge = shuffle([...largeNumbers]);
-    // Select the first 4 numbers from the small numbers array and the first 2 numbers from the large numbers array
     const selectedSmall = shuffleSmall.slice(0, 4);
     const selectedLarge = shuffleLarge.slice(0, 2);
 
-    /** 
-     * Combine selected numbers from each array
-     * Place each item into a span element
-     * Display into the gamesConsole
-     * Using map here to place each item into its own span element for styling
-     */
-    const numbers = selectedSmall.concat(selectedLarge);
-    gamesConsole.innerHTML = numbers.map(num => `<span class="generated-number">${num}</span>`).join("");
+    availableNumbers = selectedSmall.concat(selectedLarge); // store for workingout-grid.js
+
+    gamesConsole.innerHTML = availableNumbers.map(num => `<span class="generated-number">${num}</span>`).join("");
 
     createGetTargetBtn();
 }
 
-// Fisher–Yates shuffle method
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -195,6 +199,3 @@ function shuffle(array) {
     }
     return array;
 }
-
-
-
