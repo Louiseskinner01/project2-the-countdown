@@ -127,6 +127,9 @@ function startCountdown(durationInSeconds) {
         timeLeft--;
     }
 
+     // NEW: Start the working grid
+     createEquationRow(availableNumbers, targetNum);
+
     updateDisplay();
     countdownInterval = setInterval(updateDisplay, 1000);
 }
