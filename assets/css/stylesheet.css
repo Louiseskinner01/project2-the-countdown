@@ -140,6 +140,8 @@ color: var(--sub-font-color);
 
 .target-div-styling {
     background-color: deeppink;
+    font-size: 56px;
+    font-family: var(--workingout-grid-font);  
 }
 
 .feature {
@@ -155,10 +157,8 @@ color: var(--sub-font-color);
         margin: 0 10px;
         font-size: 2rem;
         font-weight: bold;
-        font-family: var(--workingout-grid-font);
-      
+        font-family: var(--workingout-grid-font);  
 }
-
 
 #console-play {
     display: none;
