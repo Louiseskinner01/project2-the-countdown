@@ -5,6 +5,7 @@ let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 
+
 // Store available numbers for validation in workingout-grid.js
 let availableNumbers = [];
 let targetNum = null;
@@ -107,6 +108,7 @@ function createStartBtns() {
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
         createEquationRow(); // Start the working grid when game starts
+        workingoutGrid.style.visibility = "visible";
     });
 }
 
@@ -120,9 +122,9 @@ function startCountdown(durationInSeconds) {
 
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
-            alert("Take more practice!");
-            solvePuzzleBtn.disabled = true;
-            //endGame(false);
+            //alert("Take more practice!");  
+            gamesConsole.innerHTML = "Sorry your time has ran out... The Countdown suggests that you take more practice!"
+            gamesConsole.style.fontSize = "36px";
         }
         timeLeft--;
     }
@@ -180,7 +182,7 @@ function createGetTargetBtn() {
 }
 
 const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const largeNumbers = [25, 33, 66, 75, 84, 91];
+const largeNumbers = [25, 33, 51, 66, 75, 84, 87, 91];
 
 function generateRandomNumbers() {
     const shuffleSmall = shuffle([...smallNumbers]);

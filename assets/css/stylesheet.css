@@ -13,6 +13,7 @@
     --sub-font-color: #ffef08;
     --sub-font-style: "Scope One", serif;
     --feauture-color: #eefae9;
+    --feature2-color: deeppink;
     --calm-color: #fcfaf7; 
     --workingout-grid-font: "Ubuntu", sans-serif;
 }
@@ -33,11 +34,10 @@ html, body {
       font-family: var(--main-font-style) !important;
 }
 
+/*Increases the main content size to ensure the footer stays at the bottom of the page*/
 main {
     flex: 1;
 }
-
-
 
 h1 {
     color: var(--main-font-color) !important;
