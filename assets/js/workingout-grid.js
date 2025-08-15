@@ -11,10 +11,23 @@ function createEquationRow(numbers) {
     const row = document.createElement("div");
     row.classList.add("equation-row");
 
+    /*
     const input = document.createElement("input");
     input.type = "text";
     input.placeholder = "Enter equation (e.g. 25 + 50)";
     input.classList.add("equation-input");
+*/
+
+const input = document.createElement("input");
+
+// Mobile-friendly numeric + operators input
+input.type = "tel"; // triggers numeric keypad on most devices
+input.inputMode = "numeric"; // hints to show numeric keypad
+input.pattern = "[0-9+\\-*/(). ]*"; // allow digits, + - * / ( ) and spaces
+input.placeholder = "Enter equation (e.g. 25 + 50)";
+
+input.classList.add("equation-input");
+
 
     const output = document.createElement("span");
     output.classList.add("equation-result");
@@ -98,7 +111,7 @@ function updateRunningTotal(result) {
 
 
 function undoEquation(result, usedNumbersJSON, row) {
-    const usedNums = JSON.parse(usedNumbersJSON);
+    const usedNums = JSON.parse(usedNumbersJSON); //convert from string back to array of numbers
     randomNumbersCopy.push(...usedNums);
 
     const resIndex = randomNumbersCopy.indexOf(Number(result));
