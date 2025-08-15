@@ -1,8 +1,118 @@
-function createEquationRow() { /* creates and appends a new row */ }
+let totalSum = 0;
+let randomNumbersCopy = [];
+let targetNumber = null;
+const workingoutGrid = document.getElementById("working-grid");
 
-function handleInputEnter(event) { /* listens for Enter key */ }
+function createEquationRow(numbers, target) {
+    if (numbers) randomNumbersCopy = [...numbers];
+    if (target) targetNumber = target;
 
-function evaluateExpression(inputValue) { /* returns result */ }
+    const container = document.getElementById("working-grid");
 
+    const row = document.createElement("div");
+    row.classList.add("equation-row");
 
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Enter equation (e.g. 25 + 50)";
+    input.classList.add("equation-input");
 
+    const output = document.createElement("span");
+    output.classList.add("equation-result");
+
+    const undoBtn = document.createElement("button");
+    undoBtn.textContent = "Undo";
+    undoBtn.classList.add("undo-btn");
+    undoBtn.style.display = "none";
+
+    input.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            handleInputEnter(input, output, undoBtn);
+        }
+    });
+
+    undoBtn.addEventListener("click", function() {
+        undoEquation(output.dataset.result, output.dataset.usedNumbers, row);
+        undoBtn.classList.add("controller-btn-styling");
+    });
+
+    row.appendChild(input);
+    row.appendChild(output);
+    row.appendChild(undoBtn);
+    container.appendChild(row);
+
+    input.focus();
+}
+
+function handleInputEnter(input, output, undoBtn) {
+    const value = input.value.trim();
+    if (value === "") return;
+
+    if (!/^[0-9+\-*/().\s]+$/.test(value)) {
+        output.textContent = "Invalid characters";
+        return;
+    }
+
+    const usedNums = value.match(/\d+/g)?.map(Number) || [];
+    let tempAvailable = [...randomNumbersCopy];
+
+    for (let num of usedNums) {
+        const index = tempAvailable.indexOf(num);
+        if (index === -1) {
+            output.textContent = "Invalid: number not available";
+            output.classList.add("output-styling");
+            return;
+        }
+        tempAvailable.splice(index, 1);
+    }
+
+    try {
+        let result = eval(value);
+    
+        // Round to nearest 0.5
+        result = Math.round(result * 2) / 2;
+    
+        output.textContent = "= " + result;
+        output.style.color = "black";
+        output.dataset.result = result;
+        output.dataset.usedNumbers = JSON.stringify(usedNums);
+    
+        randomNumbersCopy = tempAvailable;
+        randomNumbersCopy.push(result); // allow result as new usable number
+    
+        updateRunningTotal(result);
+        input.disabled = true;
+        undoBtn.style.display = "inline-block";
+        createEquationRow();
+    } catch {
+        output.textContent = "Error in equation";
+        //output.style.color = "red";
+    }
+    
+}
+
+function updateRunningTotal(result) {
+   // result += result;
+    //document.getElementById("running-total").textContent = `Total: ${totalSum}`;
+
+  
+      //if (targetNumber && totalSum === targetNumber) {
+        if (result === targetNumber) {
+        //alert("🎉 You hit the target exactly!");
+        gamesConsole.innerHTML = `WINNER WINNER CHICKEN DINNER!!! You solved that equation in ${timeLeft} time!`
+    }
+}
+
+function undoEquation(result, usedNumbersJSON, row) {
+    const usedNums = JSON.parse(usedNumbersJSON);
+    randomNumbersCopy.push(...usedNums);
+
+    const resIndex = randomNumbersCopy.indexOf(Number(result));
+    if (resIndex !== -1) {
+        randomNumbersCopy.splice(resIndex, 1); // remove that result from list
+    }
+
+    result -= Number(result);
+    //document.getElementById("running-total").textContent = `Total: ${totalSum}`;
+    row.remove();
+}
