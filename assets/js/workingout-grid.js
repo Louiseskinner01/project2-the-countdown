@@ -89,3 +89,15 @@ function handleInputEnter(input, output, undoBtn) {
         //output.style.color = "red";
     }
 }
+
+function updateRunningTotal(result) {
+    // result += result;
+     //document.getElementById("running-total").textContent = `Total: ${totalSum}`;
+ 
+   
+       //if (targetNumber && totalSum === targetNumber) {
+         if (result === targetNumber) {
+         //alert("🎉 You hit the target exactly!");
+         gamesConsole.innerHTML = `WINNER WINNER CHICKEN DINNER!!! You solved that equation in ${timeLeft} time!`
+     }
+ }
