@@ -55,6 +55,7 @@ function createKeypad() {
     const keypad = document.createElement("div");
     keypad.id = "game-keypad";
     keypad.classList.add("keypad-container");
+    document.getElementById("difficulty-btn-area").append(keypad);
 
     const keys = [
         "7", "8", "9", "+",
@@ -85,11 +86,11 @@ function createKeypad() {
         keypad.appendChild(btn);
     });
 
-    workingoutGrid.after(keypad);
+
 }
 
 // Call once when game starts
-createKeypad();
+//createKeypad();
 
 function handleInputEnter(input, output, undoBtn) {
     const value = input.value.trim();
