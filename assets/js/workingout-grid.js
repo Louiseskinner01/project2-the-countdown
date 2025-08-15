@@ -1,11 +1,10 @@
-let totalSum = 0;
 let randomNumbersCopy = [];
 let targetNumber = null;
 const workingoutGrid = document.getElementById("working-grid");
 
-function createEquationRow(numbers, target) {
+function createEquationRow(numbers) {
     if (numbers) randomNumbersCopy = [...numbers];
-    if (target) targetNumber = target;
+    // if (target) targetNumber = target; this line adds no value and can be removed (i have already moved the target from the function arguement) 
 
     const container = document.getElementById("working-grid");
 
@@ -44,16 +43,17 @@ function createEquationRow(numbers, target) {
     input.focus();
 }
 
+
 function handleInputEnter(input, output, undoBtn) {
-    const value = input.value.trim();
+    const value = input.value.trim(); //removing all white space except for in between numbers
     if (value === "") return;
 
-    if (!/^[0-9+\-*/().\s]+$/.test(value)) {
-        output.textContent = "Invalid characters";
+    if (!/^[0-9+\-*/().\s]+$/.test(value)) { //prevents invalid characters so the user can only enter numbers. Basic security and logic guard
+        output.textContent = "Invalid characters"; 
         return;
     }
 
-    const usedNums = value.match(/\d+/g)?.map(Number) || [];
+    const usedNums = value.match(/\d+/g)?.map(Number) || []; //this line needs more clarity
     let tempAvailable = [...randomNumbersCopy];
 
     for (let num of usedNums) {
@@ -88,31 +88,4 @@ function handleInputEnter(input, output, undoBtn) {
         output.textContent = "Error in equation";
         //output.style.color = "red";
     }
-    
-}
-
-function updateRunningTotal(result) {
-   // result += result;
-    //document.getElementById("running-total").textContent = `Total: ${totalSum}`;
-
-  
-      //if (targetNumber && totalSum === targetNumber) {
-        if (result === targetNumber) {
-        //alert("🎉 You hit the target exactly!");
-        gamesConsole.innerHTML = `WINNER WINNER CHICKEN DINNER!!! You solved that equation in ${timeLeft} time!`
-    }
-}
-
-function undoEquation(result, usedNumbersJSON, row) {
-    const usedNums = JSON.parse(usedNumbersJSON);
-    randomNumbersCopy.push(...usedNums);
-
-    const resIndex = randomNumbersCopy.indexOf(Number(result));
-    if (resIndex !== -1) {
-        randomNumbersCopy.splice(resIndex, 1); // remove that result from list
-    }
-
-    result -= Number(result);
-    //document.getElementById("running-total").textContent = `Total: ${totalSum}`;
-    row.remove();
 }
