@@ -80,7 +80,7 @@ function handleInputEnter(input, output, undoBtn) {
         randomNumbersCopy = tempAvailable;
         randomNumbersCopy.push(result); // allow result as new usable number
     
-        updateRunningTotal(result);
+        updateRunningTotal(result); //possbile rename to check if user has won
         input.disabled = true;
         undoBtn.style.display = "inline-block";
         createEquationRow();
@@ -91,13 +91,22 @@ function handleInputEnter(input, output, undoBtn) {
 }
 
 function updateRunningTotal(result) {
-    // result += result;
-     //document.getElementById("running-total").textContent = `Total: ${totalSum}`;
- 
-   
-       //if (targetNumber && totalSum === targetNumber) {
          if (result === targetNumber) {
-         //alert("🎉 You hit the target exactly!");
-         gamesConsole.innerHTML = `WINNER WINNER CHICKEN DINNER!!! You solved that equation in ${timeLeft} time!`
+         gamesConsole.innerHTML = `🎉 🎉 🎉 WINNER WINNER CHICKEN DINNER!!! You solved that equation in ${timeLeft} time!`
      }
  }
+
+
+function undoEquation(result, usedNumbersJSON, row) {
+    const usedNums = JSON.parse(usedNumbersJSON);
+    randomNumbersCopy.push(...usedNums);
+
+    const resIndex = randomNumbersCopy.indexOf(Number(result));
+    if (resIndex !== -1) {
+        randomNumbersCopy.splice(resIndex, 1); // remove that result from list
+    }
+
+    result -= Number(result);
+    //document.getElementById("running-total").textContent = `Total: ${totalSum}`;
+    row.remove();
+}
