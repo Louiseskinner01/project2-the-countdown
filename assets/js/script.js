@@ -84,15 +84,18 @@ function createRandomNumbersBtn() {
 }
 
 /**
- * Disable the difficulty buttons which will naturally lock the timer
+ * Replace the difficulty buttons with a built-in keypad.
+ *  This method (or disabling the buttons natually locks the timer "time confirmed")
  * Remove the confirmDifficultyBtn 
  * Call the createRandomNumbersBtn function which will append a button allowing the user to generate random numbers
  */
 function disableDifficultyBtns() {
     const difficultyButtons = document.querySelectorAll("#difficulty-btn-area .difficulty-btn");
     difficultyButtons.forEach(button => {
-        button.disabled = true;
-        button.classList.add("disabled");
+       // button.disabled = true;
+       // button.classList.add("disabled");
+       button.remove()
+       document.getElementById("timer-area").style.color = "deeppink";
     });
     confirmDifficultyBtn.remove();
     createRandomNumbersBtn();
@@ -104,11 +107,14 @@ function createStartBtns() {
     startGameBtn.id = "start-game-btn";
     startGameBtn.classList.add("controller-btn-styling");
     startGameBtn.innerText = "Start Game!"
+
     controllersArea.append(startGameBtn);
+
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
         createEquationRow(); // Start the working grid when game starts
         workingoutGrid.style.visibility = "visible";
+        startGameBtn.remove();
     });
 }
 
@@ -123,7 +129,7 @@ function startCountdown(durationInSeconds) {
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
             //alert("Take more practice!");  
-            gamesConsole.innerHTML = "Sorry your time has ran out... The Countdown suggests that you take more practice!"
+            gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!"
             gamesConsole.style.fontSize = "36px";
         }
         timeLeft--;
