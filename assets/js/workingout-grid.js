@@ -21,8 +21,8 @@ function createEquationRow(numbers) {
 const input = document.createElement("input");
 
 // Mobile-friendly numeric + operators input
-input.type = "tel"; // triggers numeric keypad on most devices
-input.inputMode = "numeric"; // hints to show numeric keypad
+input.type = "text"; // triggers numeric keypad on most devices
+input.inputMode = "decimal"; // hints to show numeric keypad
 input.pattern = "[0-9+\\-*/(). ]*"; // allow digits, + - * / ( ) and spaces
 input.placeholder = "Enter equation (e.g. 25 + 50)";
 
