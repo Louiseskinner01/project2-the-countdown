@@ -4,7 +4,7 @@ let timerDisplay;
 let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
-
+const difficultyButtons = document.querySelectorAll(".difficulty-btn");
 
 // Store available numbers for validation in workingout-grid.js
 let availableNumbers = [];
@@ -90,12 +90,12 @@ function createRandomNumbersBtn() {
  * Call the createRandomNumbersBtn function which will append a button allowing the user to generate random numbers
  */
 function disableDifficultyBtns() {
-    const difficultyButtons = document.querySelectorAll("#difficulty-btn-area .difficulty-btn");
+   // const difficultyButtons = document.querySelectorAll("#difficulty-btn-area .difficulty-btn");
     difficultyButtons.forEach(button => {
-       // button.disabled = true;
-       // button.classList.add("disabled");
-       button.remove()
+        button.disabled = true;
+        button.classList.add("disabled");
        document.getElementById("timer-area").style.color = "deeppink";
+       
     });
     confirmDifficultyBtn.remove();
     createRandomNumbersBtn();
@@ -113,7 +113,11 @@ function createStartBtns() {
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
         createEquationRow(); // Start the working grid when game starts
+        difficultyButtons.forEach(button => {
+        button.remove();
+    });
         workingoutGrid.style.visibility = "visible";
+        createKeypad();
         startGameBtn.remove();
     });
 }
@@ -142,19 +146,7 @@ function startCountdown(durationInSeconds) {
     countdownInterval = setInterval(updateDisplay, 1000);
 }
 
-/*
-function endGame(win) {
-    clearInterval(countdownInterval);
-    const inputs = document.querySelectorAll(".equation-input");
-    inputs.forEach(input => input.disabled = true);
 
-    if (win) {
-        alert("🎉 Congratulations! You hit the target!");
-    } else {
-        alert("⏰ Time's up! Better luck next time!");
-    }
-}
-*/
 
 function generateTargetNumber() {
     let max = 1000;
