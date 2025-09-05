@@ -158,10 +158,11 @@ function generateTargetNumber() {
     gamesConsole.append(targetDiv);
     targetDiv.classList.add("target-div-styling");
     targetDiv.append(targetNum);
+    
 
     getTargetBtn.addEventListener("click", createStartBtns);
     if (document.getElementById("target-div")) {
-        randomNumbersBtn.remove();
+       // randomNumbersBtn.remove();
         getTargetBtn.remove();
         createStartBtns();
     }
@@ -193,6 +194,7 @@ function generateRandomNumbers() {
     gamesConsole.innerHTML = availableNumbers.map(num => `<span class="generated-number">${num}</span>`).join("");
 
     createGetTargetBtn();
+    randomNumbersBtn.remove();
 }
 
 function shuffle(array) {
