@@ -11,8 +11,11 @@ function createEquationRow(numbers) {
 
     const input = document.createElement("input");
     input.type = "text";
-    input.placeholder = "Enter equation (e.g. 25 + 50)";
+    input.placeholder = "ENTER AN EQUASION";
     input.classList.add("equation-input");
+// Prevent mobile keyboard from showing
+input.setAttribute("readonly", true);
+
 
     const output = document.createElement("span");
     output.classList.add("equation-result");
@@ -90,9 +93,6 @@ function createKeypad() {
    // workingoutGrid.after(keypad);
 }
 
-// Call once when game starts
-//createKeypad();
-
 function handleInputEnter(input, output, undoBtn) {
     const value = input.value.trim();
     if (value === "") return;
@@ -152,18 +152,6 @@ function undoEquation(result, usedNumbersJSON, row) {
 
 // Basic styling
 const style = document.createElement("style");
-style.textContent = `
-.keypad-container {
-    display: grid;
-    grid-template-columns: repeat(4, 50px);
-    gap: 5px;
-    margin-top: 10px;
-}
-.keypad-btn {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-`;
+style.classList.add("keypad-container", "keypad-btn");
 document.head.appendChild(style);
 
