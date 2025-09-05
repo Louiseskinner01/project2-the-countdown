@@ -14,6 +14,14 @@ function createEquationRow(numbers) {
     input.placeholder = "ENTER AN EQUASION";
     input.classList.add("equation-input");
 
+    // Prevent mobile keyboard but keep keypad working
+input.addEventListener("touchstart", function (e) {
+    e.preventDefault(); // stops mobile keyboard
+    input.focus();      // still gives visual focus
+    activeInput = input;
+});
+
+
     const output = document.createElement("span");
     output.classList.add("equation-result");
 
