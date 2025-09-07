@@ -13,7 +13,7 @@ function createEquationRow(numbers) {
     input.type = "text";
     input.placeholder = "ENTER AN EQUASION";
     input.classList.add("equation-input");
-    input.readOnly = "true";
+    input.readOnly = "true"; //hide mobile device keyboard
 
 
     const output = document.createElement("span");
