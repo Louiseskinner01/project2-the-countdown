@@ -13,13 +13,7 @@ function createEquationRow(numbers) {
     input.type = "text";
     input.placeholder = "ENTER AN EQUASION";
     input.classList.add("equation-input");
-
-    // Prevent mobile keyboard but keep keypad working
-input.addEventListener("touchstart", function (e) {
-    e.preventDefault(); // stops mobile keyboard
-    input.focus();      // still gives visual focus
-    activeInput = input;
-});
+    input.readOnly = "true";
 
 
     const output = document.createElement("span");
