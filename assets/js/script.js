@@ -13,7 +13,7 @@ let targetNum = null;
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
     document.getElementById("difficulty-btn-area").style.visibility = "visible";
-    document.getElementById("timer-area").style.visibility = "visible";
+  //  document.getElementById("timer-area").style.visibility = "visible";
     document.getElementById("console-play").style.visibility = "hidden";
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
@@ -83,23 +83,29 @@ function createRandomNumbersBtn() {
     randomNumbersBtn.addEventListener("click", generateRandomNumbers);
 }
 
+
 /**
  * Replace the difficulty buttons with a built-in keypad.
  *  This method (or disabling the buttons natually locks the timer "time confirmed")
  * Remove the confirmDifficultyBtn 
  * Call the createRandomNumbersBtn function which will append a button allowing the user to generate random numbers
  */
+
+const timerArea = document.getElementById("timer-area");
 function disableDifficultyBtns() {
-   // const difficultyButtons = document.querySelectorAll("#difficulty-btn-area .difficulty-btn");
-    difficultyButtons.forEach(button => {
-        button.disabled = true;
+        difficultyButtons.forEach(button => {
+        button.remove();
         button.classList.add("disabled");
-       document.getElementById("timer-area").style.color = "deeppink";
-       
+        timerArea.style.color = "deeppink";
+        timerArea.style.visibility = "visible";
+
     });
+
     confirmDifficultyBtn.remove();
     createRandomNumbersBtn();
 }
+
+
 
 // Countdown logic
 function createStartBtns() {
