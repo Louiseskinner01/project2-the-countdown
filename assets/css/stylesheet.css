@@ -24,13 +24,12 @@ html, body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom,
-    
-        rgb(2, 125, 30) 19%, 
+        rgb(42, 226, 137) 19%, 
         #a871d8 43%, 
-        #e99105 60%,   
+        #e99105 63%,   
         #190649 90%   
       ) !important;
-      background-blend-mode: overlay;
+      background-attachment: fixed;
       font-family: var(--main-font-style) !important;
 }
 
@@ -146,6 +145,7 @@ color: var(--sub-font-color);
 
 .feature {
     background-color: var(--feauture-color); 
+ 
     border: 2px solid var(--calm-color);
     color: var(--main-font-color);
   

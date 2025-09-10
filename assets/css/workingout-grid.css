@@ -1,0 +1,65 @@
+/*workingout-grid font*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --main-font-color:  #4d05f6;
+    --main-font-style: "Sour Gummy", sans-serif;
+    --sub-font-color: #ffef08;
+    --sub-font-style: "Scope One", serif;
+    --feauture-color: #eefae9;
+    --feauture2-color: deeppink;
+    --calm-color: #fcfaf7; 
+    --workingout-font-style: "Ubuntu", sans-serif;
+}
+
+.working-grid {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--sub-font-color);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--main-font-color);
+    visibility: hidden;
+}
+
+.working-line {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  
+}
+
+.expression {
+    font-family: var(--workingout-font-style);
+    outline: none;
+    padding: 0.3rem;
+    min-height: 24px;
+}
+
+.total-line {
+    border-top: 2px solid #000;
+    font-weight: bold;
+}
+
+output-styling {
+    font-size: 42px;
+    color: green;
+}
+
+.keypad-container {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 5px;
+    margin-top: 10px;
+}
+.keypad-btn {
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--main-font-color);
+    color: var(--sub-font-color);
+}
