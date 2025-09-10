@@ -57,8 +57,7 @@ function createKeypad() {
     const keypad = document.createElement("div");
     keypad.id = "game-keypad";
     keypad.classList.add("keypad-container");
-    document.getElementById("difficulty-btn-area").appendChild(keypad); 
-
+    workingoutGrid.appendChild(keypad); 
 
     const keys = [
         "7", "8", "9", "+",
