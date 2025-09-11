@@ -13,25 +13,15 @@
 }
 
 .working-grid {
-    margin-top: 2rem;
+    margin-top: 10px;
     padding: 1rem;
     border-radius: 10px;
     background-color: var(--sub-font-color);
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
     border: 2px solid var(--main-font-color);
     visibility: hidden;
 }
 
-.working-line {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 1rem;
-    align-items: center;
-    padding: 0.5rem 0;
-  
-}
+
 
 .expression {
     font-family: var(--workingout-font-style);
@@ -40,10 +30,6 @@
     min-height: 24px;
 }
 
-.total-line {
-    border-top: 2px solid #000;
-    font-weight: bold;
-}
 
 output-styling {
     font-size: 42px;
@@ -54,7 +40,8 @@ output-styling {
     display: grid;
     grid-template-columns: repeat(4, 50px);
     gap: 5px;
-    margin-top: 10px;
+    width: auto;
+   
 }
 .keypad-btn {
     padding: 5px;

@@ -13,7 +13,7 @@ function createEquationRow(numbers) {
     input.type = "text";
     input.placeholder = "ENTER AN EQUASION";
     input.classList.add("equation-input");
-    input.readOnly = "true"; //hide mobile device keyboard
+    input.readOnly = "true"; //prevents the mobile device keyboardfrom appearing on the screen
 
 
     const output = document.createElement("span");
@@ -88,7 +88,6 @@ function createKeypad() {
         keypad.appendChild(btn);
     });
 
-   // workingoutGrid.after(keypad);
 }
 
 function handleInputEnter(input, output, undoBtn) {
@@ -148,8 +147,5 @@ function undoEquation(result, usedNumbersJSON, row) {
     row.remove();
 }
 
-// Basic styling
-const style = document.createElement("style");
-style.classList.add("keypad-container", "keypad-btn");
-document.head.appendChild(style);
+
 

@@ -138,14 +138,13 @@ color: var(--sub-font-color);
 }
 
 .target-div-styling {
-    background-color: deeppink;
-    font-size: 56px;
+    background-color: var(--main-font-color);
+    font-size: 32px;
     font-family: var(--workingout-grid-font);  
 }
 
 .feature {
     background-color: var(--feauture-color); 
- 
     border: 2px solid var(--calm-color);
     color: var(--main-font-color);
   
@@ -155,7 +154,7 @@ color: var(--sub-font-color);
 .generated-number {
         display: inline-block;
         margin: 0 10px;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: bold;
         font-family: var(--workingout-grid-font);  
 }
