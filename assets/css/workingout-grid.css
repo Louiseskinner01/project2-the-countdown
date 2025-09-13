@@ -13,14 +13,13 @@
 }
 
 .working-grid {
-    margin-top: 50px;
+    margin-top: 5px;
     padding: 1rem;
     border-radius: 10px;
     background-color: var(--sub-font-color);
     border: 2px solid var(--main-font-color);
     visibility: hidden;
 }
-
 
 
 .expression {
@@ -32,7 +31,7 @@
 
 output-styling {
     font-size: 42px;
-    color: rgb(240, 49, 62);
+    color: rgb(240, 49, 62) !important;
 }
 
 .keypad-container {
@@ -40,12 +39,13 @@ output-styling {
     grid-template-columns: repeat(4, 50px);
     gap: 5px;
     width: auto;
-   
 }
+
 .keypad-btn {
     padding: 5px;
     font-size: 20px;
     cursor: pointer;
     background-color: var(--main-font-color);
     color: var(--sub-font-color);
+    font-family: var(--workingout-font-style);
 }

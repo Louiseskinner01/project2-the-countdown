@@ -44,7 +44,7 @@ function createEquationRow(numbers) {
     row.appendChild(undoBtn);
 
     const equationArea = document.getElementById("equation-area");
-    equationArea.appendChild(row);
+    workingoutGrid.appendChild(row);
 
     // Focus new row's input
     input.focus();

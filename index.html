@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="assets/css/workingout-grid.css">
 
-    </head>
+</head>
 
 <body>
     <header>
@@ -64,94 +63,99 @@
                     <h1 class="text-wrap">THE COUNTDOWN</h1>
                     <h2>time waits for no one!</h2>
                 </div>
-            </div>
+            </div> <!--end of header grid row-->
 
             <div class="row m-0 p-0 text-center align-items-start">
                 <div id="rotate-warning">
                     <p>Please rotate your device to landscape mode for the best experience.</p>
                 </div>
-            </div>
+            </div> <!--end of warning row-->
 
-                <!-- Buttons -->
+            <!-- Buttons -->
             <div class="row m-0 p-0 text-center align-items-center">
-                <div class="col-sm-3">
-                  <div id="difficulty-btn-area" class="d-flex flex-column gap-3 difficulty-btn-area">
-                    <button class="difficulty-btn feature" onclick="setDifficulty(90)">Easy 90s</button>
-                    <button class="difficulty-btn feature" onclick="setDifficulty(60)">Medium 60s</button>
-                    <button class="difficulty-btn feature" onclick="setDifficulty(45)">Hard 45s</button>
-                  </div>
+                <div class="col-12">
+                    <div id="container-console-controls">
+                        <div class="row">
+                        <div class="col-sm-3">
+                            <div id="difficulty-btn-area" class="d-flex flex-column gap-3 difficulty-btn-area">
+                                <button class="difficulty-btn feature" onclick="setDifficulty(90)">Easy 90s</button>
+                                <button class="difficulty-btn feature" onclick="setDifficulty(60)">Medium 60s</button>
+                                <button class="difficulty-btn feature" onclick="setDifficulty(45)">Hard 45s</button>
+                            </div>
 
-                  <div id="timer" class="feature"> 
-                    <span id="timer-title">Timer</span>
-                    <br>
-                    <span id="timer-digits">00:00</span>
-                  </div>
+                            <div id="timer" class="feature">
+                                <span id="timer-title">Timer</span>
+                                <br>
+                                <span id="timer-digits">00:00</span>
+                            </div>
+                            <!-- Console -->
+                        </div>
+
+                            <div class="col-9">
+                                <div id="games-console" class="container-console">
+                                    <span id="console-play" onclick="displayControllers()">PLAY?</span>
+                                </div>
+                            </div>
+                    </div> <!--End of double column row-->
+                </div> <!--End of container-->
                 </div>
+            </div> <!--end of main row-->
 
-               <!-- Console -->
-               <div class="col-sm-9">
-                        <div id="games-console" class="container-console">
-                         <span id="console-play" onclick="displayControllers()">PLAY?</span>
+                <div class="row m-0 p-0 text-center align-items-center">
+                    <div class="col-12">
+                        <div id="working-grid" class="working-grid">
+
+                            <div class="row d-flex flex-row">
+                                <div class="col-sm-6">
+                                    <div id="keyPad-area"></div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div id="equation-area" class="equation-row me-3"></div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-12">
-
-                        
-                         <div id="working-grid" class="working-grid">
-                            <h3>Hi</h3>
-
-                           <div class="row">
-                            <div class="col-sm-3">
-                                <div id="keyPad-area"></div>
-                            </div>
-
-                            <div class="col-sm-3">
-                                <div id="equation-area"></div>
-                            </div>
-                            
-                         </div>
-                    </div>
-               </div>
-                 </div>
-        
-               </div>
-            </div>
-           
-
-           
+                </div> <!--end of working grid row-->
+      
             <!-- Controllers -->
-   
-<div class="row">
-      <div class="col-12 m-auto">
-        <div id="controllers-area">
+        <div class="row m-0 p-0 text-center align-items-center">
+            <div class="col-12">
+                <div id="controllers-area">
+                </div>
+            </div>
         </div>
-      </div> 
- </div>
-    
 
-<!--end of container-->
-</div>
-        </div>
+        
+        <!--end of container-->
+    </div>
+
+
+
         
 
 
-</main>
 
-<footer class="feature">
-    <h3 class="text-center">Join our online community!</h3>
-    <div class="footer-icons">
-    <div><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></i></a></div>
-    <div><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
-    <div><a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div>
-</div>
-</footer>
+    </main>
 
-   <script src="https://kit.fontawesome.com/24a4f7102d.js" crossorigin="anonymous"></script>  
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-   <script src="assets/js/orientation.js"></script> 
-   <script src="assets/js/script.js"></script> 
-   <script src="assets/js/workingout-grid.js"></script>
+    <footer class="feature">
+        <h3 class="text-center">Join our online community!</h3>
+        <div class="footer-icons">
+            <div><a href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></i></i></a></div>
+            <div><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div><a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/24a4f7102d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/orientation.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/workingout-grid.js"></script>
 </body>
 
 </html>
