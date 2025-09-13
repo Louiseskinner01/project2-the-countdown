@@ -71,7 +71,6 @@ h2 {
     height: 75px;
     font-size: larger;
     
-    
 }
 
 .difficulty-btn:hover {
@@ -139,8 +138,7 @@ color: var(--sub-font-color);
 
 /*Console styling*/
 .console-styling {
-    background-color: #ffef08;
-    
+    background-color: #ffef08;   
 }
 
 .controller-btn-styling {
@@ -151,6 +149,11 @@ color: var(--sub-font-color);
     border: 1px solid var(--calm-color) !important;
 }
 
+#console-play {
+    display: none;
+}
+
+/*Other Styling*/
 .target-div-styling {
     background-color: var(--main-font-color);
     font-size: 32px;
@@ -173,6 +176,4 @@ color: var(--sub-font-color);
         font-family: var(--workingout-grid-font);  
 }
 
-#console-play {
-    display: none;
-}
+

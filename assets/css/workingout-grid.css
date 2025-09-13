@@ -13,7 +13,7 @@
 }
 
 .working-grid {
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 1rem;
     border-radius: 10px;
     background-color: var(--sub-font-color);
@@ -30,10 +30,9 @@
     min-height: 24px;
 }
 
-
 output-styling {
     font-size: 42px;
-    color: green;
+    color: rgb(240, 49, 62);
 }
 
 .keypad-container {

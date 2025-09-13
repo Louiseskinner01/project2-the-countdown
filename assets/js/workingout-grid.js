@@ -43,7 +43,8 @@ function createEquationRow(numbers) {
     row.appendChild(output);
     row.appendChild(undoBtn);
 
-    workingoutGrid.appendChild(row);
+    const equationArea = document.getElementById("equation-area");
+    equationArea.appendChild(row);
 
     // Focus new row's input
     input.focus();
@@ -54,7 +55,8 @@ function createEquationRow(numbers) {
 function createKeypad() {
     if (document.getElementById("game-keypad")) return;
 
-    const keypad = document.createElement("div");
+    //const keypad = document.createElement("div");
+    const keypad = document.getElementById("keyPad-area");
     keypad.id = "game-keypad";
     keypad.classList.add("keypad-container");
     workingoutGrid.appendChild(keypad); 

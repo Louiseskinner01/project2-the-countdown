@@ -124,11 +124,11 @@ function createStartBtns() {
 
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
-        createEquationRow(); // Start the working grid when game starts
+        createEquationRow(availableNumbers); // Start the working grid when game starts
         difficultyButtons.forEach(button => {
         button.remove();
     });
-        
+    
         startGameBtn.remove();
     });
 }
@@ -153,7 +153,6 @@ function startCountdown(durationInSeconds) {
     updateDisplay();
     countdownInterval = setInterval(updateDisplay, 1000);
 }
-
 
 
 function generateTargetNumber() {
