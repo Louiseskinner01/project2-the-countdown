@@ -51,42 +51,56 @@ h2 {
     text-transform: lowercase;
 }
 
-/*Console area styling*/
+
+/*Timer area styling*/
+#timer {
+    border-radius: 25px;
+    height: 260px;
+    font-size: x-large;
+    padding: 60px;
+    display: none;
+}
+
+/*Difficulty area styling*/
+#difficulty-btn-area {
+    display: none;
+}
+
+.difficulty-btn {
+    border-radius: 15px;
+    height: 75px;
+    font-size: larger;
+    
+    
+}
+
+.difficulty-btn:hover {
+    background-color: #4d05f6;
+    color: white;
+}
+
+.difficulty-btn .selected-level {
+    background-color: red;
+    color: black;
+}
+
+
+
+
+/*Controller Area styling*/
+#controllers-area {
+    height: 30px;
+}
+
 #console-play {
     color: var(--sub-font-color);
     font-size: 45px;
+    display: none;
 }
 
 #console-play:hover {
     color: var(--main-font-color);
   }
-
-
-/*Timer area styling*/
-#timer-area {
-    border-radius: 25px;
-    height: 260px;
-    font-size: x-large;
-    padding: 60px;
-    visibility: hidden;
-}
-
-/*Difficulty area styling*/
-.difficulty-btn {
-    border-radius: 15px;
-    height: 75px;
-    font-size: larger;
-}
-
-
-#difficulty-btn-area {
-    visibility: hidden;
-}
-
-/*Controller area styling*/
-#controllers-area {
-    height: 200px;
-}
 
 /*Navigation styling*/
 nav img {
@@ -123,7 +137,7 @@ color: var(--sub-font-color);
 }
 
 
-/*Other styling*/
+/*Console styling*/
 .console-styling {
     background-color: #ffef08;
     

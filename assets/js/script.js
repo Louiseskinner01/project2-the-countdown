@@ -12,12 +12,12 @@ let targetNum = null;
 
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
-    document.getElementById("difficulty-btn-area").style.visibility = "visible";
-  //  document.getElementById("timer-area").style.visibility = "visible";
-    document.getElementById("console-play").style.visibility = "hidden";
+    document.getElementById("difficulty-btn-area").style.display = "block";
+    document.getElementById("console-play").style.display = "block";
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
 }
+
 
 /** 
  * Create a DOM element to allow the user to confirm level. 
@@ -91,17 +91,19 @@ function createRandomNumbersBtn() {
  * Call the createRandomNumbersBtn function which will append a button allowing the user to generate random numbers
  */
 
-const timerArea = document.getElementById("timer-area");
+const timerArea = document.getElementById("timer");
 function disableDifficultyBtns() {
         difficultyButtons.forEach(button => {
         button.remove();
-        button.classList.add("disabled");
+
         timerArea.style.color = "deeppink";
-        timerArea.style.visibility = "visible";
+        timerArea.style.display = "block";
 
     });
-
+    
     confirmDifficultyBtn.remove();
+
+     // Add controls for the next step
     createRandomNumbersBtn();
 }
 

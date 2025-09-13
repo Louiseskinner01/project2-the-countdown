@@ -9,7 +9,7 @@ function checkOrientation() {
             document.getElementById("console-play").style.display = "none";
         } else {
             orientationMessage.style.display = "none";
-            document.getElementById("console-play").style.display = "block"
+            document.getElementById("console-play").style.display = "block";
         }
     }
     }
