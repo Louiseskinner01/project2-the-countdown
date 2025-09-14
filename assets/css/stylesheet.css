@@ -55,8 +55,8 @@ h2 {
 /*Timer area styling*/
 #timer {
     border-radius: 10px;
-    height: 100px;
-    font-size: x-large;
+    height: 80px;
+    font-size: large;
     padding: 10px;
     display: none;
 }
@@ -96,8 +96,8 @@ h2 {
 .console-styling {
     background-color: #ffef08;   
     border-radius: 10px;
-    height: 100px;
-    padding: 2px;
+    height: 80px;
+    padding-bottom: 2px;
 }
 
 .controller-btn-styling {
@@ -159,7 +159,7 @@ color: var(--sub-font-color);
 /*Other Styling*/
 .target-div-styling {
     background-color: var(--main-font-color);
-    font-size: 32px;
+    font-size: 24px;
     font-family: var(--workingout-grid-font);  
     border-radius: 10px;
     width: 60px;

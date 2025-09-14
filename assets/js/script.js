@@ -97,7 +97,6 @@ const timerArea = document.getElementById("timer");
 function disableDifficultyBtns() {
         difficultyButtons.forEach(button => {
         button.remove();
-
         timerArea.style.color = "deeppink";
         timerArea.style.display = "block";
 
@@ -121,10 +120,12 @@ function createStartBtns() {
     controllersArea.append(startGameBtn);
     workingoutGrid.style.visibility = "visible";
         createKeypad();
+        createEquationRow(availableNumbers); // Start the working grid when game starts
+
 
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
-        createEquationRow(availableNumbers); // Start the working grid when game starts
+
         difficultyButtons.forEach(button => {
         button.remove();
     });
