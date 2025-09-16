@@ -118,14 +118,16 @@ function createStartBtns() {
     startGameBtn.innerText = "Start Game!"
 
     controllersArea.append(startGameBtn);
-    workingoutGrid.style.visibility = "visible";
+    workingoutGrid.style.display = "block";
+       //Creates and apends the built-in keypad.
         createKeypad();
-        createEquationRow(availableNumbers); // Start the working grid when game starts
+
+        //Creates and apends the input rows for the user to perform calculations.
+        createEquationRow(availableNumbers); 
 
 
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
-
         difficultyButtons.forEach(button => {
         button.remove();
     });

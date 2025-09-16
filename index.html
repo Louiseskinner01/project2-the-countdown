@@ -72,12 +72,12 @@
             </div> <!--end of warning row-->
 
             <!-- Buttons -->
-            <div class="row m-0 p-0 text-center align-items-center">
+            <div class="row m-0 p-0 text-center">
                 <div class="col-12">
                     <div id="container-console-controls">
                         <div class="row">
                         <div class="col-sm-3">
-                            <div id="difficulty-btn-area" class="d-flex flex-column gap-3 difficulty-btn-area">
+                            <div id="difficulty-btn-area" class="difficulty-btn-area">
                                 <button class="difficulty-btn feature" onclick="setDifficulty(90)">Easy 90s</button>
                                 <button class="difficulty-btn feature" onclick="setDifficulty(60)">Medium 60s</button>
                                 <button class="difficulty-btn feature" onclick="setDifficulty(45)">Hard 45s</button>
@@ -92,7 +92,7 @@
                         </div>
 
                             <div class="col-9">
-                                <div id="games-console" class="container-console">
+                                <div id="games-console">
                                     <span id="console-play" onclick="displayControllers()">PLAY?</span>
                                 </div>
                             </div>
@@ -102,12 +102,22 @@
             </div> <!--end of main row-->
 
                 <div class="row m-0 p-0">
-                    <div class="col-12">
-                        <div id="working-grid" class="working-grid m-0 p-0">
-                     <div class="row">
-                                    <div id="keyPad-area" class="col-3"></div>
-                                    <div id="equation-area" class="col-9 equation-row m-0"></div>
-                        </div> 
+                    <div class="col-6">
+                        <div id="working-grid-1" class="working-grid-1 pt-3">
+                            <div id="keyPad-area" class=""></div>
+
+                                    <div id="equation-area" class="equation-row p-0 m-0"></div>
+                        </div>
+
+                        </div>
+
+                <div class="col-6">
+                    <div id="working-grid-2">
+                </div>   
+                </div>
+                
+                
+                     
                      </div>
                     </div>
                 </div> <!--end of working grid row-->

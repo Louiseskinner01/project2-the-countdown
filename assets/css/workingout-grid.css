@@ -12,22 +12,23 @@
     --workingout-font-style: "Ubuntu", sans-serif;
 }
 
-.working-grid {
+.working-grid-1 {
     margin-top: 5px;
-    padding: 1rem;
     border-radius: 10px;
-    background-color: var(--sub-font-color);
+    background-color: pink;
     border: 2px solid var(--main-font-color);
-    visibility: hidden;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
+    display: none;
+    
 }
 
-
-
+.working-grid-2 {
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(112, 53, 158);
+    border: 2px solid var(--main-font-color);
+    display: none;
+    
+}
 
 .keypad-container {
     display: grid;
@@ -46,12 +47,16 @@
 }
 
 .equation-row {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+   
+  background-color: #4d05f6;
+}
+
+.equation-result {
     
-    
-    
+}
+span.equation-result {
+    color: red !important; 
+    font-size: 32px;
 }
 
 .expression {
@@ -59,9 +64,13 @@
     outline: none;
     padding: 0.3rem;
     min-height: 24px;
+   
 }
 
 output-styling {
     font-size: 42px;
     color: rgb(240, 49, 62) !important;
 }
+
+
+

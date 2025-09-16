@@ -1,7 +1,10 @@
 let randomNumbersCopy = [];
 let targetNumber = null;
 let activeInput = null; // track which input the keypad is typing into
-const workingoutGrid = document.getElementById("working-grid");
+const workingoutGrid = document.getElementById("working-grid-1");
+o
+const workingoutGridTwo = document.getElementById("working-grid-2");
+
 
 function createEquationRow(numbers) {
     if (numbers) randomNumbersCopy = [...numbers];
@@ -14,7 +17,7 @@ function createEquationRow(numbers) {
     input.placeholder = "ENTER AN EQUASION";
     input.classList.add("equation-input");
     input.readOnly = "true"; //prevents the mobile device keyboardfrom appearing on the screen
-
+     //added code for single input
 
     const output = document.createElement("span");
     output.classList.add("equation-result");
@@ -42,9 +45,7 @@ function createEquationRow(numbers) {
     row.appendChild(input);
     row.appendChild(output);
     row.appendChild(undoBtn);
-
-    const equationArea = document.getElementById("equation-area");
-    workingoutGrid.appendChild(row);
+    workingoutGridTwo.appendChild(row);
 
     // Focus new row's input
     input.focus();
@@ -55,7 +56,6 @@ function createEquationRow(numbers) {
 function createKeypad() {
     if (document.getElementById("game-keypad")) return;
 
-    //const keypad = document.createElement("div");
     const keypad = document.getElementById("keyPad-area");
     keypad.id = "game-keypad";
     keypad.classList.add("keypad-container");
@@ -96,10 +96,9 @@ function handleInputEnter(input, output, undoBtn) {
     const value = input.value.trim();
     if (value === "") return;
 
-    if (!/^[0-9+\-*/().\s]+$/.test(value)) {
-        output.textContent = "Invalid characters";
-        return;
-    }
+   
+   
+    
 
     const usedNums = value.match(/\d+/g)?.map(Number) || [];
     let tempAvailable = [...randomNumbersCopy];
@@ -125,7 +124,7 @@ function handleInputEnter(input, output, undoBtn) {
         randomNumbersCopy.push(result);
 
         input.disabled = true;
-        undoBtn.style.display = "inline-block";
+        undoBtn.style.display = "block";
 
         if (result === targetNumber) {
             gamesConsole.innerHTML = `🎉 WINNER! You solved it in ${timeLeft}!`;
