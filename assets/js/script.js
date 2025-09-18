@@ -5,7 +5,8 @@ let timerDisplay;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
-
+//const workingoutGrid = document.getElementById("working-grid-1");
+//const workingoutGridTwo = document.getElementById("working-grid-2");
 // Store available numbers for validation in workingout-grid.js
 let availableNumbers = [];
 let targetNum = null;
@@ -16,6 +17,7 @@ function displayControllers() {
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
     document.getElementById("console-play").style.display = "none"
+
 }
 
 
@@ -147,7 +149,16 @@ function startCountdown(durationInSeconds) {
             clearInterval(countdownInterval);
             //alert("Take more practice!");  
             gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!"
-            gamesConsole.style.fontSize = "36px";
+           // document.getElementById("workingoutGrid").disabled = true;
+           
+            
+            startNewGameBtn = document.createElement("button");
+            startNewGameBtn.classList.add("controller-btn-styling");
+            startNewGameBtn.id = "play-again";
+            startNewGameBtn.innerText = "Play again?";
+            controllersArea.append(startNewGameBtn);
+            workingoutGrid.style.display = "none";
+           
         }
         timeLeft--;
     }

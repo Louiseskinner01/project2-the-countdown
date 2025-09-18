@@ -69,7 +69,6 @@ h2 {
 #console-play {
     color: var(--sub-font-color);
     font-size: 45px;
-    display: block;
 }
 
 
@@ -156,9 +155,6 @@ footer a i {
 footer a i:hover {
 color: var(--sub-font-color);
 }
-
-
-
 
 /*Other Styling*/
 .target-div-styling {
