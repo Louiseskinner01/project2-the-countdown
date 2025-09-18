@@ -13,8 +13,6 @@ let targetNum = null;
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
     document.getElementById("difficulty-btn-area").style.display = "block";
-    //document.getElementsByClassName("difficulty-btn").style.display = "block";
-
     document.getElementById("console-play").style.display = "block";
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
@@ -119,6 +117,7 @@ function createStartBtns() {
 
     controllersArea.append(startGameBtn);
     workingoutGrid.style.display = "block";
+    workingoutGridTwo.style.display = "block";
        //Creates and apends the built-in keypad.
         createKeypad();
 

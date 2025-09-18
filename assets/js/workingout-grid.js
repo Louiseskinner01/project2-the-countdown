@@ -2,7 +2,7 @@ let randomNumbersCopy = [];
 let targetNumber = null;
 let activeInput = null; // track which input the keypad is typing into
 const workingoutGrid = document.getElementById("working-grid-1");
-o
+
 const workingoutGridTwo = document.getElementById("working-grid-2");
 
 
@@ -10,7 +10,7 @@ function createEquationRow(numbers) {
     if (numbers) randomNumbersCopy = [...numbers];
 
     const row = document.createElement("div");
-    row.classList.add("equation-row");
+    row.classList.add("working-grid-2");
 
     const input = document.createElement("input");
     input.type = "text";

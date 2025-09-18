@@ -24,17 +24,18 @@
 .working-grid-2 {
     margin-top: 5px;
     border-radius: 10px;
-    background-color: rgb(112, 53, 158);
+    background-color: rgb(168, 239, 127);
     border: 2px solid var(--main-font-color);
-    display: none;
+    display: block;
     
 }
 
 .keypad-container {
     display: grid;
-    grid-template-columns: repeat(4, 50px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-    width: 50%;
+    width: 100%;
+    margin: auto;
 }
 
 .keypad-btn {
@@ -46,14 +47,7 @@
     font-family: var(--workingout-font-style);
 }
 
-.equation-row {
-   
-  background-color: #4d05f6;
-}
 
-.equation-result {
-    
-}
 span.equation-result {
     color: red !important; 
     font-size: 32px;
