@@ -65,13 +65,13 @@ h2 {
     font-size: 12px;
 }
 
-/*
+
 #console-play {
     color: var(--sub-font-color);
     font-size: 45px;
     display: block;
 }
-*/
+
 
 #console-play:hover {
     color: var(--main-font-color);
@@ -110,15 +110,11 @@ h2 {
 }
 
 
-
-
 /*Controller Area styling*/
 #controllers-area {
     margin-top: 5px;
     height: 30px;
 }
-
-
 
   .controller-btn-styling {
     background-color: var(--sub-font-color);
@@ -140,10 +136,9 @@ nav img {
 
 /*Footer Styling*/
 footer {
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100%;  
+    position: relative;
+    margin-top: 35px;
+   
 }
 
 .footer-icons {
