@@ -33,6 +33,11 @@ html, body {
       font-family: var(--main-font-style) !important;
 }
 
+
+
+
+
+
 /*Increases the main content size to ensure the footer stays at the bottom of the page*/
 main {
     flex: 1;
@@ -51,12 +56,31 @@ h2 {
     text-transform: lowercase;
 }
 
+/*Console styling*/
+.console-styling {
+    background-color: #ffef08;   
+    border-radius: 10px;
+    height: 60px;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+
+#console-play {
+    color: var(--sub-font-color);
+    font-size: 45px;
+    display: none;
+}
+
+#console-play:hover {
+    color: var(--main-font-color);
+  }
+
 
 /*Timer area styling*/
 #timer {
     border-radius: 10px;
-    height: 80px;
-    font-size: large;
+    height: 60px;
+    font-size: 28px;
     padding: 10px;
     display: none;
 }
@@ -67,9 +91,9 @@ h2 {
 }
 
 .difficulty-btn {
-    border-radius: 15px;
-    height: 75px;
-    font-size: larger;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 12px;
     
 }
 
@@ -92,32 +116,14 @@ h2 {
 }
 
 
-/*Console styling*/
-.console-styling {
-    background-color: #ffef08;   
-    border-radius: 10px;
-    height: 80px;
-    padding-bottom: 2px;
-}
 
-.controller-btn-styling {
+  .controller-btn-styling {
     background-color: var(--sub-font-color);
     border-radius: 15px;
     height: 50px;
     font-size: medium;
     border: 1px solid var(--calm-color) !important;
 }
-
-#console-play {
-    color: var(--sub-font-color);
-    font-size: 45px;
-    display: none;
-}
-
-#console-play:hover {
-    color: var(--main-font-color);
-  }
-
 
 /*Navigation styling*/
 nav img {
