@@ -65,11 +65,13 @@ h2 {
     font-size: 12px;
 }
 
+/*
 #console-play {
     color: var(--sub-font-color);
     font-size: 45px;
-    display: none;
+    display: block;
 }
+*/
 
 #console-play:hover {
     color: var(--main-font-color);
@@ -80,7 +82,7 @@ h2 {
 #timer {
     border-radius: 10px;
     height: 60px;
-    font-size: 28px;
+    font-size: 3fr;
     padding: 10px;
     display: none;
 }
@@ -112,6 +114,7 @@ h2 {
 
 /*Controller Area styling*/
 #controllers-area {
+    margin-top: 5px;
     height: 30px;
 }
 
@@ -164,12 +167,13 @@ color: var(--sub-font-color);
 
 /*Other Styling*/
 .target-div-styling {
-    background-color: var(--main-font-color);
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 22px;
     font-family: var(--workingout-grid-font);  
     border-radius: 10px;
-    width: 60px;
-    margin: 1px auto;
+    color: var(--feature2-color);
+  
+  
 }
 
 .feature {

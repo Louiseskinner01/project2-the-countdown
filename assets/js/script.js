@@ -1,7 +1,7 @@
 let confirmDifficultyBtn;
 let difficultyBtns;
 let timerDisplay;
-let playSpan;
+//let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
@@ -13,9 +13,9 @@ let targetNum = null;
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
     document.getElementById("difficulty-btn-area").style.display = "block";
-    document.getElementById("console-play").style.display = "block";
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
+    document.getElementById("console-play").style.display = "none"
 }
 
 
@@ -166,7 +166,7 @@ function generateTargetNumber() {
     targetDiv.id = "target-div";
     gamesConsole.append(targetDiv);
     targetDiv.classList.add("target-div-styling");
-    targetDiv.append(targetNum);
+    targetDiv.append(`Target: ${targetNum}`);
     
 
     getTargetBtn.addEventListener("click", createStartBtns);
