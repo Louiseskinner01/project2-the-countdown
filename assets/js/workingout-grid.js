@@ -125,9 +125,10 @@ function handleInputEnter(input, output, undoBtn) {
         if (Number(result) === Number(targetNum)) {
             timeLeft = Math.floor(timeLeft); // ensures whole number
             clearInterval(countdownInterval);         
-               gamesConsole.innerHTML = `🎉 WINNER! You solved with ${timeLeft} seconds remaining`;
+               gamesConsole.innerHTML = `🎉 WINNER! You solved The Countdown workingout the correct result was ${result} with ${timeLeft} seconds remaining - well done!`;
             clearInterval(countdownInterval);
             workingoutGrid.style.display = "none";
+            workingoutGridTwo.style.display = "none";
         } else {
             createEquationRow();
         }
