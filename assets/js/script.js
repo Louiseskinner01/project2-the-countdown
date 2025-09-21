@@ -1,3 +1,5 @@
+window.timeLeft = 0;
+
 let confirmDifficultyBtn;
 let difficultyBtns;
 let timerDisplay;
@@ -139,18 +141,17 @@ function createStartBtns() {
 
 function startCountdown(durationInSeconds) {
     clearInterval(countdownInterval);
-    let timeLeft = durationInSeconds;
+    timeLeft = durationInSeconds;
     startTime = Date.now();
 
     function updateDisplay() {
+        timeLeft--;
         updateTimerDisplay(timeLeft);
 
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
             //alert("Take more practice!");  
-            gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!"
-           // document.getElementById("workingoutGrid").disabled = true;
-           
+            gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!";
             
             startNewGameBtn = document.createElement("button");
             startNewGameBtn.classList.add("controller-btn-styling");
@@ -160,32 +161,10 @@ function startCountdown(durationInSeconds) {
             workingoutGrid.style.display = "none";
            
         }
-        timeLeft--;
     }
 
     updateDisplay();
     countdownInterval = setInterval(updateDisplay, 1000);
-}
-
-
-function generateTargetNumber() {
-    let max = 1000;
-    let min = 131;
-    targetNum = Math.floor(Math.random() * (max - min)) + min;
-
-    const targetDiv = document.createElement("div");
-    targetDiv.id = "target-div";
-    gamesConsole.append(targetDiv);
-    targetDiv.classList.add("target-div-styling");
-    targetDiv.append(`Target: ${targetNum}`);
-    
-
-    getTargetBtn.addEventListener("click", createStartBtns);
-    if (document.getElementById("target-div")) {
-       // randomNumbersBtn.remove();
-        getTargetBtn.remove();
-        createStartBtns();
-    }
 }
 
 const getTargetBtn = document.createElement("button");
@@ -200,7 +179,61 @@ function createGetTargetBtn() {
     getTargetBtn.addEventListener("click", generateTargetNumber);
 }
 
-const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function generateTargetNumber() {
+    if (!availableNumbers || availableNumbers.length === 0) {
+        console.error("No numbers available to generate a target.");
+        return;
+    }
+
+    // Pick two random numbers from the available numbers
+    const num1 = availableNumbers[Math.floor(Math.random() * availableNumbers.length)];
+    const num2 = availableNumbers[Math.floor(Math.random() * availableNumbers.length)];
+
+    // Generate possible results
+    const possibleResults = [
+        num1 + num2,   // Addition
+        num1 * num2    // Multiplication
+    ];
+
+    // Only allow subtraction if result is positive
+    if (num1 > num2) {
+        possibleResults.push(num1 - num2);
+    } else {
+        possibleResults.push(num2 - num1);
+    }
+
+    //  Remove results that are negative or too large
+    const filteredResults = possibleResults.filter(result => result > 0 && result <= 999);
+
+    // Fallback if somehow all results were invalid
+    if (filteredResults.length === 0) {
+        console.warn("No valid target generated, defaulting to sum of all numbers.");
+        targetNum = availableNumbers.reduce((sum, n) => sum + n, 0);
+    } else {
+        targetNum = filteredResults[Math.floor(Math.random() * filteredResults.length)];
+    }
+
+    // Display target
+    const targetDiv = document.createElement("div");
+    targetDiv.id = "target-div";
+    targetDiv.classList.add("target-div-styling");
+    targetDiv.textContent = `Target: ${targetNum}`;
+    gamesConsole.append(targetDiv);
+
+    // Cleanup and move to next step
+    getTargetBtn.remove();
+    createStartBtns();
+}
+
+console.log("Generated target number:", targetNum);
+
+
+
+
+
+
+
+const smallNumbers = [1, 0, 0, 0];
 const largeNumbers = [25, 33, 51, 66, 75, 84, 87, 91];
 
 function generateRandomNumbers() {

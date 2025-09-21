@@ -1,8 +1,7 @@
+
 let randomNumbersCopy = [];
-let targetNumber = null;
 let activeInput = null; // track which input the keypad is typing into
 const workingoutGrid = document.getElementById("working-grid-1");
-
 const workingoutGridTwo = document.getElementById("working-grid-2");
 
 
@@ -10,7 +9,7 @@ function createEquationRow(numbers) {
     if (numbers) randomNumbersCopy = [...numbers];
 
     const row = document.createElement("div");
-    row.classList.add("working-grid-2");
+    row.classList.add("workingGrid");
 
     const input = document.createElement("input");
     input.type = "text";
@@ -93,12 +92,9 @@ function createKeypad() {
 }
 
 function handleInputEnter(input, output, undoBtn) {
+    //console.log("Checking timer:", timeLeft);
     const value = input.value.trim();
     if (value === "") return;
-
-   
-   
-    
 
     const usedNums = value.match(/\d+/g)?.map(Number) || [];
     let tempAvailable = [...randomNumbersCopy];
@@ -126,8 +122,12 @@ function handleInputEnter(input, output, undoBtn) {
         input.disabled = true;
         undoBtn.style.display = "block";
 
-        if (result === targetNumber) {
-            gamesConsole.innerHTML = `🎉 WINNER! You solved it in ${timeLeft}!`;
+        if (Number(result) === Number(targetNum)) {
+            timeLeft = Math.floor(timeLeft); // ensures whole number
+            clearInterval(countdownInterval);         
+               gamesConsole.innerHTML = `🎉 WINNER! You solved with ${timeLeft} seconds remaining`;
+            clearInterval(countdownInterval);
+            workingoutGrid.style.display = "none";
         } else {
             createEquationRow();
         }
