@@ -145,6 +145,16 @@ function startCountdown(durationInSeconds) {
     timeLeft = durationInSeconds;
     startTime = Date.now();
 
+    //globalising this function so it can be used in the workingout-grid.js
+    window.playAgain = function(){
+        startNewGameBtn = document.createElement("button");
+        startNewGameBtn.classList.add("controller-btn-styling");
+        startNewGameBtn.id = "play-again";
+        startNewGameBtn.innerText = "Play again?";
+        controllersArea.append(startNewGameBtn);
+        workingoutGrid.style.display = "none";
+    }
+
     function updateDisplay() {
         timeLeft--;
         updateTimerDisplay(timeLeft);
@@ -152,15 +162,8 @@ function startCountdown(durationInSeconds) {
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
             //alert("Take more practice!");  
-            gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!";
-            
-            startNewGameBtn = document.createElement("button");
-            startNewGameBtn.classList.add("controller-btn-styling");
-            startNewGameBtn.id = "play-again";
-            startNewGameBtn.innerText = "Play again?";
-            controllersArea.append(startNewGameBtn);
-            workingoutGrid.style.display = "none";
-           
+            gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!"; 
+            playAgain();
         }
     }
 
@@ -229,12 +232,7 @@ function generateTargetNumber() {
 console.log("Generated target number:", targetNum);
 
 
-
-
-
-
-
-const smallNumbers = [1, 0, 0, 0];
+const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const largeNumbers = [25, 33, 51, 66, 75, 84, 87, 91];
 
 function generateRandomNumbers() {

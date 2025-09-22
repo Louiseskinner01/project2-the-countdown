@@ -130,6 +130,7 @@ function handleInputEnter(input, output, undoBtn) {
             window.timerArea.innerHTML = "YOU WIN!"
             workingoutGrid.style.display = "none";
             workingoutGridTwo.style.display = "none";
+            window.playAgain();
         } else {
             createEquationRow();
         }
