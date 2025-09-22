@@ -1,8 +1,9 @@
 window.timeLeft = 0;
+window.timerArea = null;
 
 let confirmDifficultyBtn;
 let difficultyBtns;
-let timerDisplay;
+window.timerDisplay;
 //let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
@@ -95,7 +96,7 @@ function createRandomNumbersBtn() {
  * Call the createRandomNumbersBtn function which will append a button allowing the user to generate random numbers
  */
 
-const timerArea = document.getElementById("timer");
+window.timerArea = document.getElementById("timer");
 function disableDifficultyBtns() {
         difficultyButtons.forEach(button => {
         button.remove();

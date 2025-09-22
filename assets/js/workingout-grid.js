@@ -127,6 +127,7 @@ function handleInputEnter(input, output, undoBtn) {
             clearInterval(countdownInterval);         
                gamesConsole.innerHTML = `🎉 WINNER! You solved The Countdown workingout the correct result was ${result} with ${timeLeft} seconds remaining - well done!`;
             clearInterval(countdownInterval);
+            window.timerArea.innerHTML = "YOU WIN!"
             workingoutGrid.style.display = "none";
             workingoutGridTwo.style.display = "none";
         } else {
