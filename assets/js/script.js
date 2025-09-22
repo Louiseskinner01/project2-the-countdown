@@ -153,7 +153,15 @@ function startCountdown(durationInSeconds) {
         startNewGameBtn.innerText = "Play again?";
         controllersArea.append(startNewGameBtn);
         workingoutGrid.style.display = "none";
+        startNewGameBtn.addEventListener("click", startNewGame);
     }
+
+    function startNewGame() {
+        window.location.reload();
+      }
+      
+     
+    
 
     function updateDisplay() {
         timeLeft--;
@@ -228,8 +236,6 @@ function generateTargetNumber() {
     getTargetBtn.remove();
     createStartBtns();
 }
-
-console.log("Generated target number:", targetNum);
 
 
 const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
