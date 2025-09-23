@@ -191,6 +191,7 @@ function createGetTargetBtn() {
     getTargetBtn.addEventListener("click", generateTargetNumber);
 }
 
+/*
 function generateTargetNumber() {
     if (!availableNumbers || availableNumbers.length === 0) {
         console.error("No numbers available to generate a target.");
@@ -233,6 +234,63 @@ function generateTargetNumber() {
     gamesConsole.append(targetDiv);
 
     // Cleanup and move to next step
+    getTargetBtn.remove();
+    createStartBtns();
+}
+*/
+
+function generateTargetNumber() {
+    if (!availableNumbers || availableNumbers.length < 2) {
+        console.error("Not enough numbers to generate a target.");
+        return;
+    }
+
+    // Clone the array so we don't mess with the original numbers
+    let pool = [...availableNumbers];
+
+    // Start with one random number from the pool
+    let currentValue = pool.splice(Math.floor(Math.random() * pool.length), 1)[0];
+
+    // Decide how many steps to take (2 to 4 random operations)
+    const steps = Math.floor(Math.random() * 3) + 2;
+
+    for (let i = 0; i < steps; i++) {
+        if (pool.length === 0) break;
+
+        // Pick another random number
+        const nextNumber = pool.splice(Math.floor(Math.random() * pool.length), 1)[0];
+
+        // Randomly select an operator
+        const operators = ["+", "-", "*"];
+        const operator = operators[Math.floor(Math.random() * operators.length)];
+
+        // Perform the operation
+        if (operator === "+") {
+            currentValue += nextNumber;
+        } else if (operator === "-") {
+            // Always keep subtraction positive
+            currentValue = Math.abs(currentValue - nextNumber);
+        } else if (operator === "*") {
+            currentValue *= nextNumber;
+        }
+    }
+
+    // Ensure target is challenging and valid
+    if (currentValue < 139 || currentValue > 999) {
+        console.warn(`Retrying target generation, invalid value: ${currentValue}`);
+        return generateTargetNumber(); // Retry
+    }
+
+    // Save and display the final target
+    targetNum = currentValue;
+
+    const targetDiv = document.createElement("div");
+    targetDiv.id = "target-div";
+    targetDiv.classList.add("target-div-styling");
+    targetDiv.textContent = `Target: ${targetNum}`;
+    gamesConsole.append(targetDiv);
+
+    // Cleanup and proceed to game start
     getTargetBtn.remove();
     createStartBtns();
 }
