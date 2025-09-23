@@ -64,8 +64,7 @@ function createKeypad() {
         "7", "8", "9", "+",
         "4", "5", "6", "-",
         "1", "2", "3", "*",
-        "0", ".", "(", ")",
-        "←", "/", "C", "OK"
+        "0", "←", "OK", "/"
     ];
 
     keys.forEach(key => {
@@ -74,10 +73,14 @@ function createKeypad() {
         btn.classList.add("keypad-btn");
         btn.addEventListener("click", () => {
             if (!activeInput) return; // no active input yet
-
-            if (key === "C") {
+            
+            /*
+           /if (key === "C") {
                 activeInput.value = "";
-            } else if (key === "←") {
+            } else 
+            */
+           
+            if (key === "←") {
                 activeInput.value = activeInput.value.slice(0, -1);
             } else if (key === "OK") {
                 handleInputEnter(activeInput, activeInput.nextSibling, activeInput.parentElement.querySelector(".undo-btn"));
