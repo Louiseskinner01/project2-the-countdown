@@ -191,60 +191,7 @@ function createGetTargetBtn() {
     getTargetBtn.addEventListener("click", generateTargetNumber);
 }
 
-/*
 function generateTargetNumber() {
-    if (!availableNumbers || availableNumbers.length === 0) {
-        console.error("No numbers available to generate a target.");
-        return;
-    }
-
-    // Pick two random numbers from the available numbers
-    const num1 = availableNumbers[Math.floor(Math.random() * availableNumbers.length)];
-    const num2 = availableNumbers[Math.floor(Math.random() * availableNumbers.length)];
-
-    // Generate possible results
-    const possibleResults = [
-        num1 + num2,   // Addition
-        num1 * num2    // Multiplication
-    ];
-
-    // Only allow subtraction if result is positive
-    if (num1 > num2) {
-        possibleResults.push(num1 - num2);
-    } else {
-        possibleResults.push(num2 - num1);
-    }
-
-    //  Remove results that are negative or too large
-    const filteredResults = possibleResults.filter(result => result > 0 && result <= 999);
-
-    // Fallback if somehow all results were invalid
-    if (filteredResults.length === 0) {
-        console.warn("No valid target generated, defaulting to sum of all numbers.");
-        targetNum = availableNumbers.reduce((sum, n) => sum + n, 0);
-    } else {
-        targetNum = filteredResults[Math.floor(Math.random() * filteredResults.length)];
-    }
-
-    // Display target
-    const targetDiv = document.createElement("div");
-    targetDiv.id = "target-div";
-    targetDiv.classList.add("target-div-styling");
-    targetDiv.textContent = `Target: ${targetNum}`;
-    gamesConsole.append(targetDiv);
-
-    // Cleanup and move to next step
-    getTargetBtn.remove();
-    createStartBtns();
-}
-*/
-
-function generateTargetNumber() {
-    if (!availableNumbers || availableNumbers.length < 2) {
-        console.error("Not enough numbers to generate a target.");
-        return;
-    }
-
     // Clone the array so we don't mess with the original numbers
     let pool = [...availableNumbers];
 
