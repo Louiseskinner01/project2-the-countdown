@@ -24,10 +24,10 @@ html, body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom,
-        rgb(42, 226, 137) 19%, 
-        #a871d8 43%, 
+        rgb(243, 244, 239) 0%, 
+        #55b9d0 43%, 
         #e99105 63%,   
-        #190649 90%   
+        #ea207b 92%   
       ) !important;
       background-attachment: fixed;
       font-family: var(--main-font-style) !important;
@@ -65,13 +65,11 @@ h2 {
 #console-play {
     color: var(--sub-font-color);
     font-size: 45px;
-}
-
+} 
 
 #console-play:hover {
     color: var(--main-font-color);
   }
-
 
 /*Timer area styling*/
 #timer {
@@ -95,14 +93,10 @@ h2 {
 }
 
 .difficulty-btn:hover {
-    background-color: #4d05f6;
+    background-color: #e1daf3;
     color: white;
 }
 
-.difficulty-btn .selected-level {
-    background-color: red;
-    color: black;
-}
 
 
 /*Controller Area styling*/
