@@ -30,7 +30,39 @@
               <li>The result of you equation will be displayed in the console where you will be able to use the number to help solve the target.</li>
             </ol>
       
+            <h2>Controls</h2>
+            <div class="controls" role="list">
+              <span  role="listitem">Generate Numbers</span>
+              <span  role="listitem">Get Target Number</span>
+              <span  role="listitem">Start Game</span>
+              <span  role="listitem">Keypad (0–9, +, -, ×, ÷)</span>
+              <span  role="listitem">OK / Enter / Back</span>
+              <span  role="listitem">Undo</span>
+             
+            </div>
+      
+            <h2>Rules</h2>
+            <ul>
+              <li>You may only use numbers that appear in the console (generated random numbers and the results from your equations. Each number can be used only once — then it becomes unavaiable (unless you create a new result which becomes available).</li>
+              <li>Allowed operators: addition <code>+</code>, subtraction <code>-</code>, multiplication <code>*</code>, and division <code>/</code>.</li>
+              <li>Parentheses and decimal points are disabled in the simplified keypad (but you can still type advanced expressions on desktop if enabled).</li>
+              <li>When you create a result, that result is added to the available numbers and can be used in later steps.</li>
+              <li>The goal is to reach the <strong>target number</strong> exactly before the timer runs out.</li>
+            </ul>
+      
+            <h2>Example working</h2>
+            <p>Available numbers: <strong>2, 3, 3, 5, 50, 60</strong> — Target: <strong>58</strong></p>
+            <pre class="example" aria-hidden="false">
+      3 + 3 = 6     → add result 6 back to pool
+      6 + 2 = 8     → add result 8 back to pool
+      8 + 50 = 58   → target reached!
+            </pre>
+      
             
+
+
+
+
     
           <footer class="feature">
             <h3 class="text-center">Join our online community!</h3>
