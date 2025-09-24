@@ -53,11 +53,6 @@
 }
 
 
-span.equation-result {
-    color: rgb(22, 21, 21) !important; 
-    font-size: 32px;
-}
-
 .expression {
     font-family: var(--workingout-font-style);
     outline: none;
@@ -78,6 +73,8 @@ span.equation-result {
     display: flex;
     flex-direction: row;
     text-align: end;
+    gap: 30px; /* <-- Adds space between items */
+    
 }
 
 
