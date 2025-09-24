@@ -12,19 +12,19 @@
     --workingout-font-style: "Ubuntu", sans-serif;
 }
 
-.working-grid-1 {
+#working-grid-1 {
     margin-top: 5px;
     border-radius: 10px;
-    border: 2px solid var(--main-font-color);
+    
     display: none;
     
 }
 
-.working-grid-2 {
-    margin-top: 5px;
+#working-grid-2 {
+    margin-top: 35px;
     border-radius: 10px;
     background-color: rgb(168, 239, 127);
-    border: 2px solid var(--main-font-color);
+    
     display: block;
     
 }
@@ -71,9 +71,6 @@ span.equation-result {
     color: rgb(16, 16, 16) !important;
 }
 
-#output-div {
-
-}
 
 .output-div-styling {
     font-size: 22px;
