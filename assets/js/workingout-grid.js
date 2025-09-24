@@ -1,111 +1,114 @@
-
+// workingout-grid.js
 let randomNumbersCopy = [];
-let activeInput = null; // track which input the keypad is typing into
+let arrayOfResults = [];
+
+let activeInput = null; // Track active input for keypad
+
 const workingoutGrid = document.getElementById("working-grid-1");
 const workingoutGridTwo = document.getElementById("working-grid-2");
+const outputDiv = document.createElement("div"); // Single output for console
 
-
+// Create one input row
 function createEquationRow(numbers) {
     if (numbers) randomNumbersCopy = [...numbers];
+
+    // Clear previous row if exists
+    workingoutGridTwo.innerHTML = "";
 
     const row = document.createElement("div");
     row.classList.add("workingGrid");
 
     const input = document.createElement("input");
     input.type = "text";
-    input.placeholder = "ENTER AN EQUASION";
+    input.placeholder = "ENTER AN EQUATION";
     input.classList.add("equation-input");
-    input.readOnly = "true"; //prevents the mobile device keyboardfrom appearing on the screen
-     //added code for single input
-
-    const output = document.createElement("span");
-    output.classList.add("equation-result");
+    input.readOnly = true;
 
     const undoBtn = document.createElement("button");
     undoBtn.textContent = "Undo";
     undoBtn.classList.add("undo-btn");
     undoBtn.style.display = "none";
 
-    // Track which input is active for the keypad
-    input.addEventListener("focus", () => {
-        activeInput = input;
-    });
+    // Append the outputDiv to console
+    outputDiv.id = "output-div";
+    outputDiv.classList.add("output-div-styling");
+    outputDiv.textContent = "";
+    gamesConsole.appendChild(outputDiv);
+
+    // Focus tracking
+    input.addEventListener("focus", () => activeInput = input);
 
     input.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            handleInputEnter(input, output, undoBtn);
+            handleInputEnter(input, undoBtn);
         }
     });
 
     undoBtn.addEventListener("click", function () {
-        undoEquation(output.dataset.result, output.dataset.usedNumbers, row);
+        undoEquation(outputDiv.dataset.result, outputDiv.dataset.usedNumbers, input);
     });
 
     row.appendChild(input);
-    row.appendChild(output);
     row.appendChild(undoBtn);
     workingoutGridTwo.appendChild(row);
 
-    // Focus new row's input
     input.focus();
     activeInput = input;
 }
 
-// Create keypad ONCE
+// Keypad creation (use your simplified keypad)
 function createKeypad() {
     if (document.getElementById("game-keypad")) return;
 
     const keypad = document.getElementById("keyPad-area");
     keypad.id = "game-keypad";
     keypad.classList.add("keypad-container");
-    workingoutGrid.appendChild(keypad); 
+    workingoutGrid.appendChild(keypad);
 
     const keys = [
-        "7", "8", "9", "+",
-        "4", "5", "6", "-",
-        "1", "2", "3", "*",
-        "0", "←", "OK", "/"
+        "7","8","9","+",
+        "4","5","6","-",
+        "1","2","3","*",
+        "0","←","OK","/"
     ];
 
     keys.forEach(key => {
         const btn = document.createElement("button");
         btn.textContent = key;
         btn.classList.add("keypad-btn");
+
         btn.addEventListener("click", () => {
-            if (!activeInput) return; // no active input yet
-            
-            /*
-           /if (key === "C") {
-                activeInput.value = "";
-            } else 
-            */
-           
+            if (!activeInput) return;
+
             if (key === "←") {
                 activeInput.value = activeInput.value.slice(0, -1);
             } else if (key === "OK") {
-                handleInputEnter(activeInput, activeInput.nextSibling, activeInput.parentElement.querySelector(".undo-btn"));
+                handleInputEnter(activeInput, activeInput.parentElement.querySelector(".undo-btn"));
+                activeInput.value = "";
             } else {
                 activeInput.value += key;
             }
             activeInput.focus();
+            
         });
+
         keypad.appendChild(btn);
     });
-
 }
 
-function handleInputEnter(input, output, undoBtn) {
-    //console.log("Checking timer:", timeLeft);
+// Handle equation input
+function handleInputEnter(input, undoBtn) {
     const value = input.value.trim();
-    if (value === "") return;
+    if (!value) return;
 
     const usedNums = value.match(/\d+/g)?.map(Number) || [];
     let tempAvailable = [...randomNumbersCopy];
 
+    // Validate numbers
     for (let num of usedNums) {
         const index = tempAvailable.indexOf(num);
         if (index === -1) {
-            output.textContent = "Invalid: number not available";
+            outputDiv.textContent = "Invalid: number not available";
             return;
         }
         tempAvailable.splice(index, 1);
@@ -115,9 +118,19 @@ function handleInputEnter(input, output, undoBtn) {
         let result = eval(value);
         result = Math.round(result * 2) / 2;
 
-        output.textContent = "= " + result;
-        output.dataset.result = result;
-        output.dataset.usedNumbers = JSON.stringify(usedNums);
+        // Update console
+ // Store this result
+ arrayOfResults.push(result);
+
+ // Re-render all results into the console
+ outputDiv.innerHTML = arrayOfResults
+     .map((res, index) => `<div class="result-item">#${index + 1}: ${res}</div>`)
+     .join("");
+
+ gamesConsole.append(outputDiv);
+
+        outputDiv.dataset.result = result;
+        outputDiv.dataset.usedNumbers = JSON.stringify(usedNums);
 
         randomNumbersCopy = tempAvailable;
         randomNumbersCopy.push(result);
@@ -126,33 +139,29 @@ function handleInputEnter(input, output, undoBtn) {
         undoBtn.style.display = "block";
 
         if (Number(result) === Number(targetNum)) {
-            timeLeft = Math.floor(timeLeft); // ensures whole number
-            clearInterval(countdownInterval);         
-               gamesConsole.innerHTML = `🎉 WINNER! You solved The Countdown workingout the correct result was ${result} with ${timeLeft} seconds remaining - well done!`;
+            timeLeft = Math.floor(timeLeft); // whole seconds
             clearInterval(countdownInterval);
-            window.timerArea.innerHTML = "YOU WIN!"
+            gamesConsole.innerHTML = `🎉 WINNER! You solved The Countdown. Result: ${result}. Time left: ${timeLeft} seconds!`;
             workingoutGrid.style.display = "none";
             workingoutGridTwo.style.display = "none";
             window.playAgain();
-        } else {
-            createEquationRow();
         }
+
     } catch {
-        output.textContent = "Error in equation";
+        outputDiv.textContent = "Error in equation";
     }
 }
 
-function undoEquation(result, usedNumbersJSON, row) {
+// Undo function
+function undoEquation(result, usedNumbersJSON, input) {
     const usedNums = JSON.parse(usedNumbersJSON);
     randomNumbersCopy.push(...usedNums);
 
     const resIndex = randomNumbersCopy.indexOf(Number(result));
-    if (resIndex !== -1) {
-        randomNumbersCopy.splice(resIndex, 1);
-    }
+    if (resIndex !== -1) randomNumbersCopy.splice(resIndex, 1);
 
-    row.remove();
+    input.disabled = false;
+    input.value = "";
+    activeInput = input;
+    outputDiv.textContent = "";
 }
-
-
-
