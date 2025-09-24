@@ -21,12 +21,19 @@
 }
 
 #working-grid-2 {
-    margin-top: 35px;
-    border-radius: 10px;
-    background-color: rgb(168, 239, 127);
-    
+    margin-top: 50px;
     display: block;
-    
+}
+
+.workingGrid {
+    display: flex;
+    justify-content: center;
+}
+
+input.equation-input {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
 }
 
 .keypad-container {
@@ -74,6 +81,7 @@
     flex-direction: row;
     text-align: end;
     gap: 30px; /* <-- Adds space between items */
+    justify-content: center;
     
 }
 
