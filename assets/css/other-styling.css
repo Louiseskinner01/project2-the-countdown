@@ -35,3 +35,20 @@ body {
   .table-card ul li:last-child {
     border-bottom: none;
   }
+
+  /*Registration Styling*/
+.form-control {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    background-color: #e3e0e8;
+    width: 80%;
+    margin: auto;
+  }
+
+  label {
+    margin-left: 10%;
+  }
+
+
+ 
