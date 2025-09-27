@@ -8,9 +8,6 @@ window.timerDisplay;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
-//const workingoutGrid = document.getElementById("working-grid-1");
-//const workingoutGridTwo = document.getElementById("working-grid-2");
-// Store available numbers for validation in workingout-grid.js
 let availableNumbers = [];
 let targetNum = null;
 
@@ -223,8 +220,8 @@ function generateTargetNumber() {
     }
 
     // Ensure target is challenging and valid
-    if (currentValue < 139 || currentValue > 999) {
-        console.warn(`Retrying target generation, invalid value: ${currentValue}`);
+    if (currentValue < 122 || currentValue > 1017) {
+       // console.warn(`Retrying target generation, invalid value: ${currentValue}`);
         return generateTargetNumber(); // Retry
     }
 

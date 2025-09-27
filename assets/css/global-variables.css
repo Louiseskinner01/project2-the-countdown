@@ -1,10 +1,19 @@
+/*Imported google fonts*/
+
+/*main-font-style*/
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/*sub-font-style*/
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+/*workingout-grid font*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --main-font-color:  #4d05f6;
+    --main-theme-color:  #4d05f6;
+    --sub-theme-color: #ffef08;
+    --workingout-grid-font: "Libre Franklin", sans-serif;
     --main-font-style: "Sour Gummy", sans-serif;
-    --sub-font-color: #ffef08;
     --sub-font-style: "Scope One", serif;
-    --feauture-color: #eefae9;
-    --feature2-color: deeppink;
+    --buttons: #84f4d6;
     --calm-color: #fcfaf7; 
-    --workingout-grid-font: "Ubuntu", sans-serif;
+
 }
