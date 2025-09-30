@@ -141,7 +141,8 @@ function createStartBtns() {
     const keypadBtns = document.querySelectorAll(".keypad-btn");
 
     keypadBtns.forEach(key => {
-        key.style.backgroundColor = "pink";
+        key.style.backgroundColor = "var(--main-theme-color)";
+        key.style.color = "var(--sub-theme-color)"; 
     });
         startGameBtn.remove();
     });
