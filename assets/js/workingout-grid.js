@@ -1,3 +1,5 @@
+
+
 // workingout-grid.js
 let randomNumbersCopy = [];
 let arrayOfResults = [];
@@ -124,7 +126,7 @@ function handleInputEnter(input, undoBtn) {
 
  // Re-render all results into the console
  outputDiv.innerHTML = arrayOfResults
-     .map((res, index) => `<div class="result-item">  ${res}  </div>`)
+     .map((res, index) => `<div class="result-item">  ${res} </div>`)
      .join("");
 
  gamesConsole.append(outputDiv);

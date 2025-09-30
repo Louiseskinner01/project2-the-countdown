@@ -1,14 +1,16 @@
 window.timeLeft = 0;
 window.timerArea = null;
+window.timerDisplay;
 
 let confirmDifficultyBtn;
 let difficultyBtns;
-window.timerDisplay;
+//window.keypadBtns = document.getElementById("game-keypad");
+
 //let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
-let availableNumbers = [];
+let availableNumbers = [];  
 let targetNum = null;
 
 //Display buttons to set difficulty level and hide the "PLAY" text
@@ -123,16 +125,24 @@ function createStartBtns() {
        //Creates and apends the built-in keypad.
         createKeypad();
 
-        //Creates and apends the input rows for the user to perform calculations.
-        createEquationRow(availableNumbers); 
-
-
+     
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
-        difficultyButtons.forEach(button => {
-        button.remove();
+
+        difficultyButtons.forEach(button => button.remove());
+           //Creates and apends the input rows for the user to perform calculations.
+           createEquationRow(availableNumbers); 
+
+           timerArea.style.backgroundColor = "var(--calm-color)";
+           timerArea.style.color = "var(--main-theme-color)";
+           document.getElementById("timer-digits").style.color = "var(--feature-color)";
+            
+              // 🔹 Select keypad buttons AFTER createKeypad() has run
+    const keypadBtns = document.querySelectorAll(".keypad-btn");
+
+    keypadBtns.forEach(key => {
+        key.style.backgroundColor = "pink";
     });
-    
         startGameBtn.remove();
     });
 }
@@ -144,7 +154,7 @@ function startCountdown(durationInSeconds) {
 
     //globalising this function so it can be used in the workingout-grid.js
     window.playAgain = function(){
-        startNewGameBtn = document.createElement("button");
+       const startNewGameBtn = document.createElement("button");
         startNewGameBtn.classList.add("controller-btn-styling");
         startNewGameBtn.id = "play-again";
         startNewGameBtn.innerText = "Play again?";
