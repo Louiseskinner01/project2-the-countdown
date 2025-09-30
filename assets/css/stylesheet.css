@@ -187,4 +187,7 @@ color: var(--sub-theme-color);
        
 }
 
+#rotate-warning {
+    color: white;
+}
 
