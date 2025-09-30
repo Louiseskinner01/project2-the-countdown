@@ -22,12 +22,13 @@ function createEquationRow(numbers) {
 
     const input = document.createElement("input");
     input.type = "text";
-    input.id = "equationInput";
+    input.id = "equation-input";
     input.placeholder = "ENTER AN EQUATION";
     input.classList.add("equation-input");
     input.readOnly = true;
 
     const undoBtn = document.createElement("button");
+    undoBtn.id = "undo-btn";
     undoBtn.textContent = "Undo";
     undoBtn.classList.add("undo-btn");
     undoBtn.style.display = "none";
@@ -162,7 +163,7 @@ function undoEquation(result, usedNumbersJSON, input) {
     const resIndex = randomNumbersCopy.indexOf(Number(result));
     if (resIndex !== -1) randomNumbersCopy.splice(resIndex, 1);
 
-    input.disabled = false;
+    //input.disabled = false;
     input.value = "";
     activeInput = input;
     outputDiv.textContent = "";

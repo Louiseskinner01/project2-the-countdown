@@ -161,8 +161,10 @@ function startCountdown(durationInSeconds) {
         startNewGameBtn.innerText = "Play again?";
         controllersArea.append(startNewGameBtn);
         workingoutGrid.style.display = "none";
-        const equationInput = document.getElementById("equationInput");
+        const equationInput = document.getElementById("equation-input");
         equationInput.remove();
+        const undoBtn = document.getElementById("undo-btn");
+        undoBtn.remove();
         startNewGameBtn.addEventListener("click", startNewGame);
 
     }

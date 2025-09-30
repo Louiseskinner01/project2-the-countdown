@@ -21,6 +21,7 @@ input.equation-input {
     height: 60px;
     border-radius: 10px;
     border: 2px solid var(--calm-color);
+    background-color: black;
 }
 
 .keypad-container {
