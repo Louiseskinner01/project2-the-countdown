@@ -133,6 +133,7 @@ nav img {
 
 .nav-link {
     color: var(--main-font-color) !important;
+    font-size: 2vw;
   
 }
 
