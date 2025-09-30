@@ -10,10 +10,11 @@
 :root {
     --main-theme-color:  #4d05f6;
     --sub-theme-color: #ffef08;
+    --feature-color: deeppink;
     --workingout-grid-font: "Libre Franklin", sans-serif;
     --main-font-style: "Sour Gummy", sans-serif;
     --sub-font-style: "Scope One", serif;
-    --buttons: #84f4d6;
-    --calm-color: #fcfaf7; 
+    --buttons: #96ffe3;
+    --calm-color: #d8fbde; 
 
 }

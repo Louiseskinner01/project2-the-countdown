@@ -43,10 +43,11 @@ h2 {
 .console-styling {
     background: var(--calm-color);   
     font-style: var(--main-font-style);
+    color: var(--main-theme-color);
     border-radius: 10px;
     height: 100px;
     padding-bottom: 2px;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 #console-play {
@@ -60,16 +61,20 @@ h2 {
 
 /*Timer area styling*/
 #timer {
+    background-color: var(--calm-color);
+    border: 1px solid var(--main-theme-color);
     border-radius: 10px;
     height: 100px;
     font-size: 1.5rem;
     padding: 10px;
     display: none;
+   
 }
 
-#timer:hover {
-    background-color: var(--buttons);
+#timer-digits, #timer-title {
+    color: var(--main-theme-color);
 }
+
 
 /*Difficulty area styling*/
 #difficulty-btn-area {
@@ -77,9 +82,9 @@ h2 {
 }
 
 .difficulty-btn {
-    background-color: var(--sub-theme-color);
+    background-color: var(--calm-color);
     color: var(--main-theme-color);
-    border: 2px solid var(--calm-color);
+    border: 1px solid var(--main-theme-color);
     border-radius: 10px;
     height: 100px;
     font-size: 24px;
@@ -88,7 +93,7 @@ h2 {
 }
 
 .difficulty-btn:hover {
-    background-color: var(--buttons);
+    background-color: var(--sub-theme-color);
     color: var(--main-theme-color);
 }
 
@@ -101,7 +106,7 @@ h2 {
 }
 
 .controller-btn-styling {
-    background-color: var(--buttons);
+    background-color: var(--sub-theme-color);
     color: var( --main-theme-color);
     border-radius: 15px;
     border: 1px solid var(--calm-color) !important;
@@ -114,7 +119,7 @@ h2 {
 }
 
 .controller-btn-styling:hover {
-    background-color: var(--sub-theme-color);
+    background-color: var(--calm-color);
     color: var(--main-theme-color);
 }
 
@@ -156,10 +161,10 @@ color: var(--sub-theme-color);
 /*Other Styling*/
 .target-div-styling {
     font-weight: 500;
-    font-size: 22px;
-    font-family: var(--workingout-grid-font);  
+    font-size: 28px;
+    
     border-radius: 10px;
-    color: var(--feature2-color);
+    color: var(--feature-color);
   
   
 }
@@ -177,7 +182,8 @@ color: var(--sub-theme-color);
         font-size: 1.5em;
         font-weight: bold;
         font-family: var(--workingout-grid-font); 
-       
+        color: var(--main-theme-color);
+        
        
 }
 

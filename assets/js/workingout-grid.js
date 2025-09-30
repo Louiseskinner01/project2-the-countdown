@@ -22,6 +22,7 @@ function createEquationRow(numbers) {
 
     const input = document.createElement("input");
     input.type = "text";
+    input.id = "equationInput";
     input.placeholder = "ENTER AN EQUATION";
     input.classList.add("equation-input");
     input.readOnly = true;
@@ -130,7 +131,6 @@ function handleInputEnter(input, undoBtn) {
      .join("");
 
  gamesConsole.append(outputDiv);
-
         outputDiv.dataset.result = result;
         outputDiv.dataset.usedNumbers = JSON.stringify(usedNums);
 

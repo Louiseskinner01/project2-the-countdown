@@ -35,7 +35,7 @@ input.equation-input {
     padding: 5px;
     font-size: 20px;
     cursor: pointer;
-    background-color: var(--sub-theme-color);
+    background-color: var(--calm-color);
     color: var(--main-theme-color);
     font-family: var(--workingout-grid-font);
     border-radius: 5px;
@@ -64,21 +64,29 @@ input.equation-input {
 
 
 .output-div-styling {
-    font-size: 22px;
-    background-color: rgb(219, 251, 202) !important;
     display: flex;
-    flex-direction: row;
-    text-align: end;
-    gap: 30px; /* Adds space between items */
     justify-content: center;
-    
+    flex-direction: row;
+    gap: 30px; /* Adds space between items */
+    font-size: 22px;
+    font-family: var(--main-font-style);
+    text-align: end;  
+    background-color: var(--sub-theme-color) !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .undo-btn {
+    margin-left: 10px;
     background-color: var(--sub-theme-color);
     color: var(--main-theme-color);
     border-radius: 10px;
     border: 2px solid var(--calm-color);
 }
+
+.undo-btn:hover {
+background-color: var(--calm-color);
+}
+
 
 
