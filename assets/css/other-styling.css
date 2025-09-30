@@ -58,3 +58,17 @@
     margin-left: 10%;
   }
  
+
+  /*Instructions Styling*/
+.instructions-styling {
+ background-color: white;
+ color: var(--main-theme-color);
+ border-radius: 10px;
+padding-top: 10px;
+
+  }
+
+ .instructions-h2 {
+  color: var(--feature-color) !important;
+ } 
+
