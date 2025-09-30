@@ -155,13 +155,16 @@ function startCountdown(durationInSeconds) {
 
     //globalising this function so it can be used in the workingout-grid.js
     window.playAgain = function(){
-       const startNewGameBtn = document.createElement("button");
+        const startNewGameBtn = document.createElement("button");
         startNewGameBtn.classList.add("controller-btn-styling");
         startNewGameBtn.id = "play-again";
         startNewGameBtn.innerText = "Play again?";
         controllersArea.append(startNewGameBtn);
         workingoutGrid.style.display = "none";
+        const equationInput = document.getElementById("equationInput");
+        equationInput.remove();
         startNewGameBtn.addEventListener("click", startNewGame);
+
     }
 
     function startNewGame() {
