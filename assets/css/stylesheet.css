@@ -130,12 +130,13 @@ h2 {
 /*Navigation styling*/
 nav img {
     height: 80px;
+  
 }
 
 .nav-link {
     color: var(--main-font-color) !important;
-    font-size: 2vw;
-  
+    font-size: 18px;
+    margin-right: 25px;    
 }
 
 /*Footer Styling*/
@@ -177,7 +178,6 @@ color: var(--sub-theme-color);
     border: 2px solid var(--calm-color);
     color: var(--main-theme-color); 
 }
-
 
 .generated-number {
         display: inline-block;
