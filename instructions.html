@@ -53,7 +53,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 text-center text-white">
         <h1>How to play — The Countdown</h1>
         <p>Quick instructions to start playing the puzzle game. Scroll for examples, tips and troubleshooting.</p>
       </div>
@@ -75,10 +75,11 @@
       <div class="col-5 mx-1 instructions-styling">
         <h2 class="instructions-h2">Rules</h2>
         <ul>
-          <li>You may only use numbers that appear in the console (generated random numbers and the results from your equations). Once you have used a number it then becomes unavaiable (unless you <strong>undo</strong> your equation making the number availble to use again).</li>
-          <li>Allowed operators: addition <code>+</code>, subtraction <code>-</code>, multiplication <code>*</code>, and division <code>/</code>.</li>
-          <li>Parentheses and decimal points have been removed from the keypad making it cleaner and easy to use.</li>
-          <li>When you create a result, that result is added to a pool of available numbers that can be used in later steps.</li>
+          <li>You may only use numbers that appear in the console (generated random numbers and the results from your equations).
+            <li>When you create a result, that result is added to a pool of available numbers that can be used in later steps.</li>
+             <li> Once you have used a number it then becomes unavaiable (unless you <strong>undo</strong> your equation making the number availble to use again).</li>
+             <li>Allowed operators: addition <code>+</code>, subtraction <code>-</code>, multiplication <code>*</code>, and division <code>/</code>.</li>
+            <li>Parentheses and decimal points have been removed from the keypad, making calculations simple and easy to perform.</li>
           <li>The goal is to reach the <strong>target number</strong> before the timer runs out.</li>
         </ul>
       </div>
@@ -90,18 +91,22 @@
 
             <p>Generated Random Numbers: <strong>2, 3, 3, 5, 50, 60</strong> <br>Generated Target number: <strong>58</strong></p>
             <pre class="example" aria-hidden="false">
-      3 + 3 = 6     → add result 6 back to pool of available numbers
-      6 + 2 = 8     → add result 8 back to pool of available numbers
+      3 + 3 = 6   → add result 6 to the pool of available numbers
+      6 + 2 = 8   → add result 8 to the pool of available numbers
       8 + 50 = 58   → target reached!
             </pre>
+            <pre class="example" aria-hidden="false">
+      5 + 3 = 8   → add result 8 to the pool of available numbers
+      50 + 8 = 58   → target reached! 
+                    </pre>    
       </div>
 
-      <div class="col-5 mx-1 instructions-styling">
+      <div class="col-10 mx-1 instructions-styling">
         <h2 class="instructions-h2">Input & console behaviour</h2>
         <ul>
-          <li>The game uses one persistent input box. Submit a calculation, the result appears in the console and the input clears for your next calculation.</li>
+          <li>The game uses one input box which resets each time you submit a calculation. The result from your calculation will appear in the console, below the <em>target number</em> </li>
           <li>All results are kept in the console so you have a history of attempts.</li>
-          <li>If you enter a number that isn’t available, you’ll see an <em>Error message which will appear in the console area. Dont worry any results will be displayed when you write another equation.</em> message in the console.</li>
+          <li>If you enter a number that isn’t available, an <em>Error message</em> which will appear in the console area.  Your previous result will re-appear once you submit your next successful equation.</li>
         </ul>
       </div>
     </div>
