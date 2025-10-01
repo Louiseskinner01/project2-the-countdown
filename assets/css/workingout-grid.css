@@ -9,12 +9,18 @@
 #working-grid-2 {
     margin-top: 50px;
     display: block;
+    
 }
+
+
 
 .workingGrid {
     display: flex;
     justify-content: center;
+   
 }
+
+
 
 input.equation-input {
     width: 300px;
@@ -22,11 +28,16 @@ input.equation-input {
     border-radius: 10px;
     border: 2px solid var(--calm-color);
     background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+   
 }
 
-equation-input::placeholder {
-    columns: var(--main-theme-color);
-}
+input.equation-input::placeholder {
+    color: var(--main-theme-color) !important;
+    opacity: 1 !important;
+  }
+
+
 
 .keypad-container {
     display: grid;
