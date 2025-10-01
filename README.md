@@ -8,7 +8,7 @@ Developer: Louise Skinner ([Louiseskinner01](https://www.github.com/Louiseskinne
 [![badge](https://img.shields.io/badge/deployment-GitHub Pages-purple)](https://louiseskinner01.github.io/project2-the-countdown)
 
 ⚠️ PROJECT INTRODUCTION AND RATIONALE⚠️
-The Countdown Game is a web-based recreation of the classic British TV quiz show Countdown, designed for both desktop and mobile browsers. The game challenges players by generating a set of random numbers along with a target number. The player must use their arithmetic problem-solving skills to reach the target, using the given numbers only once. It’s a time-based, single-player experience that combines fun with cognitive skill-building.
+The Countdown Game is a web-based recreation of the classic British TV quiz show Countdown, designed for both desktop and mobile browsers. The game challenges players by generating a set of random numbers along with a target number. The player must use their arithmetic problem-solving skills to reach the target, using the given numbers and any results from calculation made. Numbers can only be used once unless the user undoes their previous equation making the number available to use again. It’s a time-based, single-player experience that combines fun with cognitive skill-building.
 
 
 The project aims to deliver a sleek, responsive interface with an engaging user experience, complete with a real-time countdown timer, score tracking, and validation of answers. The game is ideal for casual play and educational purposes alike.
