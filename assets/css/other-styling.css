@@ -12,7 +12,7 @@
   }
 
   .table-card h4 {
-    background-color: #9467e6;
+    background-color: var(--main-theme-color);
     color: white;
     padding: 10px;
     border-radius: 10px;
