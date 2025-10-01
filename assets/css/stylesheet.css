@@ -136,7 +136,7 @@ nav img {
 .nav-link {
     color: var(--main-font-color) !important;
     font-size: 18px;
-    margin-right: 25px;    
+    margin-right: 15px;    
 }
 
 /*Footer Styling*/
@@ -165,10 +165,11 @@ color: var(--sub-theme-color);
 /*Other Styling*/
 .target-div-styling {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-family: var( --main-font-style);
     border-radius: 10px;
     color: var(--feature-color);
+  
   
   
 }
