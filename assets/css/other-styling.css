@@ -44,7 +44,11 @@
     background-color: #fff;
     width: 80%;
     margin: auto;
+    color: var(--main-theme-color);
   }
+.form-control::placeholder {
+  color: var(--main-theme-color);
+}
 
   label {
     margin-left: 10%;
@@ -64,11 +68,15 @@
  background-color: white;
  color: var(--main-theme-color);
  border-radius: 10px;
-padding-top: 10px;
+ padding-top: 10px;
 
   }
 
  .instructions-h2 {
   color: var(--feature-color) !important;
  } 
+
+form {
+  color: white;
+}
 

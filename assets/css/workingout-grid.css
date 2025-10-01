@@ -24,6 +24,10 @@ input.equation-input {
     background-color: rgb(255, 255, 255);
 }
 
+equation-input::placeholder {
+    columns: var(--main-theme-color);
+}
+
 .keypad-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
