@@ -13,13 +13,24 @@ const difficultyButtons = document.querySelectorAll(".difficulty-btn");
 let availableNumbers = [];  
 let targetNum = null;
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const consolePlay = document.getElementById("console-play");
+
+    if (consolePlay) {
+        consolePlay.addEventListener("click", () => {
+            displayControllers();   // start the game
+            consolePlay.remove();   // permanently remove PLAY? span
+        });
+    }
+});
+
 //Display buttons to set difficulty level and hide the "PLAY" text
 function displayControllers() {
     document.getElementById("difficulty-btn-area").style.display = "flex";
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
     document.getElementById("console-play").style.display = "none"
-
 }
 
 
