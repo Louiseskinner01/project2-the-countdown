@@ -17,12 +17,10 @@ let targetNum = null;
 document.addEventListener("DOMContentLoaded", () => {
     const consolePlay = document.getElementById("console-play");
 
-    if (consolePlay) {
-        consolePlay.addEventListener("click", () => {
-            displayControllers();   // start the game
-            consolePlay.remove();   // permanently remove PLAY? span
-        });
-    }
+    consolePlay.addEventListener("click", () => {
+        displayControllers();   // start the game
+        consolePlay.remove();   // permanently remove PLAY? span
+    });
 });
 
 //Display buttons to set difficulty level and hide the "PLAY" text

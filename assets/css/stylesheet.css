@@ -45,9 +45,8 @@ h2 {
     font-style: var(--main-font-style);
     color: var(--main-theme-color);
     border-radius: 10px;
-    height: 100px;
+    height: 150px;
     padding: 15px;
-    
     font-size: 1.5vw;
 }
 
@@ -66,10 +65,10 @@ h2 {
     background-color: var(--calm-color);
     border: 1px solid var(--main-theme-color);
     border-radius: 10px;
-    height: 100px;
+    height: 150px;
     font-size: 1.5rem;
     padding: 10px;
-    display: none;
+    display: none;padding-top: 10px
    
 }
 
@@ -195,6 +194,14 @@ color: var(--sub-theme-color);
 #rotate-warning {
     color: white;
     margin-top: 50px;
-   
+    display: flex;
 }
 
+
+#rotate-warning.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}

@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-     <!-- Global variables first -->
+    <!-- Global variables first -->
     <link rel="stylesheet" href="assets/css/global-variables.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="assets/css/workingout-grid.css">
@@ -51,41 +51,50 @@
     </header>
 
     <main>
-        <div class="container-fluid m-0 px-3">
+
+        <div class="container-fluid m-0 px-3 hidden" id="rotate-warning">
+            <div class="row m-0 p-0 text-center align-items-start">
+                <div class="col-12">
+                    <p>Please rotate your mobile device to landscape mode for the best user experience.</p>
+                </div>
+            </div>
+            <!--end of warning row-->
+        </div>
+
+
+        <div class="container-fluid m-0 px-3" id="game-container">
             <div class="row m-0 p-0">
                 <div class="col-12 text-center">
                     <h1 class="text-wrap">THE COUNTDOWN</h1>
                     <h2 class="text-white">time waits for no one!</h2>
                 </div>
-            </div> <!--end of header grid row-->
+            </div>
+            <!--end of header grid row-->
 
-            <div class="row m-0 p-0 text-center align-items-start">
-                <div class="col-12">
-                <div id="rotate-warning">
-                    <p>Please rotate your mobile device to landscape mode for the best user experience.</p>
-                </div>
-                </div>
-            
-            </div> <!--end of warning row-->
 
             <div class="row m-0 p-0 text-center align-items-start">
                 <div class="col-12">
                     <span id="console-play" onclick="displayControllers()">PLAY?</span>
                 </div>
-            </div> <!--end of warning row-->
-            
+            </div>
+            <!--end of warning row-->
+
+
+
+
+
             <!-- Buttons -->
             <div class="row mt-3 p-0 text-center">
                 <div class="col-12 p-0">
-                
-                        <div class="row p-0 m-0">
+
+                    <div class="row p-0 m-0">
                         <div class="col-6">
                             <div id="difficulty-btn-area" class="difficulty-btn-area">
                                 <button class="difficulty-btn" onclick="setDifficulty(90)">Easy 90s</button>
                                 <button class="difficulty-btn" onclick="setDifficulty(60)">Medium 60s</button>
                                 <button class="difficulty-btn" onclick="setDifficulty(45)">Hard 45s</button>
                             </div>
-                     
+
                             <div id="timer">
                                 <span id="timer-title">Timer</span>
                                 <br>
@@ -94,30 +103,33 @@
                             <!-- Console -->
                         </div>
 
-                            <div class="col-6 col-sm-6">
-                                <div id="games-console">
-                                </div>
+                        <div class="col-6 col-sm-6">
+                            <div id="games-console">
                             </div>
-                   
-                </div> <!--End of container-->
-                </div>
-            </div> <!--end of main row-->
-
-                <div class="row p-0">
-                    <div class="col-6">
-                        <div id="working-grid-1" class="working-grid-1">
-                            <div id="keyPad-area"></div>
                         </div>
-</div>
+
+                    </div>
+                    <!--End of container-->
+                </div>
+            </div>
+            <!--end of main row-->
+
+            <div class="row p-0">
+                <div class="col-6">
+                    <div id="working-grid-1" class="working-grid-1">
+                        <div id="keyPad-area"></div>
+                    </div>
+                </div>
                 <div class="col-6">
                     <div id="working-grid-2">
-                </div>   
-                </div>
-                    
                     </div>
-                </div> <!--end of working grid row-->
-      
-            <!-- Controllers -->
+                </div>
+
+            </div>
+        </div>
+        <!--end of working grid row-->
+
+        <!-- Controllers -->
         <div class="row m-0 p-0 text-center align-items-center">
             <div class="col-12">
                 <div id="controllers-area">
@@ -125,9 +137,9 @@
             </div>
         </div>
 
-        
+
         <!--end of container-->
-    </div>
+        </div>
 
 
     </main>

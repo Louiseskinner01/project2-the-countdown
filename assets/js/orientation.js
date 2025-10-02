@@ -1,19 +1,24 @@
-function checkOrientation() {
+
     const orientationMessage = document.getElementById("rotate-warning");
-    const isMobile = window.innerWidth < 576;
-    const isPortrait = window.innerHeight > window.innerWidth;
+    const gameContainer = document.getElementById("game-container");
     
-    if (orientationMessage) {
+    function checkOrientation(){
+        const isMobile = window.innerWidth < 576;
+        const isPortrait = window.innerHeight > window.innerWidth;
+    
         if (isMobile && isPortrait) {
-            orientationMessage.style.display = "flex";
-            document.getElementById("console-play").style.display = "none";
-        } else {
-            orientationMessage.style.display = "none";
-            document.getElementById("console-play").style.display = "block";
-        }
-    }
-    }
+            
+            orientationMessage.classList.remove("hidden");
+
+gameContainer.classList.add("hidden");       
+}else 
+{
+            orientationMessage.classList.add("hidden");      
+            gameContainer.classList.remove("hidden");            
+          }
     
+        }
+ 
     // Run on load and when orientation or size changes
     window.addEventListener('load', checkOrientation);
     window.addEventListener('resize', checkOrientation);
