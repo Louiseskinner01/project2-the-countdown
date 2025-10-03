@@ -106,11 +106,15 @@ function handleInputEnter(input, undoBtn) {
     if (!value) return;
 
     const usedNums = value.match(/\d+/g)?.map(Number) || [];
+    console.log(usedNums);
     let tempAvailable = [...randomNumbersCopy];
+    console.log("tempAvailable = " + tempAvailable);
 
     // Validate numbers
     for (let num of usedNums) {
         const index = tempAvailable.indexOf(num);
+        console.log("index = " + index);
+
         if (index === -1) {
             outputDiv.textContent = "Invalid: number not available";
             return;
@@ -150,6 +154,17 @@ function handleInputEnter(input, undoBtn) {
             window.playAgain();
         }
 
+            // Apply strikethrough to used ones
+            usedNums.forEach(num => {
+                const matches = Array.from(document.querySelectorAll(
+                    "#games-console .generated-number, #output-div .result-item"
+                )).filter(matchedNum => Number(matchedNum.textContent.trim()) === num);
+    
+                matches.forEach(matchedNum => {
+                    matchedNum.classList.add("used-number");
+                    console.log(matchedNum);
+                });
+            });
     } catch {
         outputDiv.textContent = "Error in equation";
     }
@@ -159,9 +174,11 @@ function handleInputEnter(input, undoBtn) {
 function undoEquation(result, usedNumbersJSON, input) {
     const usedNums = JSON.parse(usedNumbersJSON);
     randomNumbersCopy.push(...usedNums);
+    
 
     const resIndex = randomNumbersCopy.indexOf(Number(result));
     if (resIndex !== -1) randomNumbersCopy.splice(resIndex, 1);
+   
 
     //input.disabled = false;
     input.value = "";
