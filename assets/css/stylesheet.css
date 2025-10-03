@@ -94,11 +94,9 @@ h2 {
     width: 33%;
 }
 
-.difficulty-btn:hover {
-    background-color: var(--sub-theme-color);
-    color: var(--main-theme-color);
+.active {
+    background: var(--sub-theme-color);
 }
-
 
 
 /*Controller Area styling*/
@@ -196,7 +194,6 @@ color: var(--sub-theme-color);
     margin-top: 50px;
     display: flex;
 }
-
 
 #rotate-warning.hidden {
     display: none;
