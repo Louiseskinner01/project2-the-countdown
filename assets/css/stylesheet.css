@@ -205,3 +205,15 @@ color: var(--sub-theme-color);
 .hidden {
     display: none;
 }
+
+@media only screen and (min-width: 1140px) {
+    #timer, .difficulty-btn, .console-styling {
+        height: 130px !important;
+        
+    }
+
+    #timer {
+        font-size: 2rem;
+    }
+
+}
