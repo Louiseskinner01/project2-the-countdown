@@ -77,6 +77,29 @@ function setDifficulty(seconds) {
 }
 window.setDifficulty = setDifficulty;
 
+ const buttons = document.querySelectorAll(".difficulty-btn");
+  
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // If this button is already active, unselect it
+      if (btn.classList.contains("active")) {
+        btn.classList.remove("active");
+      } else {
+        // Remove active from all buttons
+        buttons.forEach(b => b.classList.remove("active"));
+        // Add to clicked button
+        btn.classList.add("active");
+      }
+    });
+  });
+
+
+  /*  diffBtn.addEventListener("click", () => {
+        diffBtn.style.backgroundColor = "var(--feature-color)" ;
+    });
+ });
+*/
+
 /** 
  * Create a button to generate a random set of numbers
  * Apply a class for styling and assign an ID 
