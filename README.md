@@ -202,15 +202,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 
 ## Features
-
-⚠️ INSTRUCTIONS ⚠️
-
-In this section, you should go over the different parts of your project, and describe each feature. You should explain what value each of the features provides for the user, focusing on your target audience, what they want to achieve, and how your project can help them achieve these things.
-
-**IMPORTANT**: Remember to always include a screenshot of each individual feature!
-
-⚠️ --- END --- ⚠️
-
 ### Existing Features
 
 | Feature | Notes | Screenshot |
@@ -237,7 +228,6 @@ In this section, you should go over the different parts of your project, and des
 - **Advanced Calculations**: Add support for more complex mathematical operations, like square roots, powers, logarithms, trigonometry (sin, cos, tan), etc.
 - **Equation History**: Display a running log of previous calculations with the ability to recall or reuse past results.
 - **Multi-Step Equations**: Allow users to input multi-step calculations (e.g., `5 + 3 * 2 - 4`) with proper order of operations.
-- **Graphing Capabilities**: Integrate a graphing feature where users can plot functions or equations visually.
 - **Fraction Support**: Add functionality to handle calculations with fractions, including simplifications and conversions between fractions and decimals.
 - **Unit Conversions**: Introduce a feature to convert between different units of measurement (e.g., meters to feet, Celsius to Fahrenheit).
 - **Equation Solver**: Add the ability to solve algebraic equations for a given variable (e.g., `2x + 5 = 13`).
@@ -250,6 +240,11 @@ In this section, you should go over the different parts of your project, and des
 - **Save & Share Calculations**: Allow users to save or share their results via a link or social media, especially for complex equations or useful outputs.
 - **Voice Input**: Add a voice input option for users to dictate their calculations instead of typing.
 - **Educational Quizzes**: Implement math-based quizzes or games to help users improve their arithmetic skills while using the app.
+- **Scoreboard / Leaderboard**: Implement a scoring system that tracks correct answers, speed, and streaks. Users can compare scores on a leaderboard, adding gamification elements. This motivates users to improve performance, encouraging repeated engagement and friendly competition.
+- **User Account / Login Systsem**: Users can register, log in, and save their progress. Personalized accounts allow for tracking historical performance, customizing difficulty settings, and storing achievements. This adds a long-term engagement factor and supports consistent learning.
+- **Hints & Step-by-Step Solutions**:Provide optional hints or step-by-step solutions for complex problems. This helps users learn from mistakes, understand the process, and build confidence while practicing. This could be a feture that can be toggled on/off in the user account or game settings.
+- **Custom Difficulty Levels**:Allow users to adjust difficulty beyond presets, such as limiting the numbers, operations, or time allowed. This gives users control over their challenge and ensures the game remains appropriate for different skill levels.
+- **Progress Analytics / Stats Dashboard**:Track metrics such as accuracy, average completion time, and progress over time. Users can visually monitor improvement and identify areas for further practice, promoting data-driven learning.
 
 ## Tools & Technologies
 
