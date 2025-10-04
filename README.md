@@ -209,20 +209,40 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
 | Difficulty Selection | Users can choose from multiple difficulty levels that set different countdown timers. This helps beginners learn at a slower pace, while advanced players can push their speed and accuracy. | ![screenshot](documentation/features/operators.png) |
-| EquationCountdown Timer | A large, clear timer counts down during gameplay. This adds urgency and excitement, encouraging focus and simulating the real Countdown game.| ![screenshot](documentation/features/equation.png) |
-| Submit Answer | This button allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
-| Random Number Generation | Six numbers are generated at random (four small, two large). This ensures variety, so each game feels unique and unpredictable. | ![screenshot](documentation/features/scores.png) |
-| Target Number | A random target number is generated using only the numbers from the "6 random numbers generated in the previous step, and mathmateical operators to ensure the target number is realistic and achievable for players to reach. This provides a clear goal and challenge for each play. | ![screenshot](documentation/features/alerts.png) |
-| 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Maths* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
-|Built-in Keypad | An interactive customised to provide a simplistic and clean gameplay. This ensures accessibility on both desktop and mobile, while preventing invalid inputs.| ![screenshot](documentation/features/404.png) |
-| Equation Validation & Feedback | Equations are checked instantly. Correct inputs show results, while incorrect ones display error messages. This helps users learn and avoid repeated mistakes. | ![screenshot](documentation/features/404.png) |
-| Undo Feature | Players can undo their last equation. This allows experimentation without penalty, making the game more forgiving and user-friendly. | ![screenshot](documentation/features/404.png) |
-| Results Console | A console displays all previous equations and results. This lets users track their thinking process and reflect on strategies. | ![screenshot](documentation/features/404.png) |
-| Win & Lose Messages | At the end of each game, the player sees a clear outcome: either a celebratory win screen or an encouraging message if unsuccessful. | ![screenshot](documentation/features/404.png) |
-| Play Again Button | After each round, players can restart quickly without reloading the page. This boosts replayability and keeps users engaged. | ![screenshot](documentation/features/404.png) |
-| Orientation Lock (Mobile) | If the device is in portrait mode, a warning appears telling the user to rotate to landscape. This ensures the best layout and usability for small screens. | ![screenshot](documentation/features/404.png) |
-| User Registration Form | A simple registration form allows users to submit their details (e.g. name, email). This feature helps capture user interest, creates a sense of personal engagement, and could support future personalization or score-tracking. | ![screenshot](documentation/features/404.png)  |
 
+| EquationCountdown Timer | A digital style timer, offering a clear and simple look, counts down during gameplay. This adds urgency and excitement, encouraging focus and simulating the real Countdown game.| ![screenshot](documentation/features/timer-countdown.png) |
+
+| Submit Answer | This is enabled by the user clicking the OK button on the built-in keyboard. It allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
+
+| Random Number Generation | Six numbers are generated at random (four small, two large). This ensures variety, so each game feels unique and unpredictable. | ![screenshot](documentation/features/random-numbers.png) |
+
+| Target Number | A random target number is generated using only the numbers from the "6 random numbers generated in the previous step, and mathmateical operators to ensure the target number is realistic and achievable for players to reach. This provides a clear goal and challenge for each play. | ![screenshot](documentation/features/target-number.png) |
+
+
+
+|Built-in Keypad | An interactive customised to provide a simplistic and clean gameplay. This ensures accessibility on both desktop and mobile, while preventing invalid inputs.| ![screenshot](documentation/features/built-in-keypad.png) |
+
+| Equation Validation & Feedback | Equations are checked instantly. Correct inputs show results, while incorrect ones display error messages. This helps users learn and avoid repeated mistakes. | ![screenshot](documentation/features/equation-validation.png) |
+
+
+| Undo Feature | Players can undo their last equation. This allows experimentation without penalty, making the game more forgiving and user-friendly. | ![screenshot](documentation/features/undo-btn.png) |
+
+
+
+| Results Console | A console displays all previous equations and results. This lets users track their thinking process and reflect on strategies. | ![screenshot](documentation/features/404.png) |
+
+| Win & Lose Messages | At the end of each game, the player sees a clear outcome: either a celebratory win screen or an encouraging message if unsuccessful. | ![screenshot](documentation/features/message-lose.png) ![screenshot](documentation/features/message-win.png)|
+
+| Play Again Button | After each round, players can restart quickly without reloading the page. This boosts replayability and keeps users engaged. | ![screenshot](documentation/features/play-again.png) |
+
+|Used Numbers| When a user uses a number by performing a calculation with it, the number then becomes out of use. This is shown by a black strike (text-decoration) through the used number, reminding the user that the number is no longer in use| ![screenshot](documentation/features/used-numbers.png) |
+
+
+| Orientation Lock (Small Screen) | If the screen width is small, a warning appears telling the user to increase the size of their screen. This ensures the best layout and usability for small screens. | ![screenshot](documentation/features/404.png) |
+
+| User Registration Form | A simple registration form allows users to submit their details (e.g. name, email). This feature helps capture user interest, creates a sense of personal engagement, and could support future personalization or score-tracking. | ![screenshot](documentation/features/user-registration.png)  |
+
+| 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Maths* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
 
 
 ### Future Features
