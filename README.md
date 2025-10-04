@@ -209,7 +209,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
 | Difficulty Selection | Users can choose from multiple difficulty levels that set different countdown timers. This helps beginners learn at a slower pace, while advanced players can push their speed and accuracy. | ![screenshot](documentation/features/difficulty-selection.png) |
-| EquationCountdown Timer | A digital style timer, offering a clear and simple look, counts down during gameplay. This adds urgency and excitement, encouraging focus and simulating the real Countdown game.| ![screenshot](documentation/features/timer-countdown.png) |
+| Countdown Timer | A digital style timer, offering a clear and simple look, counts down during gameplay. This adds urgency and excitement, encouraging focus and simulating the real Countdown game.| ![screenshot](documentation/features/timer-countdown.png) |
 | Submit Answer | This is enabled by the user clicking the OK button on the built-in keyboard. It allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
 | Random Number Generation | Six numbers are generated at random (four small, two large). This ensures variety, so each game feels unique and unpredictable. | ![screenshot](documentation/features/random-numbers.png) |
 | Target Number | A random target number is generated using only the numbers from the "6 random numbers generated in the previous step, and mathmateical operators to ensure the target number is realistic and achievable for players to reach. This provides a clear goal and challenge for each play. | ![screenshot](documentation/features/target-number.png) |
@@ -222,7 +222,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Used Numbers| When a user uses a number by performing a calculation with it, the number then becomes out of use. This is shown by a black strike (text-decoration) through the used number, reminding the user that the number is no longer in use| ![screenshot](documentation/features/used-numbers.png) |
 | Orientation Lock (Small Screen) | If the screen width is small, a warning appears telling the user to increase the size of their screen. This ensures the best layout and usability for small screens. | ![screenshot](documentation/features/orientation-lock-small-screen.png) |
 | User Registration Form | A simple registration form allows users to submit their details (e.g. name, email). This feature helps capture user interest, creates a sense of personal engagement, and could support future personalization or score-tracking. | ![screenshot](documentation/features/user-registration.png)  |
-| 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Maths* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
+| 404 Error Message | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Maths* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
 
 
 ### Future Features
