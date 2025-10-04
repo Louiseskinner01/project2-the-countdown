@@ -107,7 +107,7 @@ Overall, the palette combines high contrast for readability, bright accents for 
 
 
 
-I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to generate my color palette.
+I used [coolors.co](https://coolors.co/palette/4d05f6-ff1493-ffffff-ffef08) to generate my color palette.
 
 - `#4d05f6`  --main-theme-color.
 - `#ffef08`  --sub-theme-color.
