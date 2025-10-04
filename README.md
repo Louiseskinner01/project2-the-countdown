@@ -215,22 +215,25 @@ In this section, you should go over the different parts of your project, and des
 
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
-| Operators | The mathematical operators (`+`, `-`, `*`, `/`) are large and colorful to allow users to easily select their preferred method of testing their calculation skills. Each operator is color-coded, and has the text name as well for easy identification. | ![screenshot](documentation/features/operators.png) |
-| Equation | This section visibly displays the current equation to be calculated, dynamically updated to use the specific operator that the user has selected above. The empty `<input>` field allows users to enter valid numerical values to test their math skills. | ![screenshot](documentation/features/equation.png) |
+| Difficulty Selection | Users can choose from multiple difficulty levels that set different countdown timers. This helps beginners learn at a slower pace, while advanced players can push their speed and accuracy. | ![screenshot](documentation/features/operators.png) |
+| EquationCountdown Timer | A large, clear timer counts down during gameplay. This adds urgency and excitement, encouraging focus and simulating the real Countdown game.| ![screenshot](documentation/features/equation.png) |
 | Submit Answer | This button allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
-| Scores | This section tallies the total number of *correct* and *incorrect* answers that the user has calculated. Green to represent *correct*, and red to represent *incorrect*. | ![screenshot](documentation/features/scores.png) |
-| Alerts | Depending on whether or not the user gets the calculation correct or incorrect, alerts are used to provide simple feedback to the user. This showcases if they got it correct, or if they've gotten it incorrect, therefore also showing the correct answer. | ![screenshot](documentation/features/alerts.png) |
+| Random Number Generation | Six numbers are generated at random (four small, two large). This ensures variety, so each game feels unique and unpredictable. | ![screenshot](documentation/features/scores.png) |
+| Target Number | A random target number is generated using only the numbers from the "6 random numbers generated in the previous step, and mathmateical operators to ensure the target number is realistic and achievable for players to reach. This provides a clear goal and challenge for each play. | ![screenshot](documentation/features/alerts.png) |
 | 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Maths* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
+|Built-in Keypad | An interactive customised to provide a simplistic and clean gameplay. This ensures accessibility on both desktop and mobile, while preventing invalid inputs.| ![screenshot](documentation/features/404.png) |
+| Equation Validation & Feedback | Equations are checked instantly. Correct inputs show results, while incorrect ones display error messages. This helps users learn and avoid repeated mistakes. | ![screenshot](documentation/features/404.png) |
+| Undo Feature | Players can undo their last equation. This allows experimentation without penalty, making the game more forgiving and user-friendly. | ![screenshot](documentation/features/404.png) |
+| Results Console | A console displays all previous equations and results. This lets users track their thinking process and reflect on strategies. | ![screenshot](documentation/features/404.png) |
+| Win & Lose Messages | At the end of each game, the player sees a clear outcome: either a celebratory win screen or an encouraging message if unsuccessful. | ![screenshot](documentation/features/404.png) |
+| Play Again Button | After each round, players can restart quickly without reloading the page. This boosts replayability and keeps users engaged. | ![screenshot](documentation/features/404.png) |
+| Orientation Lock (Mobile) | If the device is in portrait mode, a warning appears telling the user to rotate to landscape. This ensures the best layout and usability for small screens. | ![screenshot](documentation/features/404.png) |
+
+
 
 ### Future Features
 
-⚠️ INSTRUCTIONS ⚠️
 
-Do you have additional ideas that you'd like to include on your project in the future? Fantastic, list them here! It's always great to have plans for future improvements. Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-A few examples are listed below to align with possible ways to improve on the sample walkthrough project, to give you some inspiration.
-
-⚠️ --- END ---⚠️
 
 - **Advanced Calculations**: Add support for more complex mathematical operations, like square roots, powers, logarithms, trigonometry (sin, cos, tan), etc.
 - **Equation History**: Display a running log of previous calculations with the ability to recall or reuse past results.
@@ -306,9 +309,39 @@ Consider adding screenshots of your Projects Board(s), Issues (open and closed),
 I've decomposed my Epics into User Stories for prioritizing and implementing them. Using this approach, I was able to apply "MoSCoW" prioritization and labels to my User Stories within the Issues tab.
 
 - **Must Have**: guaranteed to be delivered - required to Pass the project (*max ~60% of stories*)
+
+-Must Have (Core to the project – without these the game doesn’t work)
+-As a player, I want to choose a difficulty level, so that I can play at my preferred challenge and time limit.
+-As a player, I want to see a countdown timer, so that I know how much time I have left to solve the problem.
+-As a player, I want to generate a random set of numbers, so that every game feels different and fresh.
+-As a player, I want to be given a target number, so that I know what I’m aiming for in my calculations.
+-As a player, I want to input equations using a keypad, so that I can interact easily on mobile and desktop.
+-As a player, I want the game to validate my equations, so that I don’t waste time with invalid inputs.
+-As a player, I want instant feedback when I reach the target, so that I know I’ve won.
+-As a player, I want to see a "Play Again" option after finishing a game, so that I can quickly start a new round.
+
+
+
+Advanced operations (like square roots, exponents, or brackets).
 - **Should Have**: adds significant value, but not vital (*~20% of stories*)
+
+-As a player, I want to undo a calculation step, so that I can correct mistakes without restarting the whole game.
+-As a mobile user, I want large, tap-friendly buttons, so that I can play easily on my phone.
+-As a visually impaired user, I want clear colour contrasts (e.g. bold backgrounds and bright highlights), so that I can see buttons and numbers more clearly.
+-As a user with little maths knowledge, I want helpful error messages, so that I understand what I did wrong.
+
 - **Could Have**: has small impact if left out (*the rest ~20% of stories*)
+
+-As a player, I want to start the game only when my device is in landscape mode, so that I can play with a clear and consistent layout.
+-As a casual user, I want to play for fun and relaxation, so that I can enjoy the game without pressure.
+-As a competitive user, I want to solve the problem within the timer, so that I feel challenged.
+-As a learner, I want to practice equations in a playful way, so that I can improve my maths skills without it feeling like work.
+
 - **Won't Have**: not a priority for this iteration - future features
+
+-Multiplayer mode or online leaderboards.
+-Saving player stats across sessions.
+-Custom number sets chosen by the player.
 
 ## Testing
 
