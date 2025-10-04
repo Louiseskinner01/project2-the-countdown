@@ -208,7 +208,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
-| Difficulty Selection | Users can choose from multiple difficulty levels that set different countdown timers. This helps beginners learn at a slower pace, while advanced players can push their speed and accuracy. | ![screenshot](documentation/features/operators.png) |
+| Difficulty Selection | Users can choose from multiple difficulty levels that set different countdown timers. This helps beginners learn at a slower pace, while advanced players can push their speed and accuracy. | ![screenshot](documentation/features/difficulty-selection.png) |
 | EquationCountdown Timer | A digital style timer, offering a clear and simple look, counts down during gameplay. This adds urgency and excitement, encouraging focus and simulating the real Countdown game.| ![screenshot](documentation/features/timer-countdown.png) |
 | Submit Answer | This is enabled by the user clicking the OK button on the built-in keyboard. It allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
 | Random Number Generation | Six numbers are generated at random (four small, two large). This ensures variety, so each game feels unique and unpredictable. | ![screenshot](documentation/features/random-numbers.png) |
