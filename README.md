@@ -165,6 +165,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## User Stories
+### General Play
 
 | Target | Expectation | Outcome |
 | --- | --- | --- |
@@ -181,21 +182,25 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 |As a user | I want to see a "Play Again" option after finishing a game | so that I can quickly start a new game without having to navigate via the nav-links or back buttons. |
 | As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
 
-Accessibility & Usability
 
-As a visually impaired user, I want clear colour contrasts (e.g. bold backgrounds and bright highlights), so that I can see buttons and numbers more clearly.
 
-As a user with little maths knowledge, I want helpful error messages, so that I understand what I did wrong.
+### Accessibility & Usability
 
-As a mobile user, I want large, tap-friendly buttons, so that I can play easily on my phone.
+| Target | Expectation | Outcome |
+| --- | --- | --- |
+| As a visually impaired user | I want clear colour contrasts (e.g. bold backgrounds and bright highlights) | so that I can see buttons and numbers more clearly. |
+| As a user with little maths knowledge| I want helpful error messages | so that I understand what I did wrong. |
+| As a mobile user | I want large, tap-friendly buttons | so that I can play easily on my phone. |
 
-Motivation & Fun
+### Motivation & Fun
 
-As a casual user, I want to play for fun and relaxation, so that I can enjoy the game without pressure.
+| Target | Expectation | Outcome |
+| --- | --- | --- |
+| As a casual user | I want to play for fun and relaxation | so that I can enjoy the game without pressure. |
+| As a competitive user| I want to solve the problem within the timer | so that I feel challenged. |
+| As a learner | I want to practice equations in a playful way | sso that I can improve my maths skills without it feeling like work. |
 
-As a competitive user, I want to solve the problem within the timer, so that I feel challenged.
 
-As a learner, I want to practice equations in a playful way, so that I can improve my maths skills without it feeling like work.
 ## Features
 
 ⚠️ INSTRUCTIONS ⚠️
