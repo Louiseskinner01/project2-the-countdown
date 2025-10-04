@@ -150,19 +150,21 @@ This mix avoids monotony, keeps the design visually interesting, and makes sure 
 
 ## Wireframes
 
-⚠️ INSTRUCTIONS ⚠️
-
-If you've created wireframes or mock-ups, use this section to display screenshots of your wireframes. The example table below uses sample pages from the walkthrough project to give you some inspiration for your own project, so please adjust accordingly.
-
-⚠️ --- END --- ⚠️
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 | Page | Mobile | Tablet | Desktop |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/wireframes/mobile-home.png) | ![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Home | ![screenshot](documentation/wireframes/portrait-home.png) | 
+| [screenshot](documentation/wireframes/mobile-404.png) |![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
+
 | 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+
+| Virtual Events | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+
+| Practice Timestables | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+
+| Instructions | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## User Stories
 ### General Play
@@ -265,15 +267,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
 | [![badge](https://img.shields.io/badge/W3Schools-grey?logo=w3schools&logoColor=04AA6D)](https://www.w3schools.com) | Tutorials/Reference Guide |
 
-⚠️ NOTE ⚠️
-
-Want to add more?
-
-- Tutorial: https://shields.io/badges/static-badge
-- Icons/Logos: https://simpleicons.org
-  - FYI: not all logos are available to use
-
-🛑 --- END --- 🛑
 
 ## Agile Development Process
 
@@ -487,26 +480,10 @@ Looking for some media files? Here are some popular sites to use. The list of ex
 
 - Images
     - [Pexels](https://www.pexels.com)
-    - [Unsplash](https://unsplash.com)
-    - [Pixabay](https://pixabay.com)
-    - [Lorem Picsum](https://picsum.photos) (placeholder images)
-    - [Wallhere](https://wallhere.com) (wallpaper / backgrounds)
-    - [This Person Does Not Exist](https://thispersondoesnotexist.com) (reload to get a new person)
-- Audio
-    - [Audio Micro](https://www.audiomicro.com/free-sound-effects)
-    - [Button Clicks](https://www.zapsplat.com/sound-effect-category/button-clicks)
-    - [Lasers & Weapons](https://www.zapsplat.com/sound-effect-category/lasers-and-weapons/page/5)
-    - [Puzzle Music](https://soundimage.org/puzzle-music)
-    - [Camtasia Audio](https://library.techsmith.com/camtasia/assets/Audio)
-- Video
-    - [Videvo](https://www.videvo.net)
 - Image Compression
     - [TinyPNG](https://tinypng.com) (for images <5MB)
     - [CompressPNG](https://compresspng.com) (for images >5MB)
 
-A few examples have been provided below to give you some ideas on how to do your own Media credits.
-
-⚠️ --- END ---⚠️
 
 | Source | Notes |
 | --- | --- |
@@ -522,12 +499,6 @@ A few examples have been provided below to give you some ideas on how to do your
 | [CloudConvert](https://cloudconvert.com/webp-converter) | Converting images to `.webp` |
 
 ### Acknowledgements
-
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to provide attribution and acknowledgement to any supports that helped, encouraged, or supported you throughout the development stages of this project. It's always lovely to appreciate those that help us grow and improve our developer skills. A few examples have been provided below to give you some ideas.
-
-⚠️ --- END ---⚠️
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://www.github.com/TravelTimN) for the support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) Tutor Team for their assistance with troubleshooting and debugging some project issues.
