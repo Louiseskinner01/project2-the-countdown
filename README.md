@@ -105,7 +105,7 @@ This is used consistently for text, borders, and highlights. Purple is bold and 
 Sub Theme Color – #ffef08 (Bright Yellow)
 This acts as the primary accent color. Yellow conveys urgency and draws attention, making it ideal for interactive elements like buttons, titles, and the console "PLAY?" prompt. It reinforces the game’s competitive and time-based nature by injecting vibrancy.
 
-Feature Color – deeppink
+Feature Color – deeppink (Pink)
 Pink is used sparingly for standout features and strike-through markers. This introduces variety and visual hierarchy, helping the player notice when numbers have been used. It also adds a playful, fun edge to balance the intensity of the purple and yellow.
 
 Calm Color – #ffffff (White)
@@ -115,7 +115,6 @@ Background Gradient
 The page background is styled with a linear gradient that flows from soft pastel pinks (#feddfc) into deep blues (#1717f6), vivid magentas (#f40590), and bright sky tones (#67dcf0). This gradient was chosen to create a sense of depth and progression, evoking the feeling of moving through different "levels" of the game. It also makes the environment more immersive and engaging, giving the interface a playful, almost arcade-like atmosphere while still keeping readability intact.
 
 Overall, the palette combines high contrast for readability, bright accents for engagement, and a gradient backdrop to establish a playful yet immersive mood. This ensures the game feels both exciting and approachable while keeping the focus on solving the puzzle. 
-
 
 
 I used [coolors.co](https://coolors.co/palette/4d05f6-ff1493-ffffff-ffef08) to generate my color palette.
@@ -167,24 +166,36 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ## User Stories
 
-⚠️ INSTRUCTIONS ⚠️
-
-In this section, list all of your possible user stories for the project. Samples have been provided below using the example walkthrough project for your inspiration. Make sure to adjust to match your own project features!
-
-⚠️ --- END --- ⚠️
-
 | Target | Expectation | Outcome |
 | --- | --- | --- |
-| As a user | I would like to input two numbers and select an operator (`+`, `-`, `*`, `/`) | so that I can calculate a result. |
-| As a user | I would like the application to show me an error message if I enter empty input (`NaN`) | so that I understand what went wrong. |
-| As a user | I would like the calculation to happen instantly after I select an operator | so that I get my result quickly without waiting. |
-| As a user | I would like the application to have clear and large buttons for each operator | so that I can easily select the correct one on any device. |
-| As a user | I would like the application to have high-contrast colors and accessible fonts | so that I can easily read and interact with it. |
-| As a user | I would like clear labels and instructions | so that I understand how to use the app without confusion. |
-| As a user | I would like the app to show me the correct result if my equation was incorrect | so that I understand how the answer was calculated. |
-| As a user |  I would like to see how many equations I get correct or incorrect | so I can push myself to improve my math skills. |
+| As a user |want to start the game only when my device is in landscape mode | so that I can play with a clear and consistent layout |
+| As a user | I want to choose a difficulty level | o that I can play at my preferred challenge and time limit. |
+| As a user | I want to see a countdown timer, | so that I know how much time I have left to solve the problem. |
+| As a user | I want to generate a random set of numbers | so that every game feels different and fresh. |
+| As a user | I want to be given a target number | sso that I know what I’m aiming for in my calculations. |
+| As a user | I would like clear labels and instructions | so that I understand how to play the game without confusion. |
+| As a user | I want to be given a target number | so that I know what I’m aiming for in my calculations. |
+| As a user |  I want the game to validate my equations | o that I don’t waste time with invalid inputs. |
+| As a user | I want to undo a calculation step | so that I can correct mistakes without restarting the whole game. |
+|As a user | I want instant feedback when I reach the target | so that I know I’ve won.|
+|As a user | I want to see a "Play Again" option after finishing a game | so that I can quickly start a new game without having to navigate via the nav-links or back buttons. |
 | As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
 
+Accessibility & Usability
+
+As a visually impaired user, I want clear colour contrasts (e.g. bold backgrounds and bright highlights), so that I can see buttons and numbers more clearly.
+
+As a user with little maths knowledge, I want helpful error messages, so that I understand what I did wrong.
+
+As a mobile user, I want large, tap-friendly buttons, so that I can play easily on my phone.
+
+Motivation & Fun
+
+As a casual user, I want to play for fun and relaxation, so that I can enjoy the game without pressure.
+
+As a competitive user, I want to solve the problem within the timer, so that I feel challenged.
+
+As a learner, I want to practice equations in a playful way, so that I can improve my maths skills without it feeling like work.
 ## Features
 
 ⚠️ INSTRUCTIONS ⚠️
