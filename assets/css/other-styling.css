@@ -84,3 +84,21 @@ form {
 h2.text-center.feature-color {
   color: white !important;
 }
+
+
+#error-code {
+  text-align: center;
+  color: var(--sub--theme-color) !important;
+  font-size: 8rem;
+}
+
+.error-message {
+  margin: 0px 30px 20px 30px;
+  color: var(--calm-color);
+  font-size: 2rem;
+}
+
+#back-to-home {
+  color: yellow;
+  margin: 0 30px;
+}
