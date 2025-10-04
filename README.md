@@ -106,19 +106,17 @@ The page background is styled with a linear gradient that flows from soft pastel
 Overall, the palette combines high contrast for readability, bright accents for engagement, and a gradient backdrop to establish a playful yet immersive mood. This ensures the game feels both exciting and approachable while keeping the focus on solving the puzzle.
 
 
- [coolors](https://coolors.co/generate).
-
-
-
 
 I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to generate my color palette.
 
-- `#000000` primary text.
-- `#3772FF` primary highlights.
-- `#DF2935` secondary text.
-- `#FDCA40` secondary highlights.
+- `#4d05f6`  --main-theme-color.
+- `#ffef08`  --sub-theme-color.
+- `deeppink`  --feature-color.
+- `#ffffff` --calm-color.
 
-![screenshot](documentation/coolors.png)
+
+
+![screenshot](documentation/images/coolors-colour-theme.png)
 
 ### Typography
 
