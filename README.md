@@ -225,8 +225,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Equation Validation & Feedback | Equations are checked instantly. Correct inputs show results, while incorrect ones display error messages. This helps users learn and avoid repeated mistakes. | ![screenshot](documentation/features/equation-validation.png) |
 
 
-| Undo Feature | Players can undo their last equation. This allows experimentation without penalty, making the game more forgiving and user-friendly. | ![screenshot](documentation/features/undo-btn.png) |
-
+| Undo Feature | Players can undo their last equation. This allows experimentation without penalty, making the game more forgiving and user-friendly. | ![screenshot](../documentation/features/undo-btn.png) |
 
 
 | Results Console | A console displays all previous equations and results. This lets users track their thinking process and reflect on strategies. | ![screenshot](documentation/features/404.png) |
