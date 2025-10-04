@@ -169,14 +169,14 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 | Target | Expectation | Outcome |
 | --- | --- | --- |
-| As a user |want to start the game only when my device is in landscape mode | so that I can play with a clear and consistent layout |
-| As a user | I want to choose a difficulty level | o that I can play at my preferred challenge and time limit. |
+| As a user | I want to start the game only when my device is in landscape mode | so that I can play with a clear and consistent layout |
+| As a user | I want to choose a difficulty level | so that I can play at my preferred challenge and time limit. |
 | As a user | I want to see a countdown timer, | so that I know how much time I have left to solve the problem. |
 | As a user | I want to generate a random set of numbers | so that every game feels different and fresh. |
-| As a user | I want to be given a target number | sso that I know what I’m aiming for in my calculations. |
+| As a user | I want to be given a target number | so that I know what I’m aiming for in my calculations. |
 | As a user | I would like clear labels and instructions | so that I understand how to play the game without confusion. |
 | As a user | I want to be given a target number | so that I know what I’m aiming for in my calculations. |
-| As a user |  I want the game to validate my equations | o that I don’t waste time with invalid inputs. |
+| As a user |  I want the game to validate my equations | so that I don’t waste time with invalid inputs. |
 | As a user | I want to undo a calculation step | so that I can correct mistakes without restarting the whole game. |
 |As a user | I want instant feedback when I reach the target | so that I know I’ve won.|
 |As a user | I want to see a "Play Again" option after finishing a game | so that I can quickly start a new game without having to navigate via the nav-links or back buttons. |
@@ -228,12 +228,11 @@ In this section, you should go over the different parts of your project, and des
 | Win & Lose Messages | At the end of each game, the player sees a clear outcome: either a celebratory win screen or an encouraging message if unsuccessful. | ![screenshot](documentation/features/404.png) |
 | Play Again Button | After each round, players can restart quickly without reloading the page. This boosts replayability and keeps users engaged. | ![screenshot](documentation/features/404.png) |
 | Orientation Lock (Mobile) | If the device is in portrait mode, a warning appears telling the user to rotate to landscape. This ensures the best layout and usability for small screens. | ![screenshot](documentation/features/404.png) |
+| User Registration Form | A simple registration form allows users to submit their details (e.g. name, email). This feature helps capture user interest, creates a sense of personal engagement, and could support future personalization or score-tracking. | ![screenshot](documentation/features/404.png)  |
 
 
 
 ### Future Features
-
-
 
 - **Advanced Calculations**: Add support for more complex mathematical operations, like square roots, powers, logarithms, trigonometry (sin, cos, tan), etc.
 - **Equation History**: Display a running log of previous calculations with the ability to recall or reuse past results.
@@ -342,6 +341,24 @@ Advanced operations (like square roots, exponents, or brackets).
 -Multiplayer mode or online leaderboards.
 -Saving player stats across sessions.
 -Custom number sets chosen by the player.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Testing
 
