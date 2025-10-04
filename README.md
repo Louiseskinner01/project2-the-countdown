@@ -114,21 +114,29 @@ I used [coolors.co](https://coolors.co/palette/4d05f6-ff1493-ffffff-ffef08) to g
 - `deeppink`  --feature-color.
 - `#ffffff` --calm-color.
 
-
-
 ![screenshot](documentation/images/coolors-colour-theme.png)
 
 ### Typography
 
-⚠️ INSTRUCTIONS ⚠️
+The typography was selected to reflect both the futuristic arcade feel of the game and the clarity needed for puzzle-solving. The fonts have been imported from Google Fonts and have been used in the following way:
 
-Explain any fonts and icon libraries used, like **Google Fonts**, **Font Awesome**, etc. Consider adding a link to each font used, the Font Awesome site (if used), or similar icon library.
+Main Font – Orbitron (Sans-serif)
+Orbitron is a geometric, futuristic typeface that immediately evokes the feeling of technology and digital displays. It’s used across the main interface to give the game a bold, modern identity while also being highly legible.
+
+Sub Font – Scope One (Serif)
+Scope One provides contrast as a softer, more traditional serif font. It’s used in secondary headings and text to balance Orbitron’s sharp edges with a touch of readability and elegance. This contrast helps establish hierarchy in the design.
+
+Working Grid Font – Libre Franklin (Sans-serif)
+Libre Franklin is applied to the working-out grid and keypad. It’s a clean, highly legible sans-serif that makes input fields and number interactions easy to read during gameplay. Its neutrality ensures the focus stays on solving equations, while still harmonizing with the more stylistic fonts.
+
+Together, these fonts combine futuristic energy (Orbitron), clarity for calculations (Libre Franklin), and balance through traditional contrast (Scope One). This mix reinforces the game’s identity as both playful and puzzle-driven.
+
+Instead of sticking to a single font, I intentionally combined three typefaces to give the game a unique personality while still prioritizing readability.
+This mix avoids monotony, keeps the design visually interesting, and makes sure that both the thematic elements and functional aspects of the game are well supported.
 
 
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+
 
 ## Wireframes
 
