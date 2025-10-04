@@ -10,51 +10,28 @@ Developer: Louise Skinner ([Louiseskinner01](https://www.github.com/Louiseskinne
 ⚠️ PROJECT INTRODUCTION AND RATIONALE⚠️
 The Countdown Game is a web-based recreation of the classic British TV quiz show Countdown, designed for both desktop and mobile browsers. The game challenges players by generating a set of random numbers along with a target number. The player must use their arithmetic problem-solving skills to reach the target, using the given numbers and any results from calculation made. Numbers can only be used once unless the user undoes their previous equation making the number available to use again. It’s a time-based, single-player experience that combines fun with cognitive skill-building.
 
-
 The project aims to deliver a sleek, responsive interface with an engaging user experience, complete with a real-time countdown timer, score tracking, and validation of answers. The game is ideal for casual play and educational purposes alike.
 
 The rationale behind this project is to develop a browser-based game that encourages mental agility, problem-solving, and quick thinking — skills that are often underrepresented in typical casual games. Inspired by the enduring popularity of the Countdown show, this web app provides an accessible version of the game without requiring installation or login.
 
-From a development perspective, this project serves as a practical application of web development fundamentals, including DOM manipulation, timers, responsive design, and user input validation. It also presents features like device orientation handling — bettering the user experience.
+From a development perspective, this project serves as a practical application of web development fundamentals, including DOM manipulation, a timer, responsive design, and user input validation. It also presents features like device orientation handling — bettering the user experience.
 
 
 
-⚠️ --- END --- ⚠️
 
-🛑 README NOTES 🛑
 
-Do not add a **Table of Contents** to your Markdown files. GitHub has these built-in automatically using the headers/hashtags.
 
-Don't add screenshots for the README/TESTING into your `assets` or `static` folders. Create a new folder at the root-level called `documentation`. Consider creating sub-directories within `documentation` to handle things like `wireframes`, `features`, `validation`, `responsiveness`, etc.
 
-Learn about Markdown Alerts (aka Callouts), a fairly new feature for GitHub Markdown files.
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts
-Note: these are not visible within your README Previewer, and are only visible once you push the code to GitHub.
 
 **Site Mockups**
-*([amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown), [techsini](https://techsini.com/multi-mockup), etc.)*
-Having issues generating site mockups? This is likely due to security policies with your deployed site.
-If you open up your DevTools, there may be an error referencing `X-Frame-Options`.
-
-For Chrome users, head over to http://bit.ly/3iRPn4u and install the extension within your browser. Once installed, navigate back to the mockup site of your choice. You should find your site rendering in the various devices now.
-
-Alternatively, open your project in Gitpod and run the server. Once the site is running, click the `Ports` tab from your Gitpod Terminal. Click the padlock on the appropriate port for your project (`Flask: 5000`, `Django: 8000`). This will make your local page public temporarily. Now, copy the URL of your live-preview page into the responsive tool above. You should find your site rendering in the various devices.
-
-🛑 --- END ---- 🛑
+*([amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
 
 ![screenshot](documentation/mockup.png)
 
 source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
-
-> [!IMPORTANT]  
-> The examples in these templates are strongly influenced by the Code Institute walkthrough project called "Love Maths".
-
 ## UX
 
 ### The 5 Planes of UX
-
-⚠️ NOTE: make sure to update the text below to match your own project! ⚠️
-
 #### 1. Strategy
 
 **Purpose**
@@ -109,13 +86,30 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 
 ### Colour Scheme
 
-⚠️INSTRUCTIONS ⚠️
+The color palette was designed to balance energy, clarity, and playfulness, supporting both usability and visual excitement for the player:
 
-Explain your colors and color scheme. Consider adding a link and screenshot for your color scheme using [coolors](https://coolors.co/generate).
+Main Theme Color – #4d05f6 (Deep Purple/Blue)
+This is used consistently for text, borders, and highlights. Purple is bold and energetic, while still being easy on the eyes. It provides strong contrast against the lighter background and gives the game a modern, tech-inspired aesthetic.
 
-When you add a color to the palette, the URL is dynamically updated, making it easier for you to return back to your color palette later if needed. See example below:
+Sub Theme Color – #ffef08 (Bright Yellow)
+This acts as the primary accent color. Yellow conveys urgency and draws attention, making it ideal for interactive elements like buttons, titles, and the console "PLAY?" prompt. It reinforces the game’s competitive and time-based nature by injecting vibrancy.
 
-⚠️ --- END --- ⚠️
+Feature Color – deeppink
+Pink is used sparingly for standout features and strike-through markers. This introduces variety and visual hierarchy, helping the player notice when numbers have been used. It also adds a playful, fun edge to balance the intensity of the purple and yellow.
+
+Calm Color – #ffffff (White)
+White provides a neutral balance to the bold theme and is used for backgrounds, ensuring that text and game elements remain legible. It keeps the interface clean and prevents the brighter colors from overwhelming the user.
+
+Background Gradient
+The page background is styled with a linear gradient that flows from soft pastel pinks (#feddfc) into deep blues (#1717f6), vivid magentas (#f40590), and bright sky tones (#67dcf0). This gradient was chosen to create a sense of depth and progression, evoking the feeling of moving through different "levels" of the game. It also makes the environment more immersive and engaging, giving the interface a playful, almost arcade-like atmosphere while still keeping readability intact.
+
+Overall, the palette combines high contrast for readability, bright accents for engagement, and a gradient backdrop to establish a playful yet immersive mood. This ensures the game feels both exciting and approachable while keeping the focus on solving the puzzle.
+
+
+ [coolors](https://coolors.co/generate).
+
+
+
 
 I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to generate my color palette.
 
@@ -132,7 +126,7 @@ I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to ge
 
 Explain any fonts and icon libraries used, like **Google Fonts**, **Font Awesome**, etc. Consider adding a link to each font used, the Font Awesome site (if used), or similar icon library.
 
-⚠️ --- END --- ⚠️
+
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
 - [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
