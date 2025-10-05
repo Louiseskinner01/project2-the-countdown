@@ -2,6 +2,50 @@
 
 The primary goal of testing was to ensure the Countdown Game application performs consistently across multiple devices and screen sizes, maintaining both functionality and user experience.
 
+
+## Approach
+Testing was carried out to ensure that the website functions as intended, is responsive across different devices, and provides a smooth and intuitive user experience.
+All tests were conducted manually, using a combination of Google Chrome DevTools, HTML/CSS/JS validation tools, and live user interaction testing.
+
+
+### Methods
+
+| Method                    | Description                                                                                                                                                                        | Tools Used                                                                                                                                |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Manual Testing**        | Each feature and button was manually tested to verify correct functionality. This included checking form submissions, button click responses, game flow, and orientation behavior. | Browser console, on-screen interaction                                                                                                    |
+| **Responsive Testing**    | Tested using Chrome DevTools’ built-in device emulation. Ensured the layout adapts correctly to different screen widths and orientations.                                          | Chrome DevTools                                                                                                                           |
+| **Cross-Browser Testing** | Tested in multiple browsers to ensure consistent design, color rendering, and interactivity.                                                                                       | Chrome, Firefox, Safari, Edge, Opera                                                                                                      |
+| **Validation Testing**    | Used validation tools to check that the HTML, CSS, and JavaScript are free from syntax errors and follow best practices.                                                           | [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/), [JSHint](https://jshint.com/) |
+| **Accessibility Testing** | Checked color contrast, font readability, tab navigation, and proper use of ARIA and semantic tags where applicable.                                                               | Chrome Lighthouse, manual checks                                                                                                          |
+| **Performance Testing**   | Evaluated page load speed and responsiveness using Chrome Lighthouse.                                                                                                              | Chrome DevTools > Lighthouse                                                                                                              |
+
+
+### 
+
+| Feature Tested      | Test Performed                                   | Expected Outcome                                | Result              |
+| ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- |
+| Start Game Button   | Clicked “PLAY?” and then “Start Game”            | Game begins, keypad becomes active              | ✅ Works as expected |
+| Orientation Warning | Rotated mobile device from portrait to landscape | Warning disappears and game becomes visible     | ✅ Works as expected |
+| Difficulty Buttons  | Selected “Easy / Medium / Hard”                  | Correct timer and equation difficulty displayed | ✅ Works as expected |
+| Keypad Input        | Clicked number keys and OK                       | Values entered correctly into equation input    | ✅ Works as expected |
+| Undo Button         | Clicked “Undo” after equation                    | Input cleared, numbers reactivated              | ✅ Works as expected |
+| Timer Countdown     | Started game at different difficulties           | Timer matched selected duration                 | ✅ Works as expected |
+
+
+### Validation summary
+
+| Validator               | Outcome                                                                 |
+| ----------------------- | ----------------------------------------------------------------------- |
+| **W3C HTML Validator**  | No major errors found; minor warnings fixed (e.g., attribute ordering). |
+| **W3C CSS Validator**   | Passed successfully; all CSS properties valid.                          |
+| **JSHint (JavaScript)** | Minor warnings about unused variables corrected. No functional errors.  |
+
+
+
+
+
+
+
 Google Chrome DevTools was used extensively to simulate various device viewports, including popular smartphones, tablets, and desktop resolutions. This allowed for a controlled testing environment to verify that the layout, interactive elements, and overall responsiveness behaved as intended under different conditions.
 
 Particular attention was given to:
