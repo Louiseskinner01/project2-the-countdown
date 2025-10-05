@@ -1,6 +1,6 @@
 
 
-The primary goal of testing was to ensure the Countdown Game application performs consistently across multiple devices and screen sizes, maintaining both functionality and user experience.
+The primary goal of testing was to ensure the Countdown Game application performs consistently across multiple devices and screen sizes, maintaining both functionality and a good user experience.
 
 
 ## Approach
@@ -14,7 +14,7 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **Manual Testing**        | Each feature and button was manually tested to verify correct functionality. This included checking form submissions, button click responses, game flow, and orientation behavior. | Browser console, on-screen interaction                                                                                                    |
 | **Responsive Testing**    | Tested using Chrome DevTools’ built-in device emulation. Ensured the layout adapts correctly to different screen widths and orientations.                                          | Chrome DevTools                                                                                                                           |
-| **Cross-Browser Testing** | Tested in multiple browsers to ensure consistent design, color rendering, and interactivity.                                                                                       | Chrome, Firefox, Safari, Edge                                                                                                     |
+| **Cross-Browser Compatibility Testing** | Tested in multiple browsers to ensure consistent design, color rendering, and interactivity.                                                                                       | Chrome, Firefox, Safari, Edge                                                                                                     |
 | **Validation Testing**    | Used validation tools to check that the HTML, CSS, and JavaScript are free from syntax errors and follow best practices.                                                           | [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/), [JSHint](https://jshint.com/) |
 | **Accessibility Testing** | Checked color contrast, font readability, tab navigation, and proper use of ARIA and semantic tags where applicable.                                                               | Chrome Lighthouse, manual checks                                                                                                          |
 | **Performance Testing**   | Evaluated page load speed and responsiveness using Chrome Lighthouse.                                                                                                              | Chrome DevTools > Lighthouse                                                                                                              |
@@ -128,22 +128,9 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 
 
 
-
-
-
-
-
 ## Testing Summaries 
 
-### Validation summary
-
-| Validator               | Outcome                                                                 |
-| ----------------------- | ----------------------------------------------------------------------- |
-| **W3C HTML Validator**  | No major errors found; minor warnings fixed (e.g., attribute ordering). | (screen shot) |
-| **W3C CSS Validator**   | Passed successfully; all CSS properties valid.                          | (screen shot) |
-| **JSHint (JavaScript)** | Minor warnings about unused variables corrected. No functional errors.  | (screen shot) |
-
-### Browser Compatitbility
+### Cross-Browser Compatitbility
 
 To ensure a consistent and accessible user experience across all devices and browsers, the project was thoroughly tested using Google Chrome DevTools. This allowed emulation of multiple devices (iPhone, Samsung Galaxy, iPad, Surface Duo, etc.) and responsive breakpoints to verify that all layout, interaction, and orientation features behaved correctly.
 
@@ -158,6 +145,14 @@ The goal was to confirm that the app provides the same smooth gameplay and respo
 | **Safari (Mac / iOS)** | ✅ Fully functional | Orientation message and button interactivity confirmed working.                                      | (screen shot) |
 | **Microsoft Edge**     | ✅ Fully functional | Same rendering behavior as Chrome (uses Chromium engine).                                            | (screen shot) |
 
+### Validation summary
+
+| Validator               | Outcome                                                                 |
+| ----------------------- | ----------------------------------------------------------------------- |
+| **W3C HTML Validator**  | No major errors found; minor warnings fixed (e.g., attribute ordering). | (screen shot) |
+| **W3C CSS Validator**   | Passed successfully; all CSS properties valid.                          | (screen shot) |
+| **JSHint (JavaScript)** | Minor warnings about unused variables corrected. No functional errors.  | (screen shot) |
+
 ### Accessibility Summary 
 
 | Test                                                             | Result |
@@ -167,3 +162,8 @@ The goal was to confirm that the app provides the same smooth gameplay and respo
 | Interactive elements clearly labeled and accessible via keyboard | ✅      |
 | ARIA labels provided for key game sections                       | ✅      |
 | Orientation and responsiveness maintained for screen readers     | ✅      |
+
+
+### Performance summary
+
+#### Lighthouse
