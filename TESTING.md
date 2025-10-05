@@ -32,13 +32,6 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 | Timer Countdown     | Started game at different difficulties           | Timer matched selected duration                 | ✅ Works as expected |
 
 
-### Validation summary
-
-| Validator               | Outcome                                                                 |
-| ----------------------- | ----------------------------------------------------------------------- |
-| **W3C HTML Validator**  | No major errors found; minor warnings fixed (e.g., attribute ordering). |
-| **W3C CSS Validator**   | Passed successfully; all CSS properties valid.                          |
-| **JSHint (JavaScript)** | Minor warnings about unused variables corrected. No functional errors.  |
 
 
 
@@ -119,6 +112,15 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 | “As a user, I want to play again quickly.”             | Play Again button reloads game.        | ✅ Works     |
 
 
+## Testing Summaries 
+
+### Validation summary
+
+| Validator               | Outcome                                                                 |
+| ----------------------- | ----------------------------------------------------------------------- |
+| **W3C HTML Validator**  | No major errors found; minor warnings fixed (e.g., attribute ordering). | (screen shot) |
+| **W3C CSS Validator**   | Passed successfully; all CSS properties valid.                          | (screen shot) |
+| **JSHint (JavaScript)** | Minor warnings about unused variables corrected. No functional errors.  | (screen shot) |
 
 ### Browser Compatitbility
 
@@ -130,10 +132,10 @@ The goal was to confirm that the app provides the same smooth gameplay and respo
 
 | Browser                | Result             | Notes / Screenshots                                                                                  |
 | ---------------------- | ------------------ | ---------------------------------------------------------------------------------------------------- |
-| **Google Chrome**      | ✅ Fully functional | Responsive design works across all breakpoints (mobile, tablet, desktop). No layout issues detected. |
-| **Mozilla Firefox**    | ✅ Fully functional | Minor font rendering differences due to browser engine.                                              |
-| **Safari (Mac / iOS)** | ✅ Fully functional | Orientation message and button interactivity confirmed working.                                      |
-| **Microsoft Edge**     | ✅ Fully functional | Same rendering behavior as Chrome (uses Chromium engine).                                            |
+| **Google Chrome**      | ✅ Fully functional | Responsive design works across all breakpoints (mobile, tablet, desktop). No layout issues detected. | (screen shot) |
+| **Mozilla Firefox**    | ✅ Fully functional | Minor font rendering differences due to browser engine.                                              | (screen shot) |
+| **Safari (Mac / iOS)** | ✅ Fully functional | Orientation message and button interactivity confirmed working.                                      | (screen shot) |
+| **Microsoft Edge**     | ✅ Fully functional | Same rendering behavior as Chrome (uses Chromium engine).                                            | (screen shot) |
 
 ### Accessibility Summary 
 
