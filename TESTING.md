@@ -17,13 +17,18 @@ Visual consistency: Checking that colours, fonts, and spacing remain aligned wit
 By testing through Chrome DevTools, I was able to efficiently identify and resolve layout shifts, overlapping elements, and scaling issues before deployment. This ensured the final build delivered a clean, accessible, and user-friendly experience on all supported devices.
 
 
-| Device               | Screen Size                   | Result                     |
-| -------------------- | ----------------------------- | -------------------------- |
-| iPhone 12            | 390x844                       | ✅ Fully responsive         |
-| iPad                 | 810x1080                      | ✅ Layout adjusts correctly |
-| Laptop (13”)         | 1366x768                      | ✅ No layout issues         |
-| Desktop (Full HD)    | 1920x1080                     | ✅ Works perfectly          |
-| Ultra-wide (2560px+) | ✅ Layout remains proportional |                            |
+| Device                  | Screen Size (Approx.) | Orientation Tested   | Result                                                              |
+| ----------------------- | --------------------- | -------------------- | ------------------------------------------------------------------- |
+| iPhone SE               | 375 × 667 px          | Portrait / Landscape | ✅ Fully functional and responsive                                   |
+| iPhone 12 Pro           | 390 × 844 px          | Portrait / Landscape | ✅ Layout scales correctly, all buttons accessible                   |
+| iPhone 14 Pro Max       | 430 × 932 px          | Portrait / Landscape | ✅ Smooth transition between orientations                            |
+| Pixel 7                 | 412 × 915 px          | Portrait / Landscape | ✅ Responsive elements adjust correctly                              |
+| Samsung Galaxy S8+      | 360 × 740 px          | Portrait / Landscape | ✅ No layout distortion observed                                     |
+| iPad Air                | 820 × 1180 px         | Portrait / Landscape | ✅ Layout adjusts well; game content centered                        |
+| iPad Mini               | 768 × 1024 px         | Portrait / Landscape | ✅ Fully functional; text and button scaling appropriate             |
+| Surface Pro 7           | 912 × 1368 px         | Landscape            | ✅ Desktop-style layout renders correctly                            |
+| Desktop (1080p)         | 1920 × 1080 px        | Landscape            | ✅ All components display as intended with balanced spacing          |
+| Large Display (2560px+) | Variable              | Landscape            | ✅ Tested using media query breakpoint; scaling remains proportional |
 
 
 
