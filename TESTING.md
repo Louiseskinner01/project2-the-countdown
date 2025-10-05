@@ -120,7 +120,7 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 
 
 
-
+### Browser Compatitbility
 
 To ensure a consistent and accessible user experience across all devices and browsers, the project was thoroughly tested using Google Chrome DevTools. This allowed emulation of multiple devices (iPhone, Samsung Galaxy, iPad, Surface Duo, etc.) and responsive breakpoints to verify that all layout, interaction, and orientation features behaved correctly.
 
@@ -134,4 +134,13 @@ The goal was to confirm that the app provides the same smooth gameplay and respo
 | **Mozilla Firefox**    | ✅ Fully functional | Minor font rendering differences due to browser engine.                                              |
 | **Safari (Mac / iOS)** | ✅ Fully functional | Orientation message and button interactivity confirmed working.                                      |
 | **Microsoft Edge**     | ✅ Fully functional | Same rendering behavior as Chrome (uses Chromium engine).                                            |
-| **Opera**              | ✅ Fully functional | Smooth animations and transitions preserved.                                                         |
+
+### Accessibility Summary 
+
+| Test                                                             | Result |
+| ---------------------------------------------------------------- | ------ |
+| Color contrast meets WCAG 2.1 standards                          | ✅      |
+| Text size and spacing adjustable                                 | ✅      |
+| Interactive elements clearly labeled and accessible via keyboard | ✅      |
+| ARIA labels provided for key game sections                       | ✅      |
+| Orientation and responsiveness maintained for screen readers     | ✅      |
