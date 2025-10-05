@@ -1,6 +1,20 @@
 
 
+The primary goal of testing was to ensure the Countdown Game application performs consistently across multiple devices and screen sizes, maintaining both functionality and user experience.
 
+Google Chrome DevTools was used extensively to simulate various device viewports, including popular smartphones, tablets, and desktop resolutions. This allowed for a controlled testing environment to verify that the layout, interactive elements, and overall responsiveness behaved as intended under different conditions.
+
+Particular attention was given to:
+
+Responsive design: Ensuring all elements (buttons, grids, and text) resize and reposition correctly.
+
+Touch interactions: Confirming buttons and inputs respond properly on smaller screens.
+
+Orientation changes: Validating that the landscape and portrait orientation logic functions correctly on mobile devices.
+
+Visual consistency: Checking that colours, fonts, and spacing remain aligned with the intended design across all viewports.
+
+By testing through Chrome DevTools, I was able to efficiently identify and resolve layout shifts, overlapping elements, and scaling issues before deployment. This ensured the final build delivered a clean, accessible, and user-friendly experience on all supported devices.
 
 
 | Device               | Screen Size                   | Result                     |
