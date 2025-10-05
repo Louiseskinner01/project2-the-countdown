@@ -20,7 +20,9 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 | **Performance Testing**   | Evaluated page load speed and responsiveness using Chrome Lighthouse.                                                                                                              | Chrome DevTools > Lighthouse                                                                                                              |
 
 
-### 
+### Manual Tests
+
+#### Features
 
 | Feature Tested      | Test Performed                                   | Expected Outcome                                | Result              |
 | ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- |
@@ -32,6 +34,40 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 | Timer Countdown     | Started game at different difficulties           | Timer matched selected duration                 | ✅ Works as expected |
 
 
+| Feature            | Expected Outcome                       | Result                          | Pass/Fail |
+| ------------------ | -------------------------------------- | ------------------------------- | --------- |
+| Difficulty buttons | Update timer based on selection        | Timer updates correctly         | ✅         |
+| Confirm difficulty | Locks difficulty and removes buttons   | Works as expected               | ✅         |
+| Generate numbers   | Six random numbers displayed           | Unique each round               | ✅         |
+| Get target number  | Generates valid target (122–1017)      | Within range                    | ✅         |
+| Start Game button  | Begins timer and displays keypad       | Works correctly                 | ✅         |
+| Keypad input       | Inputs digits and operators            | Responsive and accurate         | ✅         |
+| Undo button        | Clears last entry and restores numbers | Works as expected               | ✅         |
+| Timer              | Counts down correctly                  | Works consistently              | ✅         |
+| Win condition      | Displays winner message                | Works and stops timer           | ✅         |
+| Lose condition     | Displays timeout message               | Works and triggers “Play Again” | ✅         |
+
+
+
+#### Elements 
+
+| Element                    | Test Description                   | Result                        | Pass/Fail |
+| -------------------------- | ---------------------------------- | ----------------------------- | --------- |
+| Console area               | Displays messages clearly          | Text visible and styled       | ✅         |
+| Buttons                    | Hover and click effects consistent | Colors and transitions smooth | ✅         |
+| Orientation warning        | Displays on portrait mobile        | Hides automatically on rotate | ✅         |
+| Placeholder text           | Color visible and readable         | Matches theme                 | ✅         |
+| Font and color consistency | Uses variables correctly           | All consistent                | ✅         |
+
+#### User Stories
+
+| User Story                                             | Expected Outcome                       | Test Result |
+| ------------------------------------------------------ | -------------------------------------- | ----------- |
+| “As a user, I want to choose my own difficulty level.” | Difficulty buttons change timer.       | ✅ Works     |
+| “As a user, I want to see my numbers clearly.”         | Numbers displayed in console.          | ✅ Works     |
+| “As a user, I want to input equations easily.”         | Keypad input is smooth and responsive. | ✅ Works     |
+| “As a user, I want feedback on results.”               | Console updates with messages.         | ✅ Works     |
+| “As a user, I want to play again quickly.”             | Play Again button reloads game.        | ✅ Works     |
 
 
 
@@ -39,6 +75,8 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 
 
 
+
+### Responsiveness
 Google Chrome DevTools was used extensively to simulate various device viewports, including popular smartphones, tablets, and desktop resolutions. This allowed for a controlled testing environment to verify that the layout, interactive elements, and overall responsiveness behaved as intended under different conditions.
 
 Particular attention was given to:
@@ -69,26 +107,17 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 
 
 
-| Feature            | Expected Outcome                       | Result                          | Pass/Fail |
-| ------------------ | -------------------------------------- | ------------------------------- | --------- |
-| Difficulty buttons | Update timer based on selection        | Timer updates correctly         | ✅         |
-| Confirm difficulty | Locks difficulty and removes buttons   | Works as expected               | ✅         |
-| Generate numbers   | Six random numbers displayed           | Unique each round               | ✅         |
-| Get target number  | Generates valid target (122–1017)      | Within range                    | ✅         |
-| Start Game button  | Begins timer and displays keypad       | Works correctly                 | ✅         |
-| Keypad input       | Inputs digits and operators            | Responsive and accurate         | ✅         |
-| Undo button        | Clears last entry and restores numbers | Works as expected               | ✅         |
-| Timer              | Counts down correctly                  | Works consistently              | ✅         |
-| Win condition      | Displays winner message                | Works and stops timer           | ✅         |
-| Lose condition     | Displays timeout message               | Works and triggers “Play Again” | ✅         |
 
-| Element                    | Test Description                   | Result                        | Pass/Fail |
-| -------------------------- | ---------------------------------- | ----------------------------- | --------- |
-| Console area               | Displays messages clearly          | Text visible and styled       | ✅         |
-| Buttons                    | Hover and click effects consistent | Colors and transitions smooth | ✅         |
-| Orientation warning        | Displays on portrait mobile        | Hides automatically on rotate | ✅         |
-| Placeholder text           | Color visible and readable         | Matches theme                 | ✅         |
-| Font and color consistency | Uses variables correctly           | All consistent                | ✅         |
+
+
+
+
+
+
+
+
+
+
 
 | Issue                                         | Cause                          | Solution                               | Status  |
 | --------------------------------------------- | ------------------------------ | -------------------------------------- | ------- |
@@ -102,14 +131,6 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 
 
 
-
-| User Story                                             | Expected Outcome                       | Test Result |
-| ------------------------------------------------------ | -------------------------------------- | ----------- |
-| “As a user, I want to choose my own difficulty level.” | Difficulty buttons change timer.       | ✅ Works     |
-| “As a user, I want to see my numbers clearly.”         | Numbers displayed in console.          | ✅ Works     |
-| “As a user, I want to input equations easily.”         | Keypad input is smooth and responsive. | ✅ Works     |
-| “As a user, I want feedback on results.”               | Console updates with messages.         | ✅ Works     |
-| “As a user, I want to play again quickly.”             | Play Again button reloads game.        | ✅ Works     |
 
 
 ## Testing Summaries 
