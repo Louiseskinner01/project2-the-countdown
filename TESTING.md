@@ -118,16 +118,6 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 
 
 
-
-| Issue                                         | Cause                          | Solution                               | Status  |
-| --------------------------------------------- | ------------------------------ | -------------------------------------- | ------- |
-| Keypad not resizing correctly                 | Flexbox conflict               | Adjusted grid layout                   | ✅ Fixed |
-| Timer not resetting on replay                 | Countdown interval not cleared | Added `clearInterval()`                | ✅ Fixed |
-| “Play?” span reappeared on orientation change | Re-triggered event listener    | Added `.remove()` on click             | ✅ Fixed |
-| Placeholder color not applying                | CSS selector conflict          | Used `::placeholder` with `!important` | ✅ Fixed |
-
-
-
 ## Testing Summaries 
 
 ### Cross-Browser Compatitbility
@@ -154,7 +144,7 @@ The goal was to confirm that the app provides the same smooth gameplay and respo
 | **JSHint (JavaScript)** | Minor warnings about unused variables corrected. No functional errors.  | (screen shot) |
 
 ### Accessibility Summary 
-
+ 
 | Test                                                             | Result |
 | ---------------------------------------------------------------- | ------ |
 | Color contrast meets WCAG 2.1 standards                          | ✅      |
@@ -166,4 +156,14 @@ The goal was to confirm that the app provides the same smooth gameplay and respo
 
 ### Performance summary
 
-#### Lighthouse
+
+## Bugs / Fixes
+
+| Issue                                         | Cause                          | Solution                               | Status  |
+| --------------------------------------------- | ------------------------------ | -------------------------------------- | ------- |
+| Keypad not resizing correctly                 | Flexbox conflict               | Adjusted grid layout                   | ✅ Fixed |
+| Timer not resetting on replay                 | Countdown interval not cleared | Added `clearInterval()`                | ✅ Fixed |
+| “Play?” span reappeared on orientation change | Re-triggered event listener    | Added `.remove()` on click             | ✅ Fixed |
+| Placeholder color not applying                | CSS selector conflict          | Used `::placeholder` with `!important` | ✅ Fixed |
+
+
