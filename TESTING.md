@@ -1,17 +1,18 @@
 # Testing
 
+
 > [!NOTE]  
 > Return back to the [README.md](README.md) file.
 
+## Rationale
 The primary goal of testing was to ensure the Countdown Game application performs consistently across multiple devices and screen sizes, maintaining both functionality and a good user experience.
-
 
 ## Approach
 Testing was carried out to ensure that the website functions as intended, is responsive across different devices, and provides a smooth and intuitive user experience.
 All tests were conducted manually, using a combination of Google Chrome DevTools, HTML/CSS/JS validation tools, and live user interaction testing.
 
 
-### Methods
+## Methods
 
 | Method                    | Description                                                                                                                                                                        | Tools Used                                                                                                                                |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,9 +24,8 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 | **Performance Testing**   | Evaluated page load speed and responsiveness using Chrome Lighthouse.                                                                                                              | Chrome DevTools  Lighthouse                                                                                                              |
 
 
-### Manual Tests
+## Manual Tests (Defensive Programming)
 
-#### Features
 
 | Feature Tested      | Test Performed                                   | Expected Outcome                                | Pass/Fail             |
 | ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- |
@@ -46,9 +46,7 @@ Lose condition     | Displays timeout message               | Works and triggers
 
 
 
-#### Elements 
-
-| Element                    | Test Description                   | Result                        | Pass/Fail |
+| Element Tested                | Test Description                   | Result                        | Pass/Fail |
 | -------------------------- | ---------------------------------- | ----------------------------- | --------- |
 | Console area               | Displays messages clearly          | Text visible and styled       | ✅ Works          |
 | Buttons                    | Hover and click effects consistent | Colors and transitions smooth | ✅ Works          |
@@ -56,9 +54,8 @@ Lose condition     | Displays timeout message               | Works and triggers
 | Placeholder text           | Color visible and readable         | Matches theme                 | ✅  Works         |
 | Font and color consistency | Uses variables correctly           | All consistent                | ✅  Works       |
 
-#### User Stories
 
-| User Story                                             | Expected Outcome                       | Pass/Fail |
+| User Story Tested                                            | Expected Outcome                       | Pass/Fail |
 | ------------------------------------------------------ | -------------------------------------- | ----------- |
 | “As a user, I want to choose my own difficulty level.” | Difficulty buttons change timer.       | ✅ Works     |
 | “As a user, I want to see my numbers clearly.”         | Numbers displayed in console.          | ✅ Works     |
@@ -73,7 +70,7 @@ Lose condition     | Displays timeout message               | Works and triggers
 
 
 
-### Responsiveness
+## Responsiveness
 Google Chrome DevTools was used extensively to simulate various device viewports, including popular smartphones, tablets, and desktop resolutions. This allowed for a controlled testing environment to verify that the layout, interactive elements, and overall responsiveness behaved as intended under different conditions.
 
 Particular attention was given to:
@@ -174,7 +171,6 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 
 ### Performance summary
-
 
 ## Bugs / Fixes
 
