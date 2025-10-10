@@ -126,7 +126,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Practice.html | ![screenshot](documentation/browser/chrome/chrome-practice.png) | ![screenshot](documentation/browser/firefox/firefox-practice.png) | ![screenshot](documentation/browser/safari/safari-practice.png) | ![screenshot](documentation/browser/edge/edge-practice.png) | ![screenshot]() | Works as expected |
 | Registration.html | ![screenshot](documentation/browser/chrome/chrome-registration.png) | ![screenshot](documentation/browser/firefox/firefox-registration.png) | ![screenshot](documentation/browser/safari/safari-registration.png) |  ![screenshot](documentation/browser/edge/edge-registration.png) | ![screenshot]() | Works as expected |
 | Form-submitted.html | ![screenshot](xxx) | ![screenshot](documentation/browsers/firefox-confirmation.png) | ![screenshot](documentation/browsers/safari-confirmation.png) |  ![screenshot]() | ![screenshot]() | Works as expected |
-| 404.html | ![screenshot](documentation/browser/chrome/chrome-404.png) | ![screenshot](documentation/browser/firefox/firefox-404.png) | ![screenshot](documentation/browser/safari/safari-404.png) | ![screenshot](/Users/codingaccount1/Documents/GitHub/project2-lskinner/documentation/browser/edge/edge-404.png) | ![screenshot]() | Works as expected |
+| 404.html | ![screenshot](documentation/browser/chrome/chrome-404.png) | ![screenshot](documentation/browser/firefox/firefox-404.png) | ![screenshot](documentation/browser/safari/safari-404.png) | ![screenshot](documentation/browser/edge/edge-404.png) | ![screenshot]() | Works as expected |
 
 
 
