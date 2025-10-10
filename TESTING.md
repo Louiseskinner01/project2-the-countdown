@@ -125,6 +125,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Instructions.html | ![screenshot](documentation/browser/chrome/chrome-instruction.png) | ![screenshot](documentation/browsers/firefox-gallery.png) | ![screenshot](documentation/browsers/safari-gallery.png) |  x | x | Works as expected |
 | Practice.html | ![screenshot](documentation/browser/chrome/chrome-practice.png) | ![screenshot](documentation/browsers/firefox-signup.png) | ![screenshot](documentation/browsers/safari-signup.png) | x | x | Works as expected |
 | Registration.html | ![screenshot](documentation/browser/chrome/chrome-registration.png) | ![screenshot](documentation/browsers/firefox-confirmation.png) | ![screenshot](documentation/browsers/safari-confirmation.png) |  x | x | Works as expected |
+| Form-submitted.html | ![screenshot](xxx) | ![screenshot](documentation/browsers/firefox-confirmation.png) | ![screenshot](documentation/browsers/safari-confirmation.png) |  x | x | Works as expected |
 | 404.html | ![screenshot](documentation/browser/chrome/chrome-404.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation/browsers/safari-404.png) |  x | x | Works as expected |
 
 
