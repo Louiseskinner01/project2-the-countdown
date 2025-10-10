@@ -24,10 +24,10 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 | **Performance Testing**   | Evaluated page load speed and responsiveness using Chrome Lighthouse.                                                                                                              | Chrome DevTools  Lighthouse                                                                                                              |
 
 
-## Manual Tests (Defensive Programming)
+### Manual Tests (Defensive Programming)
 
 
-| Feature Tested      | Test Performed                                   | Expected Outcome                                | Pass/Fail             |
+| Feature Tested      | Test Description                                   | Expected Outcome                                | Pass/Fail             |
 | ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- |
 | Start Game Button   | Clicked “PLAY?” and then “Start Game”            | Game begins, keypad becomes active              | ✅ Works |
 | Orientation Warning | Rotated mobile device from portrait to landscape | Warning disappears and game becomes visible     | ✅ Works |
@@ -46,31 +46,29 @@ Lose condition     | Displays timeout message               | Works and triggers
 
 
 
-| Element Tested                | Test Description                   | Result                        | Pass/Fail |
+| Element Tested                | Test Description                   | Expected Outcome                        | Pass/Fail |
 | -------------------------- | ---------------------------------- | ----------------------------- | --------- |
-| Console area               | Displays messages clearly          | Text visible and styled       | ✅ Works          |
-| Buttons                    | Hover and click effects consistent | Colors and transitions smooth | ✅ Works          |
-| Orientation warning        | Displays on portrait mobile        | Hides automatically on rotate | ✅  Works         |
-| Placeholder text           | Color visible and readable         | Matches theme                 | ✅  Works         |
-| Font and color consistency | Uses variables correctly           | All consistent                | ✅  Works       |
+| Console area               | Displays messages clearly          | Text visible and styled       | ✅ Pass          |
+| Buttons                    | Hover and click effects consistent | Colors and transitions smooth | ✅ Pass           |
+| Orientation warning        | Displays on portrait mobile        | Hides automatically on rotate | ✅  Pass          |
+| Placeholder text           | Color visible and readable         | Matches theme                 | ✅  Pass          |
+| Font and color consistency | Uses variables correctly           | All consistent                | ✅  Pass        |
 
 
-| User Story Tested                                            | Expected Outcome                       | Pass/Fail |
-| ------------------------------------------------------ | -------------------------------------- | ----------- |
-| “As a user, I want to choose my own difficulty level.” | Difficulty buttons change timer.       | ✅ Works     |
-| “As a user, I want to see my numbers clearly.”         | Numbers displayed in console.          | ✅ Works     |
-| “As a user, I want to input equations easily.”         | Keypad input is smooth and responsive. | ✅ Works     |
-| “As a user, I want feedback on results.”               | Console updates with messages.         | ✅ Works     |
-| “As a user, I want to play again quickly.”             | Play Again button reloads game.        | ✅ Works     |
+| User Story Tested | Test Description | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+| “As a user, I want to choose my own difficulty level” | Visit the home page and click the PLAY? text on the screen, follow the instructions that lead to the select a difficulty level. Select a level by clicking on the button and then clicking the confirm difficulty button.  | The timer is updated to reflect the difficulty level that has been selected | ✅ Pass |
+| “As a user, I want to clearly see the timer and generated numbers” | Follow the game instructions untill the timer and random numbers are displayed. | Numbers displayed in console are clearly formatted and the timer digits displayed to the left of the console are large and standout. | ✅ Pass |
+| “As a user, I want to input equations easily” | Follow the instructions, once a target number has been generated the built-n keypad will appear. Click on the keyoad buttons and wsee the numbers/operators appear in the input box. | Keypad input is smooth, responsive and has the displays the correct output into the corret area. 2| ✅ Pass |
+| “As a user, I want feedback on results” | Once the game is in play (after the start game button has been clicked) the user can enter equations via the keypad. If an equation is successful the result will appear at the bottom of the console else the console will display an error message. | Console updates with results, striked out used numbers and messages (error, win/lose). | ✅ Pass |
+| “As a user, I want to play again quickly” | Click on the play again button which displays the home page so a difficulty level can be selected for a new game. | ✅ Pass |
+| “As a user, I want to be prevented from entering invalid equations” | Use the keypad to enter invalid equations | The console displays an error message, the user is able to continue the game without it crashing. | ✅ Pass |
+| “As a user, I want the orientation message to guide me on mobile” | Visit the deployed site using a mobile device. Visit each page on the website and rotate the device between landscape and portrait. | Warning shows in portrait, disappears in landscape. | ✅ Pass |
+| “As a user, I want used numbers to be tracked correctly” | Use the keypad to enter values (numbers from generated numbers or results) into the input box. | Once a number is used, it becomes unavailabl and it’s strucken out with a black strike. | ✅ Pass |
+| “As a user, I want the game to reset properly when I play again” | At the end of a game, click the play again buttin. | The user is presented with the home page PLAY? text. | ✅ Pass |
+| “As a user, I want to be challenged in a realistic way” | Perform manual calculations on the target number and the random numbers produced to ensure the target number is always achievable. | Target numbers can always be solved by using some or all of the 6 randomly generated numbers. | ✅ Pass |
 
-
-
-
-
-
-
-
-## Responsiveness
+### Responsiveness
 Google Chrome DevTools was used extensively to simulate various device viewports, including popular smartphones, tablets, and desktop resolutions. This allowed for a controlled testing environment to verify that the layout, interactive elements, and overall responsiveness behaved as intended under different conditions.
 
 Particular attention was given to:
@@ -100,34 +98,36 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 | Large Display (2560px+) | Variable              | Landscape            | ✅ Tested using media query breakpoint; scaling remains proportional |
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Testing Summaries 
 
 ### Cross-Browser Compatitbility
 
 To ensure a consistent and accessible user experience across all devices and browsers, the project was thoroughly tested using Google Chrome DevTools. This allowed emulation of multiple devices (iPhone, Samsung Galaxy, iPad, Surface Duo, etc.) and responsive breakpoints to verify that all layout, interaction, and orientation features behaved correctly.
 
-Cross-browser compatibility testing was performed manually in Chrome, Firefox, Safari, Edge, and Opera. Each browser was checked for layout consistency, JavaScript functionality (such as keypad interactivity and timers), and color rendering.
+Cross-browser compatibility testing was performed manually in the following browsers:
+ - Chrome
+ - Firefox
+ - Safari 
+ - Edge
+ - Opera
 
-The goal was to confirm that the app provides the same smooth gameplay and responsive UI on both desktop and mobile environments, regardless of platform or browser engine.
+ Each browser was checked for layout consistency, JavaScript functionality (such as keypad interactivity and timers), and color rendering.
 
-| Browser                | Result             | Notes / Screenshots                                                                                  |
-| ---------------------- | ------------------ | ---------------------------------------------------------------------------------------------------- |
-| **Google Chrome**      | ✅ Fully functional | Responsive design works across all breakpoints (mobile, tablet, desktop). No layout issues detected. | (screen shot) |
-| **Mozilla Firefox**    | ✅ Fully functional | Minor font rendering differences due to browser engine.                                              | (screen shot) |
-| **Safari (Mac / iOS)** | ✅ Fully functional | Orientation message and button interactivity confirmed working.                                      | (screen shot) |
-| **Microsoft Edge**     | ✅ Fully functional | Same rendering behavior as Chrome (uses Chromium engine).                                            | (screen shot) |
+The goal was to confirm that the web app provides the same smooth gameplay and responsive UI on both desktop and mobile environments, regardless of platform or browser engine.
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Page | Chrome | Firefox | Safari | Edge | Opera | Notes
+| --- | --- | --- | --- | --- | --- | --- |
+| Index.html (Home - Rotate Warning)  | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) | x | x | Works as expected |
+| Index.html (Home - PLAY?)  | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) |  x | x | Works as expected |
+| Instructions.html | ![screenshot](documentation/browsers/chrome-gallery.png) | ![screenshot](documentation/browsers/firefox-gallery.png) | ![screenshot](documentation/browsers/safari-gallery.png) |  x | x | Works as expected |
+| Practice.html | ![screenshot](documentation/browsers/chrome-signup.png) | ![screenshot](documentation/browsers/firefox-signup.png) | ![screenshot](documentation/browsers/safari-signup.png) | x | x | Works as expected |
+| Registration.html | ![screenshot](documentation/browsers/chrome-confirmation.png) | ![screenshot](documentation/browsers/firefox-confirmation.png) | ![screenshot](documentation/browsers/safari-confirmation.png) |  x | x | Works as expected |
+| 404.html | ![screenshot](documentation/browsers/chrome-404.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation/browsers/safari-404.png) |  x | x | Works as expected |
+
+
+
 
 ### Validation summary
 
