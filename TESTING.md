@@ -119,12 +119,12 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Page | Chrome | Firefox | Safari | Edge | Opera | Notes
 | --- | --- | --- | --- | --- | --- | --- |
-| Index.html (Home - Rotate Warning)  | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) | x | x | Works as expected |
-| Index.html (Home - PLAY?)  | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) |  x | x | Works as expected |
-| Instructions.html | ![screenshot](documentation/browsers/chrome-gallery.png) | ![screenshot](documentation/browsers/firefox-gallery.png) | ![screenshot](documentation/browsers/safari-gallery.png) |  x | x | Works as expected |
-| Practice.html | ![screenshot](documentation/browsers/chrome-signup.png) | ![screenshot](documentation/browsers/firefox-signup.png) | ![screenshot](documentation/browsers/safari-signup.png) | x | x | Works as expected |
-| Registration.html | ![screenshot](documentation/browsers/chrome-confirmation.png) | ![screenshot](documentation/browsers/firefox-confirmation.png) | ![screenshot](documentation/browsers/safari-confirmation.png) |  x | x | Works as expected |
-| 404.html | ![screenshot](documentation/browsers/chrome-404.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation/browsers/safari-404.png) |  x | x | Works as expected |
+| Index.html (Home - Rotate Warning)  | ![screenshot](documentation/browser/chrome/chrome-index-rotate.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) | x | x | Works as expected |
+| Index.html (Home - PLAY?)  | ![screenshot](documentation/browser/chrome/chrome-index-play.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) |  x | x | Works as expected |
+| Instructions.html | ![screenshot](documentation/browser/chrome/chrome-instruction.png) | ![screenshot](documentation/browsers/firefox-gallery.png) | ![screenshot](documentation/browsers/safari-gallery.png) |  x | x | Works as expected |
+| Practice.html | ![screenshot](documentation/browser/chrome/chrome-practice.png) | ![screenshot](documentation/browsers/firefox-signup.png) | ![screenshot](documentation/browsers/safari-signup.png) | x | x | Works as expected |
+| Registration.html | ![screenshot](documentation/browser/chrome/chrome-registration.png) | ![screenshot](documentation/browsers/firefox-confirmation.png) | ![screenshot](documentation/browsers/safari-confirmation.png) |  x | x | Works as expected |
+| 404.html | ![screenshot](documentation/browser/chrome/chrome-404.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation/browsers/safari-404.png) |  x | x | Works as expected |
 
 
 
