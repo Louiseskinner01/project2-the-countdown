@@ -213,7 +213,7 @@ color: var(--sub-theme-color);
         font-size: 120px !important;  
     }
     h2 {
-        margin-bottom: 80px !important;
+        margin-bottom: 40px !important;
     } 
 }
 
@@ -225,7 +225,7 @@ color: var(--sub-theme-color);
         font-size: 150px !important;  
     }
     h2 {
-        margin-bottom: 90px !important;
+        margin-bottom: 70px !important;
         
     } 
 }
@@ -259,6 +259,6 @@ color: var(--sub-theme-color);
         font-size: 200px !important;
     }
     h2 {
-        margin-bottom: 150px !important;
+        margin-bottom: 100px !important;
     }
 }
