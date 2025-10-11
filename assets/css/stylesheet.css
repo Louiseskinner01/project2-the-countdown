@@ -37,6 +37,7 @@ h2 {
     text-transform: capitalize;
     font-size: 22px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /*Console styling*/
@@ -212,7 +213,7 @@ color: var(--sub-theme-color);
         font-size: 120px !important;  
     }
     h2 {
-        margin-bottom: 90px !important;
+        margin-bottom: 80px !important;
     } 
 }
 
@@ -224,7 +225,8 @@ color: var(--sub-theme-color);
         font-size: 150px !important;  
     }
     h2 {
-        margin-bottom: 110px !important;
+        margin-bottom: 90px !important;
+        
     } 
 }
 
@@ -246,9 +248,7 @@ color: var(--sub-theme-color);
          font-size: 170px !important;
          
      }
-     h2 {
-         margin-bottom: 130px !important;
-     }
+    
  }
 
 @media only screen and (min-width: 2560px) {
@@ -257,7 +257,6 @@ color: var(--sub-theme-color);
     }
     #console-play {
         font-size: 200px !important;
-        
     }
     h2 {
         margin-bottom: 150px !important;
