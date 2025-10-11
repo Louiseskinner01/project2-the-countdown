@@ -166,7 +166,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| assets | [new-stylesheet.css](https://github.com/Louiseskinner01/project1-lskinner/blob/main/assets/css/new-stylesheet.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://louiseskinner01.github.io/project1-lskinner) | ![screenshot](documentation/validation/css-assets-new-stylesheet.png) | ⚠️ Notes (if applicable) |
+| assets | [stylesheet.css](https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/css/stylesheet.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://louiseskinner01.github.io/project1-lskinner) | ![screenshot](documentation/validation/css/stylesheet-url-error.png) ![screenshot](documentation/validation/css/stylesheet-url-error1-fixed.png) ![screenshot](documentation/validation/css/stylesheet-upload-valid.png) | ⚠️ Notes (if applicable) |
+|  | [other-styling.css](https://github.com/Louiseskinner01/project1-lskinner/blob/main/assets/css/new-stylesheet.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://louiseskinner01.github.io/project1-lskinner) | ![screenshot](documentation/validation/css-assets-new-stylesheet.png) | ⚠️ Notes (if applicable) |
+|  | [global-variables.css](https://github.com/Louiseskinner01/project1-lskinner/blob/main/assets/css/new-stylesheet.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://louiseskinner01.github.io/project1-lskinner) | ![screenshot](documentation/validation/css-assets-new-stylesheet.png) | ⚠️ Notes (if applicable) |
 
 #### JS
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
