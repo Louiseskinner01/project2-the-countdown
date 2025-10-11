@@ -72,6 +72,15 @@
     </div>
 </footer>
 
+<script>
+    function showSize() {
+      document.getElementById('viewportSize').textContent =
+        window.innerWidth + ' x ' + window.innerHeight;
+    }
+    window.addEventListener('resize', showSize);
+    showSize();
+  </script>
+  
 </body>
 </html>
 
