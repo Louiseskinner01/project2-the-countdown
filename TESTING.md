@@ -88,12 +88,13 @@ I've tested my deployed project to check for responsiveness issues.
 
 | Page | Mobile (Portrait) | Mobile (Lanscape)| Tablet | Laptop | Desktop | Notes |
 | --- | --- | --- | --- | ---| --- |--- |
-| Home (landing page) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) |  | Works as expected |
-| Home (during Play) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) |  | Works as expected |
-| Instructions | ![screenshot](documentation/responsiveness/mobile-gallery.png) | ![screenshot](documentation/responsiveness/tablet-gallery.png) | ![screenshot](documentation/responsiveness/desktop-gallery.png) |  | Works as expected |
-| Practice | ![screenshot](documentation/responsiveness/mobile-signup.png) | ![screenshot](documentation/responsiveness/tablet-signup.png) | ![screenshot](documentation/responsiveness/desktop-signup.png) |  | Works as expected |
-| Confirmation | ![screenshot](documentation/responsiveness/mobile-confirmation.png) | ![screenshot](documentation/responsiveness/tablet-confirmation.png) | ![screenshot](documentation/responsiveness/desktop-confirmation.png) | | Works as expected 
-| 404 | ![screenshot](documentation/responsiveness/mobile-404.png) | ![screenshot](documentation/responsiveness/tablet-404.png) | ![screenshot](documentation/responsiveness/desktop-404.png) |  | Works as expected 
+| Home (landing page) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-play.png) | ![screenshot]() | |
+| Home (during Play) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-during-play.png) | ![screenshot]() |  | 
+| Instructions | ![screenshot](documentation/responsiveness/mobile-gallery.png) | ![screenshot](documentation/responsiveness/tablet-gallery.png) | ![screenshot](documentation/responsiveness/desktop-gallery.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-instructions.png) | ![screenshot]() | |
+| Practice | ![screenshot](documentation/responsiveness/mobile-signup.png) | ![screenshot](documentation/responsiveness/tablet-signup.png) | ![screenshot](documentation/responsiveness/desktop-signup.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-practice.png)  | ![screenshot]() |
+| registration | ![screenshot](documentation/responsiveness/mobile-confirmation.png) | ![screenshot](documentation/responsiveness/tablet-confirmation.png) | ![screenshot](documentation/responsiveness/desktop-confirmation.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-registration.png) | ![screenshot]() | |
+| form-submitted | ![screenshot]() | ![screenshot]() | ![screenshot]() | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-form-submitted.png)  | ![screenshot]() | | 
+| 404 | ![screenshot]() | ![screenshot]() | ![screenshot]() | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-404.png)  | ![screenshot]() | |
 
 
 
