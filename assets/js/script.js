@@ -94,11 +94,6 @@ buttons.forEach(btn => {
   });
 
 
-  /*  diffBtn.addEventListener("click", () => {
-        diffBtn.style.backgroundColor = "var(--feature-color)" ;
-    });
- });
-*/
 
 /** 
  * Create a button to generate a random set of numbers

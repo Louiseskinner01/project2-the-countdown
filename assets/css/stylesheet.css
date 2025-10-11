@@ -212,7 +212,19 @@ color: var(--sub-theme-color);
         font-size: 120px !important;  
     }
     h2 {
-        margin-bottom: 400px !important;
+        margin-bottom: 90px !important;
+    } 
+}
+
+@media only screen and (min-width: 1024px) {
+    .landing-text {
+        font-size: 60px !important;  
+    }
+    #console-play {
+        font-size: 150px !important;  
+    }
+    h2 {
+        margin-bottom: 110px !important;
     } 
 }
 
@@ -228,14 +240,14 @@ color: var(--sub-theme-color);
 
 @media only screen and (min-width: 1440px) {
     .landing-text {
-         font-size: 60px !important;  
+         font-size: 70px !important;  
      }
      #console-play {
-         font-size: 150px !important;
+         font-size: 170px !important;
          
      }
      h2 {
-         margin-bottom: 400px !important;
+         margin-bottom: 130px !important;
      }
  }
 
@@ -244,10 +256,10 @@ color: var(--sub-theme-color);
         font-size: 80px !important;  
     }
     #console-play {
-        font-size: 190px !important;
+        font-size: 200px !important;
         
     }
     h2 {
-        margin-bottom: 500px !important;
+        margin-bottom: 150px !important;
     }
 }

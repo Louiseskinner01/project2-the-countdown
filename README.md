@@ -200,7 +200,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | --- | --- | --- |
 | As a casual user | I want to play for fun and relaxation | so that I can enjoy the game without pressure. |
 | As a competitive user| I want to solve the problem within the timer | so that I feel challenged. |
-| As a learner | I want to practice equations in a playful way | sso that I can improve my maths skills without it feeling like work. |
+| As a learner | I want to practice equations in a playful way | so that I can improve my maths skills without it feeling like work. |
 
 
 ## Features
@@ -266,6 +266,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | [![badge](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) | Icons. |
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
 | [![badge](https://img.shields.io/badge/W3Schools-grey?logo=w3schools&logoColor=04AA6D)](https://www.w3schools.com) | Tutorials/Reference Guide |
+
+| [![badge](https://img.shields.io/badge/W3Schools-grey?logo=w3schools&logoColor=04AA6D)](https://fonts.google.com/) | Tutorials/Reference Guide |
 
 
 ## Agile Development Process
