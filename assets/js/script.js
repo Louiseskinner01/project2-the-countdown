@@ -1,10 +1,18 @@
+/* jshint esversion: 6 */
+/* global timerArea */
+/* global createKeypad */
+/* global createEquationRow */
+/* global playAgain */
+
 window.timeLeft = 0;
 window.timerArea = null;
-window.timerDisplay;
+window.timerDisplay = null;
+
+const workingoutGrid = document.getElementById("workingout-grid-1");
+const workingoutGridTwo = document.getElementById("workingout-grid-2");
 
 let confirmDifficultyBtn;
-let difficultyBtns;
-//window.keypadBtns = document.getElementById("game-keypad");
+let timeLeft;
 
 //let playSpan;
 let controllersArea = document.getElementById("controllers-area");
@@ -12,6 +20,7 @@ const gamesConsole = document.getElementById("games-console");
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
 let availableNumbers = [];  
 let targetNum = null;
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,7 +37,7 @@ function displayControllers() {
     document.getElementById("difficulty-btn-area").style.display = "flex";
     gamesConsole.classList.add("console-styling");
     gamesConsole.innerText = "Select a difficulty level, this will update the timer. Once you have decided what level to play at, click the confirm level button below. ";
-    document.getElementById("console-play").style.display = "none"
+    document.getElementById("console-play").style.display = "none";
 }
 
 
@@ -56,7 +65,7 @@ function createConfirmBtn() {
  */
 let countdownInterval;
 let startTime;
-let selectedDifficulty = 00; // Timer digits are set to 00:00 as default
+let selectedDifficulty = 0; // Timer digits are set to 00:00 as default
 
 // Displays seconds on the timer element
 function updateTimerDisplay(seconds) {
@@ -106,7 +115,7 @@ function createRandomNumbersBtn() {
         return;
     }
 
-    randomNumbersBtn.classList.add("controller-btn-styling")
+    randomNumbersBtn.classList.add("controller-btn-styling");
     randomNumbersBtn.innerText = "Generate Numbers";
     randomNumbersBtn.id = "generate-random-numbers-btn";
     controllersArea.append(randomNumbersBtn);
@@ -144,7 +153,7 @@ function createStartBtns() {
     const startGameBtn = document.createElement("button");
     startGameBtn.id = "start-game-btn";
     startGameBtn.classList.add("controller-btn-styling");
-    startGameBtn.innerText = "Start Game!"
+    startGameBtn.innerText = "Start Game!";
 
     controllersArea.append(startGameBtn);
     workingoutGrid.style.display = "block";
@@ -194,7 +203,7 @@ function startCountdown(durationInSeconds) {
         undoBtn.remove();
         startNewGameBtn.addEventListener("click", startNewGame);
 
-    }
+    };
 
     function startNewGame() {
         window.location.reload();
