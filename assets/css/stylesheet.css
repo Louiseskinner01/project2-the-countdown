@@ -25,7 +25,7 @@ main {
 h1 {
     color: var(--sub-theme-color) !important;
     font-family: var(--main-font-style);
-    font-size: 38px;
+    font-size: 45px;
     text-align: center;
     letter-spacing: 1px; 
     margin-bottom: 10px;
@@ -35,7 +35,7 @@ h2 {
     color: var(--sub-theme-color) !important;
     font-family: var(--sub-theme-style);
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -50,14 +50,14 @@ h2 {
     font-size: 1.5vw;
 }
 
+
 #console-play {
     color: var(--sub-theme-color);
-    font-size: 45px;
-    margin-top: 30px;
+    font-size: 85px;
 } 
 
 #console-play:hover {
-    color: var(--calm-color);
+    color: lime;
   }
 
 /*Timer area styling*/
@@ -203,14 +203,51 @@ color: var(--sub-theme-color);
     display: none;
 }
 
+
+@media only screen and (min-width: 750px) {
+    .landing-text {
+        font-size: 50px !important;  
+    }
+    #console-play {
+        font-size: 120px !important;  
+    }
+    h2 {
+        margin-bottom: 400px !important;
+    } 
+}
+
 @media only screen and (min-width: 1140px) {
     #timer, .difficulty-btn, .console-styling {
         height: 130px !important;
         
     }
-
     #timer {
         font-size: 2rem;
-    }
+    } 
+}
 
+@media only screen and (min-width: 1440px) {
+    .landing-text {
+         font-size: 60px !important;  
+     }
+     #console-play {
+         font-size: 150px !important;
+         
+     }
+     h2 {
+         margin-bottom: 400px !important;
+     }
+ }
+
+@media only screen and (min-width: 2560px) {
+   .landing-text {
+        font-size: 80px !important;  
+    }
+    #console-play {
+        font-size: 190px !important;
+        
+    }
+    h2 {
+        margin-bottom: 500px !important;
+    }
 }
