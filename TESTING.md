@@ -196,12 +196,12 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | Timer not resetting on replay                 | Countdown interval not cleared | Added `clearInterval()`                | ✅ Fixed |
 | “Play?” span reappeared on orientation change | Re-triggered event listener    | Added `.remove()` on click             | ✅ Fixed |
 | Placeholder color not applying                | CSS selector conflict          | Used `::placeholder` with `!important` | ✅ Fixed |
-
+| Buttons remaining visible when the screen size is reduced or mobile device in put into portrait          | Missing DOM elements on orientation function         | Added `const controllerBtnsContainer = document.getElementById("controllers-area");` & `controllerBtnsContainer.classList.add("hidden");` in the IF condition, with `controllerBtnsContainer.classList.remove("hidden");` in the else condition| ✅ Fixed |
 ### Known/Existing Issues
 
 | Issue | Screenshot |
 | --- | --- |
-| When the use clicks on a difficulty level, the select difficulty button appears (as it should), and should dissapear if the user rotates their mobile into portait mode or they resize their computer screen (making it too small). However the button stays visible which should not happen! | ![screenshot](documentation/bugs/bug-responsive-rotatewarning.png) |
+
 | When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot](documentation/issues/section-header.png) |
 
 > [!IMPORTANT]  
