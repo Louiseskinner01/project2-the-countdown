@@ -37,7 +37,7 @@ h2 {
     text-transform: capitalize;
     font-size: 22px;
     text-align: center;
-    margin-bottom: 50px;
+   
 }
 
 /*Console styling*/
@@ -205,15 +205,15 @@ color: var(--sub-theme-color);
 }
 
 
-@media only screen and (min-width: 750px) and  (max-width: 1023) {
+@media only screen and (max-width: 1023) {
     .landing-text {
         font-size: 50px !important;  
     }
     #console-play {
-        font-size: 120px !important;  
+        font-size: 90px !important;  
     }
     h2 {
-        margin-bottom: 25px !important;
+        margin-bottom: 10px !important;
     } 
 }
 
