@@ -86,8 +86,8 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 
 I've tested my deployed project to check for responsiveness issues.
 
-| Page | Mobile (Portrait) | Mobile (Lanscape)| Tablet | Desktop | Notes |
-| --- | --- | --- | --- | ---| --- |
+| Page | Mobile (Portrait) | Mobile (Lanscape)| Tablet | Laptop | Desktop | Notes |
+| --- | --- | --- | --- | ---| --- |--- |
 | Home (landing page) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) |  | Works as expected |
 | Home (during Play) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) |  | Works as expected |
 | Instructions | ![screenshot](documentation/responsiveness/mobile-gallery.png) | ![screenshot](documentation/responsiveness/tablet-gallery.png) | ![screenshot](documentation/responsiveness/desktop-gallery.png) |  | Works as expected |
