@@ -205,7 +205,7 @@ color: var(--sub-theme-color);
 }
 
 
-@media only screen and (max-width: 1023) {
+@media only screen and (max-width: 1023px) {
     .landing-text {
         font-size: 50px !important;  
     }
