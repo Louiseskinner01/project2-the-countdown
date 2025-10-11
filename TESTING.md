@@ -84,6 +84,20 @@ Visual consistency: Checking that colours, fonts, and spacing remain aligned wit
 By testing through Chrome DevTools, I was able to efficiently identify and resolve layout shifts, overlapping elements, and scaling issues before deployment. This ensured the final build delivered a clean, accessible, and user-friendly experience on all supported devices.
 
 
+I've tested my deployed project to check for responsiveness issues.
+
+| Page | Mobile (Portrait) | Mobile (Lanscape)| Tablet | Desktop | Notes |
+| --- | --- | --- | --- | ---| --- |
+| Home (landing page) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) |  | Works as expected |
+| Home (during Play) | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) |  | Works as expected |
+| Instructions | ![screenshot](documentation/responsiveness/mobile-gallery.png) | ![screenshot](documentation/responsiveness/tablet-gallery.png) | ![screenshot](documentation/responsiveness/desktop-gallery.png) |  | Works as expected |
+| Practice | ![screenshot](documentation/responsiveness/mobile-signup.png) | ![screenshot](documentation/responsiveness/tablet-signup.png) | ![screenshot](documentation/responsiveness/desktop-signup.png) |  | Works as expected |
+| Confirmation | ![screenshot](documentation/responsiveness/mobile-confirmation.png) | ![screenshot](documentation/responsiveness/tablet-confirmation.png) | ![screenshot](documentation/responsiveness/desktop-confirmation.png) | | Works as expected 
+| 404 | ![screenshot](documentation/responsiveness/mobile-404.png) | ![screenshot](documentation/responsiveness/tablet-404.png) | ![screenshot](documentation/responsiveness/desktop-404.png) |  | Works as expected 
+
+
+
+
 | Device                  | Screen Size (Approx.) | Orientation Tested   | Result                                                              |
 | ----------------------- | --------------------- | -------------------- | ------------------------------------------------------------------- |
 | iPhone SE               | 375 × 667 px          | Portrait / Landscape | ✅ Fully functional and responsive                                   |
