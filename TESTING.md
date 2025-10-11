@@ -27,21 +27,21 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 ### Manual Tests (Defensive Programming)
 
 
-| Feature Tested      | Test Description                                   | Expected Outcome                                | Pass/Fail             |
-| ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- |
-| Start Game Button   | Clicked “PLAY?” and then “Start Game”            | Game begins, keypad becomes active              | ✅ Works |
-| Orientation Warning | Rotated mobile device from portrait to landscape | Warning disappears and game becomes visible     | ✅ Works |
-| Difficulty Buttons  | Selected “Easy / Medium / Hard”                  | Correct timer and equation difficulty displayed | ✅ Works |
-| Keypad Input        | Clicked number keys and OK                       | Values entered correctly into equation input    | ✅ Works |
-| Timer Countdown     | Started game at different difficulties           | Timer matched selected duration                 | ✅ Works |
-| Play Aagin? Button     |  Clicked the button at the end of a game     | Resets the window bringing the user back to the clickable PLAY? text                  | ✅ Works |
-Confirm difficulty |  Clicked the confirm button on diffeent difficulty levels | Locks difficulty, updates the timer and removes buttons from further use  | ✅ Works          |
-| Generate numbers   | Six random numbers displayed           | Unique each round               | ✅  Works         |
-Get target number  | Generates valid target (122–1017)      | Within range                    | ✅ Works          |
-Keypad input       | Inputs digits and operators            | Responsive and accurate         | ✅  Works         |
-Undo button        | Clicked the undo button after submitting an equation | Clears last entry and restores numbers              | ✅  Works         |
-Win condition      | Displays winner message                | Works and stops timer           | ✅  Works         |
-Lose condition     | Displays timeout message               | Works and triggers “Play Again” | ✅ Works          |
+| Feature Tested | Test Description                                   | Expected Outcome                                | Pass/Fail             |  Screenshot |
+| ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- | ----------- |
+| Start Game Button   | Clicked “PLAY?” and then “Start Game”            | Game begins, keypad becomes active              | ✅ Works | ![screenshot]() |
+| Orientation Warning | Rotated mobile device from portrait to landscape | Warning disappears and game becomes visible     | ✅ Works | ![screenshot]() |
+| Difficulty Buttons  | Selected “Easy / Medium / Hard”                  | Correct timer and equation difficulty displayed | ✅ Works | ![screenshot]() |
+| Keypad Input        | Clicked number keys and OK                       | Values entered correctly into equation input    | ✅ Works | ![screenshot]() |
+| Timer Countdown     | Started game at different difficulties           | Timer matched selected duration                 | ✅ Works | ![screenshot]() |
+| Play Aagin? Button     |  Clicked the button at the end of a game     | Resets the window bringing the user back to the clickable PLAY? text                  | ✅ Works | ![screenshot]() |
+Confirm difficulty |  Clicked the confirm button on diffeent difficulty levels | Locks difficulty, updates the timer and removes buttons from further use  | ✅ Works          | ![screenshot]() |
+| Generate numbers   | Six random numbers displayed           | Unique each round               | ✅  Works         | ![screenshot]() |
+Get target number  | Generates valid target (122–1017)      | Within range                    | ✅ Works          | ![screenshot]() |
+Keypad input       | Inputs digits and operators            | Responsive and accurate         | ✅  Works         | ![screenshot]() |
+Undo button        | Clicked the undo button after submitting an equation | Clears last entry and restores numbers              | ✅  Works         | ![screenshot]() |
+Win condition      | Displays winner message                | Works and stops timer           | ✅  Works         | ![screenshot]() |
+Lose condition     | Displays timeout message               | Works and triggers “Play Again” | ✅ Works          | ![screenshot]() |
 
 
 
@@ -197,6 +197,12 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | “Play?” span reappeared on orientation change | Re-triggered event listener    | Added `.remove()` on click             | ✅ Fixed |
 | Placeholder color not applying                | CSS selector conflict          | Used `::placeholder` with `!important` | ✅ Fixed |
 
+### Known/Existing Issues
+
+| Issue | Screenshot |
+| --- | --- |
+| When the use clicks on a difficulty level, the select difficulty button appears (as it should), and should dissapear if the user rotates their mobile into portait mode or they resize their computer screen (making it too small). However the button stays visible which should not happen! | ![screenshot](documentation/bugs/bug-responsive-rotatewarning.png) |
+| When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot](documentation/issues/section-header.png) |
 
 > [!IMPORTANT]  
-> There are no remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
+> From my testing I have not identified any bugs other than the ones listed in the above sections. If you identify any new bugs please feel free to contact me and/or clone the project and fix the issue.
