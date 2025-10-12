@@ -178,6 +178,7 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 | --- | --- | --- | --- | --- |
 | assets | [script.js](https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/js/script.js) | [JSHint valid code](https://jigsaw.w3.org/css-validator/validator?uri=https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/js/script.js) |![screenshot](documentation/validation/js/script-warnings-top.png) ![screenshot](documentation/validation/js/script-warnings-bottom.png)![screenshot](documentation/validation/js/script-warnings-reduced.png)![screenshot](documentation/validation/js/script-warnings-none.png)| I added `/* jshint esversion: 6 */` to the top of my js files and that reduced the warnings by a significant amount. |
 |  | [workingout-grid.js](https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/js/workingout-grid.js) | [JSHint valid code](https://jigsaw.w3.org/css-validator/validator?uri=) | ![screenshot](documentation/validation/js/workingout-grid-warnings.png) ![screenshot](documentation/validation/js/workingout-grid-warnings-reduced.png) | ` /* jshint esversion: 11 */` `/* exported createEquationRow, createKeypad */` |
+|  | [orientation.js](https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/js/orientation.js) | [JSHint valid code](https://jigsaw.w3.org/css-validator/validator?uri=) | ![screenshot](documentation/validation/js/orientation-warnings-none.png)  | ` /* jshint esversion: 6 */` |
 
 ### Accessibility Summary 
  
