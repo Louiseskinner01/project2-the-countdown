@@ -214,7 +214,7 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 | Issue | Screenshot |
 | --- | --- |
 
-| When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot](documentation/issues/section-header.png) |
+| When an equation has been undone using the undo btn, the numbers that had been previously used, remain striked out. | ![screenshot](documentation/bugs/bug-uno-1.png) ![screenshot](documentation/bugs/bug-uno-2.png)  ![screenshot](documentation/bugs/bug-uno-3.png) |
 
 > [!IMPORTANT]  
 > From my testing I have not identified any bugs other than the ones listed in the above sections. If you identify any new bugs please feel free to contact me and/or clone the project and fix the issue.
