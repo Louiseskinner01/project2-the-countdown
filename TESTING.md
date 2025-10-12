@@ -185,7 +185,7 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
  
 | Test                                                             | Result |
 | ---------------------------------------------------------------- | ------ |
-| Color contrast meets WCAG 2.1 standards                          | ✅      |
+| The web app follows the WCAG (web content accessibility guidelines) 2.1 standards                          | ![](documentation/images/accessibility-fail.png)    |
 | Text size and spacing adjustable                                 | ✅      |
 | Interactive elements clearly labeled and accessible via keyboard | ✅      |
 | ARIA labels provided for key game sections                       | ✅      |
