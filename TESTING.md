@@ -29,19 +29,20 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 
 | Feature Tested | Test Description                                   | Expected Outcome                                | Pass/Fail             |  Screenshot |
 | ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- | ----------- |
-| Start Game Button   | Clicked “PLAY?” and then “Start Game”            | Game begins, keypad becomes active              | ✅ Works | ![screenshot]() |
-| Orientation Warning | Rotated mobile device from portrait to landscape | Warning disappears and game becomes visible     | ✅ Works | ![screenshot]() |
-| Difficulty Buttons  | Selected “Easy / Medium / Hard”                  | Correct timer and equation difficulty displayed | ✅ Works | ![screenshot]() |
-| Keypad Input        | Clicked number keys and OK                       | Values entered correctly into equation input    | ✅ Works | ![screenshot]() |
-| Timer Countdown     | Started game at different difficulties           | Timer matched selected duration                 | ✅ Works | ![screenshot]() |
-| Play Aagin? Button     |  Clicked the button at the end of a game     | Resets the window bringing the user back to the clickable PLAY? text                  | ✅ Works | ![screenshot]() |
-Confirm difficulty |  Clicked the confirm button on diffeent difficulty levels | Locks difficulty, updates the timer and removes buttons from further use  | ✅ Works          | ![screenshot]() |
-| Generate numbers   | Six random numbers displayed           | Unique each round               | ✅  Works         | ![screenshot]() |
-Get target number  | Generates valid target (122–1017)      | Within range                    | ✅ Works          | ![screenshot]() |
-Keypad input       | Inputs digits and operators            | Responsive and accurate         | ✅  Works         | ![screenshot]() |
-Undo button        | Clicked the undo button after submitting an equation | Clears last entry and restores numbers              | ✅  Works         | ![screenshot]() |
-Win condition      | Displays winner message                | Works and stops timer           | ✅  Works         | ![screenshot]() |
-Lose condition     | Displays timeout message               | Works and triggers “Play Again” | ✅ Works          | ![screenshot]() |
+| Start Game Button   | Clicked “PLAY?” and then “Start Game”            | Game begins, keypad becomes active              | ✅ Works | ![screenshot](documentation/features/404.png) |
+| Orientation Warning | Rotated mobile device from portrait to landscape | Warning disappears and game becomes visible     | ✅ Works | ![screenshot](documentation/features/orientation-lock-small-screen.png) |
+| Difficulty Buttons  | Selected “Easy / Medium / Hard”                  | Correct timer and equation difficulty displayed | ✅ Works | ![screenshot](documentation/features/difficulty-selection.png) |
+| Keypad Input        | Clicked number keys and OK                       | Values entered correctly into equation input    | ✅ Works | ![screenshot](documentation/features/keypad-inplay.png) |
+| Timer Countdown     | Started game at different difficulties           | Timer matched selected duration                 | ✅ Works | ![screenshot](documentation/features/timer-countdown.png) |
+| Play Aagin? Button     |  Clicked the button at the end of a game     | Resets the window bringing the user back to the clickable PLAY? text                  | ✅ Works | ![screenshot](documentation/features/play-again.png) ![screenshot](documentation/features/play-again-reload.png)|
+Confirm difficulty |  Clicked the confirm button on different difficulty levels | Locks difficulty, updates the timer and removes buttons from further use  | ✅ Works          | ![screenshot](documentation/features/difficulty-level-confirmed.png) |
+| Generate numbers   | Six random numbers displayed           | Unique each round               | ✅  Works         | ![screenshot](documentation/features/random-numbers.png) |
+Get target number  | Generates valid target (122–1017)      | Within range                    | ✅ Works          | ![screenshot](documentation/features/target-number.png) |
+Keypad input       | Inputs digits and operators            | Responsive and accurate         | ✅  Works         | ![screenshot](documentation/features/keypad-operators.png) |
+Undo button        | Clicked the undo button after submitting an equation | Clears last entry and restores numbers              | ✅  Works         | ![screenshot](documentation/features/undo-btn-before.png) ![screenshot](documentation/features/undo-btn-used.png)|
+Win condition      | Displays winner message                | Works and stops timer           | ✅  Works         | ![screenshot](documentation/features/message-win.png) |
+Lose condition     | Displays timeout message               | Works and triggers “Play Again” | ✅ Works          | ![screenshot](documentation/features/message-lose.png) |
+Navigation (Burger-icon)     | Displays timeout message               | Works and triggers “Play Again” | ✅ Works          |  ![screenshot](documentation/features/navbar-toggle.png) ![screenshot](documentation/features/navbar-expand.png) |
 
 
 
@@ -191,7 +192,13 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 | Orientation and responsiveness maintained for screen readers     | ✅      |
 
 
-### Performance summary
+## Performance summary
+### Lighthouse Performace
+
+
+
+
+
 
 ## Bugs / Fixes
 
