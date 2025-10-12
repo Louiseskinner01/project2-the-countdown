@@ -8,8 +8,6 @@ window.timeLeft = 0;
 window.timerArea = null;
 window.timerDisplay = null;
 
-const workingoutGrid = document.getElementById("workingout-grid-1");
-const workingoutGridTwo = document.getElementById("workingout-grid-2");
 
 let confirmDifficultyBtn;
 let timeLeft;
