@@ -7,7 +7,7 @@
     function checkOrientation(){
         const isMobile = window.innerWidth < 576;
         const isPortrait = window.innerHeight > window.innerWidth;
-    
+        if (orientationMessage && gameContainer && controllerBtnsContainer) {
         if (isMobile && isPortrait) {
             
             orientationMessage.classList.remove("hidden");
@@ -20,6 +20,7 @@
             controllerBtnsContainer.classList.remove("hidden");    
          
           }
+        }
     
         }
  
