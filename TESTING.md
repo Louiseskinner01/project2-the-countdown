@@ -188,18 +188,8 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 |  | [workingout-grid.js](https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/js/workingout-grid.js) | [JSHint valid code](https://jigsaw.w3.org/css-validator/validator?uri=) | ![screenshot](documentation/validation/js/workingout-grid-warnings.png) ![screenshot](documentation/validation/js/workingout-grid-warnings-reduced.png) | ` /* jshint esversion: 11 */` `/* exported createEquationRow, createKeypad */` |
 |  | [orientation.js](https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/js/orientation.js) | [JSHint valid code](https://jigsaw.w3.org/css-validator/validator?uri=) | ![screenshot](documentation/validation/js/orientation-warnings-none.png)  | ` /* jshint esversion: 6 */` |
 
-### Accessibility Summary 
- 
-| Test                                                             | Result |
-| ---------------------------------------------------------------- | ------ |
-| The web app follows the WCAG (web content accessibility guidelines) 2.1 standards                          | ![](documentation/images/accessibility-fail.png)    |
-| Text size and spacing adjustable                                 | ✅      |
-| Interactive elements clearly labeled and accessible via keyboard | ✅      |
-| ARIA labels provided for key game sections                       | ✅      |
-| Orientation and responsiveness maintained for screen readers     | ✅      |
 
-
-## Performance summary
+## Performance
 ### Lighthouse Performance
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
@@ -212,6 +202,17 @@ Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lightho
 | Virtual Events | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-registration-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-registration.png) | The first set of lighthouse tests for the mobile site came back with a performance of 84%. After chnaging the navbar image and adding a good alt description, the performance improved. |
 | Form-submitted | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-form-submitted.png) | Due to the erros found and corrections made on previous pages, there wasn't anything major effecting this page, resulting in a good performance level. ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-poor.png)|
 | 404 | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-404-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-404.png) | Due to the erros found and corrections made on previous pages, there wasn't anything major effecting this page, resulting in a good performance level. |
+
+### Accessibility Summary 
+ 
+| Test                                                             | Result |
+| ---------------------------------------------------------------- | ------ |
+| The web app follows the WCAG (web content accessibility guidelines) 2.1 standards                          | ![](documentation/images/accessibility-fail.png)    |
+| Text size and spacing adjustable                                 | ✅      |
+| Interactive elements clearly labeled and accessible via keyboard | ✅      |
+| ARIA labels provided for key game sections                       | ✅      |
+| Orientation and responsiveness maintained for screen readers     | ✅      |
+
 
 
 ## Bugs / Fixes
