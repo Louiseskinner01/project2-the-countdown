@@ -26,6 +26,11 @@ All tests were conducted manually, using a combination of Google Chrome DevTools
 
 ### Manual Tests (Defensive Programming)
 
+⚠️ NOTE ⚠️
+- Users cannot submit an empty form (add the `required` attribute)
+- Users must enter valid field types (ensure the correct input `type=""` is used)
+- Users cannot brute-force a URL to navigate to a restricted pages
+
 
 | Feature Tested | Test Description                                   | Expected Outcome                                | Pass/Fail             |  Screenshot |
 | ------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------- | ----------- |
@@ -195,7 +200,14 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 ## Performance summary
 ### Lighthouse Performace
 
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
 
+| Page | Result | Notes |   |
+| --- | --- | --- | --- |
+| Home | ![screenshot](documentation/lighthouse-performance/home-errors.png) |
+![screenshot](documentation/lighthouse/desktop-home.png) |
+| Game | ![screenshot](documentation/lighthouse/mobile-game.png) | ![screenshot](documentation/lighthouse/desktop-game.png) |
+| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
 
 
 
