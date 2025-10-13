@@ -127,10 +127,7 @@ h2 {
 
 
 /*Navigation styling*/
-nav img {
-    height: 80px;
-  
-}
+
 
 .nav-link {
     color: var(--main-font-color) !important;
