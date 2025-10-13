@@ -202,14 +202,14 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
 
-| Page | Result | Notes |   |
+| Page | Mobile | Desktop |  Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-performance/home-errors.png) |
-![screenshot](documentation/lighthouse/desktop-home.png) |
-| Game | ![screenshot](documentation/lighthouse/mobile-game.png) | ![screenshot](documentation/lighthouse/desktop-game.png) |
-| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
-
-
+| Home | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-index-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-index.png) | x |
+Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-satisfactory.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-instructions.png) | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-poor.png) |
+| Math Practice | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-practice-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-practice.png) | x |
+| Virtual Events | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-registration-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-registration.png) | x |
+| Form-submitted | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-form-submitted.png) | x |
+| 404 | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-404-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-404.png) | x |
 
 
 ## Bugs / Fixes
