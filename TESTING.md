@@ -198,18 +198,18 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 
 
 ## Performance summary
-### Lighthouse Performace
+### Lighthouse Performance
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
 
-| Page | Mobile | Desktop |  Notes |
+| Page | Mobile | Desktop |  Notes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-index-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-index.png) | x |
-Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-satisfactory.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-instructions.png) | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-poor.png) |
-| Math Practice | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-practice-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-practice.png) | x |
-| Virtual Events | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-registration-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-registration.png) | x |
-| Form-submitted | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-form-submitted.png) | x |
-| 404 | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-404-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-404.png) | x |
+| Home | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-index-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-index.png) |This is the first page that was tested so its at this stage that the most effective changes were made. Meta tags were added to help improve SEO. The previous image taht sat in the navbar was resized to help improve the page load, this had a positive impact but was minute. Aria lables were added to the footers where the social icons are. It is also at this stage that the fontawesome script tag was removed from html pages and replaced with a cdn link, speeding up the page load and improving the overal performance.|
+Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-satisfactory.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-instructions.png) | There we a few minor issues related to accessibility that had a negative impact on the perofrmance. ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-poor.png) |
+| Math Practice | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-practice-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-practice.png) | Testing was still showing that the image in the navbar could be smaller in size, plus feedback on the readability of the image initiated me to change tge image completely. Once I created a new image, resized it using tinyPNG and commited it into the project, the performance improved, not only on this page but all previously tested pages. |
+| Virtual Events | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-registration-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-registration.png) | The first set of lighthouse tests for the mobile site came back with a performance of 84%. After chnaging the navbar image and adding a good alt description, the performance improved. |
+| Form-submitted | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-form-submitted.png) | Due to the erros found and corrections made on previous pages, there wasn't anything major effecting this page, resulting in a good performance level. ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-poor.png)|
+| 404 | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-404-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-404.png) | Due to the erros found and corrections made on previous pages, there wasn't anything major effecting this page, resulting in a good performance level. |
 
 
 ## Bugs / Fixes
