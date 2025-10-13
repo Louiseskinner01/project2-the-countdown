@@ -5,11 +5,13 @@
 > Return back to the [README.md](README.md) file.
 
 ## Rationale
-The primary goal of testing was to ensure the Countdown Game application performs consistently across multiple devices and screen sizes, maintaining both functionality and a good user experience.
+
+The primary goal of testing was to ensure that the Countdown Game application performs consistently across multiple devices and screen sizes, maintaining both functionality and a smooth user experience.
+Testing focused on performance, accessibility, and responsiveness.
 
 ## Approach
-Testing was carried out to ensure that the website functions as intended, is responsive across different devices, and provides a smooth and intuitive user experience.
-All tests were conducted manually, using a combination of Google Chrome DevTools, HTML/CSS/JS validation tools, and live user interaction testing.
+Testing was carried out to verify that the website functions as intended, is fully responsive, and provides an intuitive user experience.
+All tests were conducted manually using a combination of Google Chrome DevTools, validation tools, and live user interaction testing.
 
 
 ## Methods
@@ -227,6 +229,7 @@ Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lightho
 | --- | --- |
 
 | When an equation has been undone using the undo btn, the numbers that had been previously used, remain striked out. | ![screenshot](documentation/bugs/bug-uno-1.png) ![screenshot](documentation/bugs/bug-uno-2.png)  ![screenshot](documentation/bugs/bug-uno-3.png) |
+| When playing on a mobile device vs a desktop, the equation input becomes opaque where as it's css styling works fine on a tablet, laptop and desktop. | ![screenshot](documentation/bugs/bug-uno-1.png) ![screenshot](documentation/bugs/bug-uno-2.png) |
 
 > [!IMPORTANT]  
 > From my testing I have not identified any bugs other than the ones listed in the above sections. If you identify any new bugs please feel free to contact me and/or clone the project and fix the issue.
