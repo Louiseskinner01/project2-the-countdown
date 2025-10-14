@@ -94,8 +94,8 @@ By testing through Chrome DevTools, I was able to efficiently identify and resol
 
 I've tested my deployed project to check for responsiveness issues.
 
-| Page | Mobile (Portrait) | Mobile (Lanscape)| Tablet | Laptop | Desktop | Notes |
-| --- | --- | --- | --- | ---| --- |--- |
+| Page | Mobile (Portrait) | Mobile (Lanscape)| Tablet | Laptop | Desktop | 
+| --- | --- | --- | --- | ---| --- |
 | Home (landing page) | ![screenshot](documentation/responsiveness/mobile-portrait/m-portrait-home-landing.PNG) | ![screenshot](documentation/responsiveness/mobile-landscape/m-landscape-home.PNG) | ![screenshot](documentation/responsiveness/tablet/tablet-index.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-play.png) | ![screenshot]() | |
 | Home (during Play) | NA | ![screenshot](documentation/responsiveness/mobile-landscape/m-landscape-register-top.PNG) | ![screenshot](documentation/responsiveness/tablet/tablet-index-during-play.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-during-play.png) | ![screenshot]() |  | 
 | Instructions | ![screenshot](documentation/responsiveness/mobile-portrait/m-portrait-instructions.PNG) | ![screenshot](documentation/responsiveness/mobile-landscape/m-landscape-instructions-top.PNG) ![screenshot](documentation/responsiveness/mobile-landscape/m-landscape-instructions.PNG)| ![screenshot](documentation/responsiveness/tablet/tablet-instructions.png) | ![screenshot](documentation/responsiveness/laptop/responsive-laptop-instructions.png) | ![screenshot]() | |
