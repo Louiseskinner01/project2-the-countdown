@@ -229,7 +229,7 @@ Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lightho
 | Issue                 | Screenshot |
 | --------------------- | --- | 
  When an equation has been undone using the undo btn, the numbers that had been previously used, remain striked out. | ![screenshot](documentation/bugs/bug-uno-1.png)![screenshot](documentation/bugs/bug-undo-2.png)  ![screenshot](documentation/bugs/bug-undo-3.png) |
- When playing on a mobile device vs a desktop, the equation input becomes opaque where as it's css styling works fine on a tablet, laptop and desktop. |![screenshot]() ![screenshot]() |
+ There is an issue with the opacity of the **equation input** when the game is in play. The backgorund of the **equation input** should be white and remain white for the duration of play, however when playing The Countdown on a mobile device the **equation input** loses opacity. |**Laptop** ![screenshot](documentation/bugs/existing/existing-issue-laptop.png) **Mobile** ![screenshot](documentation/bugs/existing/existing-issue-mobile.PNG) |
 
 > [!IMPORTANT]  
 > From my testing I have not identified any bugs other than the ones listed in the above sections. If you identify any new bugs please feel free to contact me and/or clone the project and fix the issue.
