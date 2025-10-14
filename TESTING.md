@@ -189,7 +189,7 @@ I have used the recommended [JSHint](https://jshint.com/) to validate all of my 
 |  | [orientation.js](https://github.com/Louiseskinner01/project2-the-countdown/blob/main/assets/js/orientation.js) | [JSHint valid code](https://jigsaw.w3.org/css-validator/validator?uri=) | ![screenshot](documentation/validation/js/orientation-warnings-none.png)  | ` /* jshint esversion: 6 */` |
 
 
-## Performance
+## Performance 
 ### Lighthouse Performance
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
@@ -217,20 +217,19 @@ Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lightho
 
 ## Bugs / Fixes
 
-| Issue                                         | Cause                          | Solution                               | Status  |
-| --------------------------------------------- | ------------------------------ | -------------------------------------- | ------- |
-| Keypad not resizing correctly                 | Flexbox conflict               | Adjusted grid layout                   | ✅ Fixed |
+| Issue      | Cause  | Solution    | Status  |
+| --------------------------------------------- | ------------------------------ | -------------------------- | ------- |
+ Keypad not resizing correctly                 | Flexbox conflict               | Adjusted grid layout                   | ✅ Fixed |
 | Timer not resetting on replay                 | Countdown interval not cleared | Added `clearInterval()`                | ✅ Fixed |
 | “Play?” span reappeared on orientation change | Re-triggered event listener    | Added `.remove()` on click             | ✅ Fixed |
 | Placeholder color not applying                | CSS selector conflict          | Used `::placeholder` with `!important` | ✅ Fixed |
 | Buttons remaining visible when the screen size is reduced or mobile device in put into portrait          | Missing DOM elements in the orientation.js file       | Added `const controllerBtnsContainer = document.getElementById("controllers-area");` & `controllerBtnsContainer.classList.add("hidden");` in the IF condition, with `controllerBtnsContainer.classList.remove("hidden");` in the else condition| ✅ Fixed |
 ### Known/Existing Issues
 
-| Issue | Screenshot |
-| --- | --- |
-
-| When an equation has been undone using the undo btn, the numbers that had been previously used, remain striked out. | ![screenshot](documentation/bugs/bug-uno-1.png) ![screenshot](documentation/bugs/bug-uno-2.png)  ![screenshot](documentation/bugs/bug-uno-3.png) |
-| When playing on a mobile device vs a desktop, the equation input becomes opaque where as it's css styling works fine on a tablet, laptop and desktop. | ![screenshot](documentation/bugs/bug-uno-1.png) ![screenshot](documentation/bugs/bug-uno-2.png) |
+| Issue                 | Screenshot |
+| --------------------- | --- | 
+ When an equation has been undone using the undo btn, the numbers that had been previously used, remain striked out. | ![screenshot](documentation/bugs/bug-uno-1.png)![screenshot](documentation/bugs/bug-undo-2.png)  ![screenshot](documentation/bugs/bug-undo-3.png) |
+ When playing on a mobile device vs a desktop, the equation input becomes opaque where as it's css styling works fine on a tablet, laptop and desktop. |![screenshot]() ![screenshot]() |
 
 > [!IMPORTANT]  
 > From my testing I have not identified any bugs other than the ones listed in the above sections. If you identify any new bugs please feel free to contact me and/or clone the project and fix the issue.
