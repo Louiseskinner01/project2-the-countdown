@@ -273,7 +273,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 Consider adding screenshots of your Projects Board(s), Issues (open and closed), and Milestone tasks.
 
-⚠️ --- END ---⚠️
+
 
 [GitHub Projects](https://www.github.com/Louiseskinner01/project2-the-countdown/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
@@ -328,23 +328,6 @@ Advanced operations (like square roots, exponents, or brackets).
 -Custom number sets chosen by the player.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Testing
 
 > [!NOTE]  
@@ -363,38 +346,6 @@ The site was deployed to GitHub Pages. The steps to deploy are as follows:
 - Allow up to 5 minutes for the site to fully deploy.
 
 The live link can be found on [GitHub Pages](https://louiseskinner01.github.io/project2-the-countdown).
-
-### EmailJS API
-
-This application uses [EmailJS](https://www.emailjs.com/docs) to handle sending emails from the live site.
-
-Instructions on how to connect EmailJS to this project:
-
-- [Sign Up](https://dashboard.emailjs.com/sign-up) for an EmailJS account on their website.
-- Create an **Email Service** from your EmailJS dashboard.
-- In your EmailJS dashboard, navigate to the **API Keys** section, and copy your *API Key*.
-- Add the following code snippet into the `head` of your HTML file at the top.
-    - Make sure you have added your own `API Key`.
-
-```js
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-   (function(){
-      emailjs.init({
-        publicKey: "YOUR_PUBLIC_KEY",
-      });
-   })();
-</script>
-```
-
-- Create an "Email Template" in your EmailJS dashboard. This template will define the content and structure of the emails you'll send.
-- Write JavaScript functionality to send emails using EmailJS. Below is very basic syntax for the code example, but check the EmailJS docs for further code:
-
-```js
-emailjs.send(serviceID, templateID, templateParams, options);
-```
-
-- Call your function whenever you want to send an email.
 
 
 ### Local Development
@@ -430,16 +381,9 @@ By forking the GitHub Repository, you make a copy of the original repository on 
 
 ### Local VS Deployment
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site. Generally, there shouldn't be [m]any major differences, so if you honestly cannot find any differences, feel free to use the following example:
-
-⚠️ --- END --- ⚠️
-
 There are no remaining major differences between the local version when compared to the deployed version online.
 
 ## Credits
-
 ### Content
 
 | Source | Notes |
