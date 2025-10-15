@@ -156,7 +156,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Page | Mobile (landscape & portrait)  Tablet Desktop |
 | --- | --- |
 | Home (index.html) | ![screenshot](documentation/wireframes/wireframe-index-play.png) |
-| Home - During Play<br>(index.html) | ![screenshot]() |
+| Home - During Play<br>(index.html) | ![screenshot](documentation/wireframes/wireframes-index-during-play.png) |
 | 404 Error (404.html)| ![screenshot](documentation/wireframes/wireframe-404.png) |![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Virtual Events (registration.html) | ![screenshot](documentation/wireframes/wireframe-registration.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Practice Timestables (practice.html) | ![screenshot](documentation/wireframes/wireframe-practice.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
@@ -295,38 +295,38 @@ I've decomposed my Epics into User Stories for prioritizing and implementing the
 
 - **Must Have**: guaranteed to be delivered - required to Pass the project (*max ~60% of stories*)
 
--Must Have (Core to the project – without these the game doesn’t work)
--As a player, I want to choose a difficulty level, so that I can play at my preferred challenge and time limit.
--As a player, I want to see a countdown timer, so that I know how much time I have left to solve the problem.
--As a player, I want to generate a random set of numbers, so that every game feels different and fresh.
--As a player, I want to be given a target number, so that I know what I’m aiming for in my calculations.
--As a player, I want to input equations using a keypad, so that I can interact easily on mobile and desktop.
--As a player, I want the game to validate my equations, so that I don’t waste time with invalid inputs.
--As a player, I want instant feedback when I reach the target, so that I know I’ve won.
--As a player, I want to see a "Play Again" option after finishing a game, so that I can quickly start a new round.
+  - Must Have (Core to the project – without these the game doesn’t work)
+  - As a player, I want to choose a difficulty level, so that I can play at my preferred challenge and time limit.
+  - As a player, I want to see a countdown timer, so that I know how much time I have left to solve the problem.
+  - As a player, I want to generate a random set of numbers, so that every game feels different and fresh.
+  - As a player, I want to be given a target number, so that I know what I’m aiming for in my calculations.
+  - As a player, I want to input equations using a keypad, so that I can interact easily on mobile and desktop.
+  - As a player, I want the game to validate my equations, so that I don’t waste time with invalid inputs.
+  - As a player, I want instant feedback when I reach the target, so that I know I’ve won.
+  - As a player, I want to see a "Play Again" option after finishing a game, so that I can quickly start a new round.
 
 
 
 Advanced operations (like square roots, exponents, or brackets).
 - **Should Have**: adds significant value, but not vital (*~20% of stories*)
 
--As a player, I want to undo a calculation step, so that I can correct mistakes without restarting the whole game.
--As a mobile user, I want large, tap-friendly buttons, so that I can play easily on my phone.
--As a visually impaired user, I want clear colour contrasts (e.g. bold backgrounds and bright highlights), so that I can see buttons and numbers more clearly.
--As a user with little maths knowledge, I want helpful error messages, so that I understand what I did wrong.
+  - As a player, I want to undo a calculation step, so that I can correct mistakes without restarting the whole game.
+  - As a mobile user, I want large, tap-friendly buttons, so that I can play easily on my phone.
+  - As a visually impaired user, I want clear colour contrasts (e.g. bold backgrounds and bright highlights), so that I can see buttons and numbers more clearly.
+  - As a user with little maths knowledge, I want helpful error messages, so that I understand what I did wrong.
 
 - **Could Have**: has small impact if left out (*the rest ~20% of stories*)
 
--As a player, I want to start the game only when my device is in landscape mode, so that I can play with a clear and consistent layout.
--As a casual user, I want to play for fun and relaxation, so that I can enjoy the game without pressure.
--As a competitive user, I want to solve the problem within the timer, so that I feel challenged.
--As a learner, I want to practice equations in a playful way, so that I can improve my maths skills without it feeling like work.
+  - As a player, I want to start the game only when my device is in landscape mode, so that I can play with a clear and consistent layout.
+  - As a casual user, I want to play for fun and relaxation, so that I can enjoy the game without pressure.
+  - As a competitive user, I want to solve the problem within the timer, so that I feel challenged.
+  - As a learner, I want to practice equations in a playful way, so that I can improve my maths skills without it feeling like work.
 
 - **Won't Have**: not a priority for this iteration - future features
 
--Multiplayer mode or online leaderboards.
--Saving player stats across sessions.
--Custom number sets chosen by the player.
+  - Multiplayer mode or online leaderboards.
+  - Saving player stats across sessions.
+  - Custom number sets chosen by the player.
 
 
 ## Testing
