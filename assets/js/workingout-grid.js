@@ -1,4 +1,4 @@
-/* jshint esversion: 6 */
+/* jshint esversion: 11 */
 
 // workingout-grid.js
 let randomNumbersCopy = [];
@@ -123,6 +123,7 @@ function handleInputEnter(input, undoBtn) {
     }
 
     try {
+        /* jshint -W061 */
         let result = eval(value);
         result = Math.round(result * 2) / 2;
 
