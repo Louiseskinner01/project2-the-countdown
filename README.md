@@ -156,6 +156,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Page | Mobile (landscape & portrait)  Tablet Desktop |
 | --- | --- |
 | Home (index.html) | ![screenshot](documentation/wireframes/wireframe-index-play.png) |
+| Home - During Play<br>(index.html) | ![screenshot]() |
 | 404 Error (404.html)| ![screenshot](documentation/wireframes/wireframe-404.png) |![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Virtual Events (registration.html) | ![screenshot](documentation/wireframes/wireframe-registration.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Practice Timestables (practice.html) | ![screenshot](documentation/wireframes/wireframe-practice.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
