@@ -35,55 +35,55 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 #### 1. Strategy
 
 **Purpose**
--Provide users with a simple, accessible, and enjoyable way to perform mathematical operations.
--Deliver instant feedback to reinforce learning and make the experience interactive.
--Support accessibility through clear design, responsive layouts, and intuitive controls.
+- Provide users with a simple, accessible, and enjoyable way to perform mathematical operations.
+- Deliver instant feedback to reinforce learning and make the experience interactive.
+- Support accessibility through clear design, responsive layouts, and intuitive controls.
 
 **Primary User Needs**
--Perform calculations quickly and accurately without unnecessary steps.
--Understand mistakes easily and learn from feedback.
--Track performance and progress to feel motivated and engaged over time.
--Enjoy a game-like experience rather than just a static calculator.
+- Perform calculations quickly and accurately without unnecessary steps.
+- Understand mistakes easily and learn from feedback.
+- Track performance and progress to feel motivated and engaged over time.
+- Enjoy a game-like experience rather than just a static calculator.
 
 **Business Goals**
--Encourage repeat engagement by blending education with fun.
--Showcase an accessible, well-structured tool that demonstrates strong UX principles.
--Position the app as both a learning aid and a casual game to broaden appeal.
--Build a foundation that could later expand into new features (leaderboards, multiplayer challenges, etc.).
+- Encourage repeat engagement by blending education with fun.
+- Showcase an accessible, well-structured tool that demonstrates strong UX principles.
+- Position the app as both a learning aid and a casual game to broaden appeal.
+- Build a foundation that could later expand into new features (leaderboards, multiplayer challenges, etc.).
 #### 2. Scope
 
 **[Features](#features)** (see below)
--Interactive number and operator inputs with built-in keypad.
--Random number and target generation for a challenge-based mode.
--Difficulty settings with adjustable timers.
--Error detection with clear, user-friendly messages.
--Feedback system that tracks correct and incorrect equations.
--Visual styling that reinforces the theme (e.g., “Countdown” style).
+- Interactive number and operator inputs with built-in keypad.
+- Random number and target generation for a challenge-based mode.
+- Difficulty settings with adjustable timers.
+- Error detection with clear, user-friendly messages.
+- Feedback system that tracks correct and incorrect equations.
+- Visual styling that reinforces the theme (e.g., “Countdown” style).
 
 **Content Requirements**
--Clear and consistent labels for all buttons and interactive elements.
--Instructions and guidance within the console to reduce confusion.
--Prominent display of results, error states, and remaining time.
--Accessibility considerations: high-contrast colors, legible fonts, and responsive design for mobile/desktop use.
+- Clear and consistent labels for all buttons and interactive elements.
+- Instructions and guidance within the console to reduce confusion.
+- Prominent display of results, error states, and remaining time.
+- Accessibility considerations: high-contrast colors, legible fonts, and responsive design for mobile/desktop use.
 
 #### 3. Structure
 
 **Information Architecture**
 - **Navigation Menu**:
-  -Navigation Menu: Minimalist navbar with clear links to Home, How to Play, and About.
-  -Main Game Console: Central focus with difficulty selection, number generation, and results area.
- -Supporting Elements: Timer display, user feedback (errors or successes), and controls positioned logically beneath the console.
+   - Navigation Menu: Minimalist navbar with clear links to Home, How to Play, and About.
+   - Main Game Console: Central focus with difficulty selection, number generation, and results area.
+  - Supporting Elements: Timer display, user feedback (errors or successes), and controls positioned logically beneath the console.
 - **Hierarchy**:
--Key interactions (inputs, operators, results) placed at the center of the screen for visibility.
--Secondary elements (difficulty options, instructions) appear before gameplay begins, then fade to the background.
--Feedback messages styled to stand out (e.g., different color coding for success/error).
+  - Key interactions (inputs, operators, results) placed at the center of the screen for visibility.
+  - Secondary elements (difficulty options, instructions) appear before gameplay begins, then fade to the background.
+  - Feedback messages styled to stand out (e.g., different color coding for success/error).
 
 **User Flow**
-1.User lands on the homepage and reads a short introduction.
-2.Clicks Play, chooses difficulty, and generates numbers.
-3.Works through equations using the keypad and inputs.
-4.Instantly sees whether the attempt is correct or not.
-5.Timer runs out or target is met → user gets feedback and can restart..
+1. User lands on the homepage and reads a short introduction.
+2. Clicks Play, chooses difficulty, and generates numbers.
+3. Works through equations using the keypad and inputs.
+4. Instantly sees whether the attempt is correct or not.
+5. Timer runs out or target is met → user gets feedback and can restart..
 
 #### 4. Skeleton
 
@@ -156,11 +156,11 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Page | Mobile (landscape & portrait)  Tablet Desktop |
 | --- | --- |
 | Home (index.html) | ![screenshot](documentation/wireframes/wireframe-index-play.png) |
-| 404 Error (404.html)| ![screenshot](documentation/wireframes/mobile-404.png) |![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
-| Virtual Events (registration.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
-| Practice Timestables (practice.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+| 404 Error (404.html)| ![screenshot](documentation/wireframes/wireframe-404.png) |![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+| Virtual Events (registration.html) | ![screenshot](documentation/wireframes/wireframe-registration.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+| Practice Timestables (practice.html) | ![screenshot](documentation/wireframes/wireframe-practice.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Instructions (instructions.html) | ![screenshot](documentation/wireframes/wireframe-instructions.png) |
-| Confirmation (form-submitted.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+| Confirmation (form-submitted.html) | ![screenshot](documentation/wireframes/wireframe-form-submitted.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## User Stories
 ### General Play
