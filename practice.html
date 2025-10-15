@@ -313,7 +313,6 @@
       
   
     </main>
-    <div id="viewportSize" style="position:fixed;bottom:10px;right:10px;background:#000;color:#fff;padding:5px;font-family:monospace;z-index:9999;"></div>
 
 
     <footer class="feature">
@@ -334,15 +333,6 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    function showSize() {
-      document.getElementById('viewportSize').textContent =
-        window.innerWidth + ' x ' + window.innerHeight;
-    }
-    window.addEventListener('resize', showSize);
-    showSize();
-  </script>
   
 </body>
 </html>
