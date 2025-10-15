@@ -153,9 +153,9 @@ This mix avoids monotony, keeps the design visually interesting, and makes sure 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-| Page | Mobile | Tablet | Desktop |
-| --- | --- | --- | --- |
-| Home (index.html) | ![screenshot](documentation/wireframes/portrait-home.png) |![screenshot](documentation/wireframes/mobile-404.png) |![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Page | Mobile (landscape & portrait)  Tablet Desktop |
+| --- | --- |
+| Home (index.html) | ![screenshot](documentation/wireframes/wireframe-index-play.png) |
 | 404 Error (404.html)| ![screenshot](documentation/wireframes/mobile-404.png) |![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Virtual Events (registration.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Practice Timestables (practice.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
