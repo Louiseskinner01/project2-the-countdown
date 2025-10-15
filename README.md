@@ -159,7 +159,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | 404 Error (404.html)| ![screenshot](documentation/wireframes/mobile-404.png) |![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Virtual Events (registration.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 | Practice Timestables (practice.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
-| Instructions (instructions.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+| Instructions (instructions.html) | ![screenshot](documentation/wireframes/wireframe-instructions.png) |
 | Confirmation (form-submitted.html) | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## User Stories
