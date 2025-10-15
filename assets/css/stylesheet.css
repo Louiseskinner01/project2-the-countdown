@@ -136,7 +136,7 @@ h2 {
 }
 
 img {
-    
+
     width: 200px;
 }
 
@@ -154,13 +154,12 @@ footer {
     padding: 1rem;
 }
 
-footer a i {
-    text-decoration: none;
-    color: var(--main-font-color) !important;
+i {
+    color: var(--main-theme-color);
 }
 
-footer a i:hover {
-color: var(--main-theme-colorcolor);
+i:hover {
+    color: var(--feature-color);
 }
 
 /*Other Styling*/
