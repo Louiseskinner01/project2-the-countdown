@@ -106,14 +106,13 @@ function handleInputEnter(input, undoBtn) {
     if (!value) return;
 
     const usedNums = value.match(/\d+/g)?.map(Number) || [];
-    console.log(usedNums);
     let tempAvailable = [...randomNumbersCopy];
-    console.log("tempAvailable = " + tempAvailable);
+
 
     // Validate numbers
     for (let num of usedNums) {
         const index = tempAvailable.indexOf(num);
-        console.log("index = " + index);
+      
 
         if (index === -1) {
             outputDiv.textContent = "Invalid: number not available";
@@ -163,7 +162,7 @@ function handleInputEnter(input, undoBtn) {
     
                 matches.forEach(matchedNum => {
                     matchedNum.classList.add("used-number");
-                    console.log(matchedNum);
+                  
                 });
             });
     } catch {
