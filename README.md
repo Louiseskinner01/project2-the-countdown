@@ -196,7 +196,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | --- | --- | --- |
 | As a casual user | I want to play for fun and relaxation | so that I can enjoy the game without pressure. |
 | As a competitive user| I want to solve the problem within the timer | so that I feel challenged. |
-| As a learner | I want to practice equations in a playful way | so that I can improve my maths skills without it feeling like work. |
+| As a learner | I want to practice equations in a playful way | so that I can improve my math skills without it feeling like work. |
 
 
 ## Features
@@ -206,9 +206,9 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | --- | --- | --- |
 | Difficulty Selection | Users can choose from multiple difficulty levels that set different countdown timers. This helps beginners learn at a slower pace, while advanced players can push their speed and accuracy. | ![screenshot](documentation/features/difficulty-selection.png) |
 | Countdown Timer | A digital style timer, offering a clear and simple look, counts down during gameplay. This adds urgency and excitement, encouraging focus and simulating the real Countdown game.| ![screenshot](documentation/features/timer-countdown.png) |
-| Submit Answer | This is enabled by the user clicking the OK button on the built-in keyboard. It allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
+| Submit Answer | This is enabled by the user clicking the OK button on the built-in keyboard. It allows users to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
 | Random Number Generation | Six numbers are generated at random (four small, two large). This ensures variety, so each game feels unique and unpredictable. | ![screenshot](documentation/features/random-numbers.png) |
-| Target Number | A random target number is generated using only the numbers from the "6 random numbers generated in the previous step, and mathmateical operators to ensure the target number is realistic and achievable for players to reach. This provides a clear goal and challenge for each play. | ![screenshot](documentation/features/target-number.png) |
+| Target Number | A random target number is generated using only the numbers from the "6 random numbers generated in the previous step, and mathemateical operators to ensure the target number is realistic and achievable for players to reach. This provides a clear goal and challenge for each play. | ![screenshot](documentation/features/target-number.png) |
 | Built-in Keypad | An interactive customised to provide a simplistic and clean gameplay. This ensures accessibility on both desktop and mobile, while preventing invalid inputs.| ![screenshot](documentation/features/keypad-operators.png) |
 | Equation Validation & Feedback | Equations are checked instantly. Correct inputs show results, while incorrect ones display error messages. This helps users learn and avoid repeated mistakes. | ![screenshot](documentation/features/equation-validation.png) |
 | Undo Feature | Players can undo their last equation. This allows experimentation without penalty, making the game more forgiving and user-friendly. | **Before Undo**![screenshot](documentation/features/undo-btn-before.png) **After Undo**![screenshot](documentation/features/undo-btn-used.png) |
@@ -239,8 +239,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - **Voice Input**: Add a voice input option for users to dictate their calculations instead of typing.
 - **Educational Quizzes**: Implement math-based quizzes or games to help users improve their arithmetic skills while using the app.
 - **Scoreboard / Leaderboard**: Implement a scoring system that tracks correct answers, speed, and streaks. Users can compare scores on a leaderboard, adding gamification elements. This motivates users to improve performance, encouraging repeated engagement and friendly competition.
-- **User Account / Login Systsem**: Users can register, log in, and save their progress. Personalized accounts allow for tracking historical performance, customizing difficulty settings, and storing achievements. This adds a long-term engagement factor and supports consistent learning.
-- **Hints & Step-by-Step Solutions**:Provide optional hints or step-by-step solutions for complex problems. This helps users learn from mistakes, understand the process, and build confidence while practicing. This could be a feture that can be toggled on/off in the user account or game settings.
+- **User Account / Login System**: Users can register, log in, and save their progress. Personalized accounts allow for tracking historical performance, customizing difficulty settings, and storing achievements. This adds a long-term engagement factor and supports consistent learning.
+- **Hints & Step-by-Step Solutions**:Provide optional hints or step-by-step solutions for complex problems. This helps users learn from mistakes, understand the process, and build confidence while practicing. This could be a feature that can be toggled on/off in the user account or game settings.
 - **Custom Difficulty Levels**:Allow users to adjust difficulty beyond presets, such as limiting the numbers, operations, or time allowed. This gives users control over their challenge and ensures the game remains appropriate for different skill levels.
 - **Progress Analytics / Stats Dashboard**:Track metrics such as accuracy, average completion time, and progress over time. Users can visually monitor improvement and identify areas for further practice, promoting data-driven learning.
 
@@ -311,14 +311,14 @@ Advanced operations (like square roots, exponents, or brackets).
   - As a player, I want to undo a calculation step, so that I can correct mistakes without restarting the whole game.
   - As a mobile user, I want large, tap-friendly buttons, so that I can play easily on my phone.
   - As a visually impaired user, I want clear colour contrasts (e.g. bold backgrounds and bright highlights), so that I can see buttons and numbers more clearly.
-  - As a user with little maths knowledge, I want helpful error messages, so that I understand what I did wrong.
+  - As a user with little math knowledge, I want helpful error messages, so that I understand what I did wrong.
 
 - **Could Have**: has small impact if left out (*the rest ~20% of stories*)
 
   - As a player, I want to start the game only when my device is in landscape mode, so that I can play with a clear and consistent layout.
   - As a casual user, I want to play for fun and relaxation, so that I can enjoy the game without pressure.
   - As a competitive user, I want to solve the problem within the timer, so that I feel challenged.
-  - As a learner, I want to practice equations in a playful way, so that I can improve my maths skills without it feeling like work.
+  - As a learner, I want to practice equations in a playful way, so that I can improve my math skills without it feeling like work.
 
 - **Won't Have**: not a priority for this iteration - future features
 
@@ -389,10 +389,10 @@ There are no remaining major differences between the local version when compared
 | --- | --- |
 | [Markdown Builder](https://markdown.2bn.dev) | Help generating Markdown files |
 | [Interactive Frontend Development](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
-| [w3schools](https://www.w3schools.com/) | Help with form validation, display:block/none vs visibiliy: vidible/hidden |
+| [w3schools](https://www.w3schools.com/) | Help with form validation, display:block/none vs visibiliy: visible/hidden |
 | [JavaScript In Easy Steps](https://ineasysteps.com/wp-content/uploads/2020/02/JavaScript-in-easy-steps-6th-edition-9781840788778-TOCCh1.pdf) | Additional JS help |
 | [Bootstrap](https://getbootstrap.com) | Various components / responsive front-end framework |
-| [ChatGPT](https://chatgpt.com) | Help with code logic and explanations:<br>**Example 1** Initially, when I tried to copy an array, changes to the “copy” also changed the original — because they both referenced the same array in memory. I fixed this by creating a true copy using the _spread operator_:      `const originalArray = [1, 2, 3];`<br> `const copiedArray = [...originalArray];`<br>**Example 2** The undo function lets the user reverse their last action. I used chat to help me understand the logic and then to implement a function that saves the game state in an array before each change so when the user clicks “Undo”, the last saved state is restored, bringing everything back to how it was. This function is called `function undoEquation(result, usedNumbersJSON, input)` and can be found in the _workingout-grid.js_ file.<br>**Example 3** I was having some UX issues with onscreen keypads (mobile device) during game play so I had create a built-in keypad but needed some help with functionality. Clicking a button either deletes the last character (←), submits the input (OK), or adds a number/operator to the input. It keeps the input focused so the user can continue typing smoothly. This makes the keypad intuitive and responsive, like a real calculator. The code fome Chat is inserted into the `function createKeypad()` and can be found in the _workingout-grid.js_ file.
+| [ChatGPT](https://chatgpt.com) | Help with code logic and explanations:<br>**Example 1** Initially, when I tried to copy an array, changes to the “copy” also changed the original — because they both referenced the same array in memory. I fixed this by creating a true copy using the _spread operator_:      `const originalArray = [1, 2, 3];`<br> `const copiedArray = [...originalArray];`<br>**Example 2** The undo function lets the user reverse their last action. I used chat to help me understand the logic and then to implement a function that saves the game state in an array before each change so when the user clicks “Undo”, the last saved state is restored, bringing everything back to how it was. This function is called `function undoEquation(result, usedNumbersJSON, input)` and can be found in the _workingout-grid.js_ file.<br>**Example 3** I was having some UX issues with onscreen keypads (mobile device) during game play so I had create a built-in keypad but needed some help with functionality. Clicking a button either deletes the last character (←), submits the input (OK), or adds a number/operator to the input. It keeps the input focused so the user can continue typing smoothly. This makes the keypad intuitive and responsive, like a real calculator. The code from Chat is inserted into the `function createKeypad()` and can be found in the _workingout-grid.js_ file.
 
  |
 
