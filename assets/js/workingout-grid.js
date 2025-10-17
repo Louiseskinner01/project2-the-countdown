@@ -3,7 +3,6 @@
 // workingout-grid.js
 let randomNumbersCopy = [];
 let arrayOfResults = [];
-
 let activeInput = null; // Track active input for keypad
 
 const workingoutGrid = document.getElementById("working-grid-1");
@@ -41,7 +40,6 @@ function createEquationRow(numbers) {
 
     // Focus tracking
     input.addEventListener("focus", () => activeInput = input);
-
     input.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             handleInputEnter(input, undoBtn);
@@ -60,7 +58,7 @@ function createEquationRow(numbers) {
     activeInput = input;
 }
 
-// Keypad creation (use your simplified keypad)
+
 function createKeypad() {
     if (document.getElementById("game-keypad")) return;
 
@@ -70,10 +68,10 @@ function createKeypad() {
     workingoutGrid.appendChild(keypad);
 
     const keys = [
-        "7","8","9","+",
-        "4","5","6","-",
-        "1","2","3","*",
-        "0","←","OK","/"
+        "7", "8", "9", "+",
+        "4", "5", "6", "-",
+        "1", "2", "3", "*",
+        "0", "←", "OK", "/"
     ];
 
     keys.forEach(key => {
@@ -93,7 +91,7 @@ function createKeypad() {
                 activeInput.value += key;
             }
             activeInput.focus();
-            
+
         });
 
         keypad.appendChild(btn);
@@ -104,16 +102,12 @@ function createKeypad() {
 function handleInputEnter(input, undoBtn) {
     const value = input.value.trim();
     if (!value) return;
-
     const usedNums = value.match(/\d+/g)?.map(Number) || [];
     let tempAvailable = [...randomNumbersCopy];
-
 
     // Validate numbers
     for (let num of usedNums) {
         const index = tempAvailable.indexOf(num);
-      
-
         if (index === -1) {
             outputDiv.textContent = "Invalid: number not available";
             return;
@@ -127,15 +121,15 @@ function handleInputEnter(input, undoBtn) {
         result = Math.round(result * 2) / 2;
 
         // Update console
- // Store this result
- arrayOfResults.push(result);
+        // Store this result
+        arrayOfResults.push(result);
 
- // Re-render all results into the console
- outputDiv.innerHTML = arrayOfResults
-     .map((res, index) => `<div class="result-item">  ${res} </div>`)
-     .join("");
+        // Re-render all results into the console
+        outputDiv.innerHTML = arrayOfResults
+            .map((res, index) => `<div class="result-item">  ${res} </div>`)
+            .join("");
 
- gamesConsole.append(outputDiv);
+        gamesConsole.append(outputDiv);
         outputDiv.dataset.result = result;
         outputDiv.dataset.usedNumbers = JSON.stringify(usedNums);
 
@@ -154,31 +148,27 @@ function handleInputEnter(input, undoBtn) {
             window.playAgain();
         }
 
-            // Apply strikethrough to used ones
-            usedNums.forEach(num => {
-                const matches = Array.from(document.querySelectorAll(
-                    "#games-console .generated-number, #output-div .result-item"
-                )).filter(matchedNum => Number(matchedNum.textContent.trim()) === num);
-    
-                matches.forEach(matchedNum => {
-                    matchedNum.classList.add("used-number");
-                  
-                });
+        // Apply strikethrough to used ones
+        usedNums.forEach(num => {
+            const matches = Array.from(document.querySelectorAll(
+                "#games-console .generated-number, #output-div .result-item"
+            )).filter(matchedNum => Number(matchedNum.textContent.trim()) === num);
+
+            matches.forEach(matchedNum => {
+                matchedNum.classList.add("used-number");
+
             });
+        });
     } catch {
         outputDiv.textContent = "Error in equation";
     }
 }
 
-// Undo function
 function undoEquation(result, usedNumbersJSON, input) {
     const usedNums = JSON.parse(usedNumbersJSON);
     randomNumbersCopy.push(...usedNums);
-    
-
     const resIndex = randomNumbersCopy.indexOf(Number(result));
     if (resIndex !== -1) randomNumbersCopy.splice(resIndex, 1);
-   
 
     //input.disabled = false;
     input.value = "";

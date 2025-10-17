@@ -8,15 +8,12 @@ window.timeLeft = 0;
 window.timerArea = null;
 window.timerDisplay = null;
 
-
 let confirmDifficultyBtn;
 let timeLeft;
-
-//let playSpan;
 let controllersArea = document.getElementById("controllers-area");
 const gamesConsole = document.getElementById("games-console");
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
-let availableNumbers = [];  
+let availableNumbers = [];
 let targetNum = null;
 
 
@@ -84,23 +81,20 @@ function setDifficulty(seconds) {
 }
 window.setDifficulty = setDifficulty;
 
- const buttons = document.querySelectorAll(".difficulty-btn");
-  
+const buttons = document.querySelectorAll(".difficulty-btn");
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
-      // If this button is already active, unselect it
-      if (btn.classList.contains("active")) {
-        btn.classList.remove("active");
-      } else {
-        // Remove active from all buttons
-        buttons.forEach(b => b.classList.remove("active"));
-        // Add to clicked button
-        btn.classList.add("active");
-      }
+        // If this button is already active, unselect it
+        if (btn.classList.contains("active")) {
+            btn.classList.remove("active");
+        } else {
+            // Remove active from all buttons
+            buttons.forEach(b => b.classList.remove("active"));
+            // Add to clicked button
+            btn.classList.add("active");
+        }
     });
-  });
-
-
+});
 
 /** 
  * Create a button to generate a random set of numbers
@@ -121,7 +115,6 @@ function createRandomNumbersBtn() {
     randomNumbersBtn.addEventListener("click", generateRandomNumbers);
 }
 
-
 /**
  * Replace the difficulty buttons with a built-in keypad.
  *  This method (or disabling the buttons natually locks the timer "time confirmed")
@@ -131,20 +124,18 @@ function createRandomNumbersBtn() {
 
 window.timerArea = document.getElementById("timer");
 function disableDifficultyBtns() {
-        difficultyButtons.forEach(button => {
+    difficultyButtons.forEach(button => {
         button.remove();
         timerArea.style.color = "deeppink";
         timerArea.style.display = "block";
 
     });
-    
+
     confirmDifficultyBtn.remove();
 
-     // Add controls for the next step
+    // Add controls for the next step
     createRandomNumbersBtn();
 }
-
-
 
 // Countdown logic
 function createStartBtns() {
@@ -156,28 +147,26 @@ function createStartBtns() {
     controllersArea.append(startGameBtn);
     workingoutGrid.style.display = "block";
     workingoutGridTwo.style.display = "block";
-       //Creates and apends the built-in keypad.
-        createKeypad();
+    //Creates and apends the built-in keypad.
+    createKeypad();
 
-     
     startGameBtn.addEventListener("click", () => {
         startCountdown(selectedDifficulty);
-
         difficultyButtons.forEach(button => button.remove());
-           //Creates and apends the input rows for the user to perform calculations.
-           createEquationRow(availableNumbers); 
+        //Creates and apends the input rows for the user to perform calculations.
+        createEquationRow(availableNumbers);
 
-           timerArea.style.backgroundColor = "var(--calm-color)";
-           timerArea.style.color = "var(--main-theme-color)";
-           document.getElementById("timer-digits").style.color = "var(--feature-color)";
-            
-              // 🔹 Select keypad buttons AFTER createKeypad() has run
-    const keypadBtns = document.querySelectorAll(".keypad-btn");
+        timerArea.style.backgroundColor = "var(--calm-color)";
+        timerArea.style.color = "var(--main-theme-color)";
+        document.getElementById("timer-digits").style.color = "var(--feature-color)";
 
-    keypadBtns.forEach(key => {
-        key.style.backgroundColor = "var(--main-theme-color)";
-        key.style.color = "var(--sub-theme-color)"; 
-    });
+        //Select keypad buttons AFTER createKeypad() has run
+        const keypadBtns = document.querySelectorAll(".keypad-btn");
+
+        keypadBtns.forEach(key => {
+            key.style.backgroundColor = "var(--main-theme-color)";
+            key.style.color = "var(--sub-theme-color)";
+        });
         startGameBtn.remove();
     });
 }
@@ -188,7 +177,7 @@ function startCountdown(durationInSeconds) {
     startTime = Date.now();
 
     //globalising this function so it can be used in the workingout-grid.js
-    window.playAgain = function(){
+    window.playAgain = function () {
         const startNewGameBtn = document.createElement("button");
         startNewGameBtn.classList.add("controller-btn-styling");
         startNewGameBtn.id = "play-again";
@@ -205,10 +194,7 @@ function startCountdown(durationInSeconds) {
 
     function startNewGame() {
         window.location.reload();
-      }
-      
-     
-    
+    }
 
     function updateDisplay() {
         timeLeft--;
@@ -217,11 +203,10 @@ function startCountdown(durationInSeconds) {
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
             //alert("Take more practice!");  
-            gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!"; 
+            gamesConsole.innerHTML = "Sorry your time has ran out... Countdown suggests that you take more practice!";
             playAgain();
         }
     }
-
     updateDisplay();
     countdownInterval = setInterval(updateDisplay, 1000);
 }
@@ -268,16 +253,13 @@ function generateTargetNumber() {
             currentValue *= nextNumber;
         }
     }
-
-    // Ensure target is challenging and valid
     if (currentValue < 122 || currentValue > 1017) {
-       // console.warn(`Retrying target generation, invalid value: ${currentValue}`);
+        // console.warn(`Retrying target generation, invalid value: ${currentValue}`);
         return generateTargetNumber(); // Retry
     }
 
     // Save and display the final target
     targetNum = currentValue;
-
     const targetDiv = document.createElement("div");
     targetDiv.id = "target-div";
     targetDiv.classList.add("target-div-styling");
@@ -292,7 +274,6 @@ function generateTargetNumber() {
 
 const smallNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const largeNumbers = [25, 33, 51, 66, 75, 84, 87, 91];
-
 function generateRandomNumbers() {
     const shuffleSmall = shuffle([...smallNumbers]);
     const shuffleLarge = shuffle([...largeNumbers]);
