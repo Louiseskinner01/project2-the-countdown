@@ -24,8 +24,7 @@ From a development perspective, this project serves as a practical application o
 
 
 **Site Mockups**
-*([amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
-
+[amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
 ![screenshot](documentation/images/site-mockup.png)
 
 source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
@@ -270,15 +269,14 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ### GitHub Projects
 
-⚠️ TIP ⚠️
-
-Consider adding screenshots of your Projects Board(s), Issues (open and closed), and Milestone tasks.
-
-
 
 [GitHub Projects](https://www.github.com/Louiseskinner01/project2-the-countdown/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
-![screenshot](documentation/gh-projects.png)
+| Stage   | Screenshot |
+| ----- | --- |
+| To Do | ![screenshot](documentation/project-board/board/project-board-todo.png) |
+| In-progress | ![](documentation/project-board/board/project-board-even.png) ![screenshot](documentation/project-board/board/project-board-inprogess-done.png) |
+| Done | ![screenshot](documentation/project-board/board/project-board-done.png) |
 
 ### GitHub Issues
 
@@ -286,8 +284,8 @@ Consider adding screenshots of your Projects Board(s), Issues (open and closed),
 
 | Link | Screenshot |
 | --- | --- |
-| [![GitHub issues](https://img.shields.io/github/issues/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/issues) | ![screenshot](documentation/gh-issues-open.png) |
-| [![GitHub closed issues](https://img.shields.io/github/issues-closed/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) |
+| [![GitHub issues](https://img.shields.io/github/issues/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/issues) | ![screenshot](documentation/project-board/issues/project-board-open-task.png) |
+| [![GitHub closed issues](https://img.shields.io/github/issues-closed/Louiseskinner01/project2-the-countdown)](https://www.github.com/Louiseskinner01/project2-the-countdown/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/project-board/issues/project-board-closed-task.png) |
 
 ### MoSCoW Prioritization
 
