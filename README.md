@@ -82,7 +82,7 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 2. Clicks Play, chooses difficulty, and generates numbers.
 3. Works through equations using the keypad and inputs.
 4. Instantly sees whether the attempt is correct or not.
-5. Timer runs out or target is met → user gets feedback and can restart..
+5. Timer runs out or target is met → user gets feedback and can restart.
 
 #### 4. Skeleton
 
@@ -129,13 +129,13 @@ I used [coolors.co](https://coolors.co/palette/4d05f6-ff1493-ffffff-ffef08) to g
 
 The typography was selected to reflect both the futuristic arcade feel of the game and the clarity needed for puzzle-solving. The fonts have been imported from Google Fonts and have been used in the following way:
 
-Main Font – Orbitron (Sans-serif)
+**Main Font – Orbitron (Sans-serif)**<br>
 Orbitron is a geometric, futuristic typeface that immediately evokes the feeling of technology and digital displays. It’s used across the main interface to give the game a bold, modern identity while also being highly legible.
 
-Sub Font – Scope One (Serif)
+**Sub Font – Scope One (Serif)**<br>
 Scope One provides contrast as a softer, more traditional serif font. It’s used in secondary headings and text to balance Orbitron’s sharp edges with a touch of readability and elegance. This contrast helps establish hierarchy in the design.
 
-Working Grid Font – Libre Franklin (Sans-serif)
+**Working Grid Font – Libre Franklin (Sans-serif)**<br>
 Libre Franklin is applied to the working-out grid and keypad. It’s a clean, highly legible sans-serif that makes input fields and number interactions easy to read during gameplay. Its neutrality ensures the focus stays on solving equations, while still harmonizing with the more stylistic fonts.
 
 Together, these fonts combine futuristic energy (Orbitron), clarity for calculations (Libre Franklin), and balance through traditional contrast (Scope One). This mix reinforces the game’s identity as both playful and puzzle-driven.
@@ -340,7 +340,7 @@ The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
 - In the [GitHub repository](https://www.github.com/Louiseskinner01/project2-the-countdown), navigate to the "Settings" tab.
 - In Settings, click on the "Pages" link from the menu on the left.
-- From the "Build and deployment" section, click the drop-down called "Branch", and select the **main** branch, then click "Save".
+- From the "Build and deployment" section, click the drop-down called "Branch", and select the main branch, then click "Save".
 - The page will be automatically refreshed with a detailed message display to indicate the successful deployment.
 - Allow up to 5 minutes for the site to fully deploy.
 
