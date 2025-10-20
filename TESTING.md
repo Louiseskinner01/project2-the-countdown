@@ -227,7 +227,7 @@ Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lightho
 
 | Issue                 | Screenshot |
 | --------------------- | --- | 
- When an equation has been undone using the undo btn, the numbers that had been previously used, remain striked out. | ![screenshot](documentation/bugs/bug-uno-1.png)![screenshot](documentation/bugs/bug-undo-2.png)  ![screenshot](documentation/bugs/bug-undo-3.png) |
+ When an equation has been undone using the undo button, the numbers that had been previously used, remain striked out. | ![screenshot](documentation/bugs/bug-uno-1.png)![screenshot](documentation/bugs/bug-undo-2.png)  ![screenshot](documentation/bugs/bug-undo-3.png) |
  There is an issue with the opacity of the **equation input** when the game is in play. The background of the **equation input** should be white and remain white for the duration of play, however when playing The Countdown on a mobile device the **equation input** loses opacity (turned to a greyish colour). |**Laptop** ![screenshot](documentation/bugs/existing/existing-issue-laptop.png) **Mobile** ![screenshot](documentation/bugs/existing/existing-issue-mobile.PNG) |
 
 > [!IMPORTANT]  
