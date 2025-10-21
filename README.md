@@ -63,7 +63,7 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 - Clear and consistent labels for all buttons and interactive elements.
 - Instructions and guidance within the console to reduce confusion.
 - Prominent display of results, error states, and remaining time.
-- Accessibility considerations: high-contrast colors, legible fonts, and responsive design for mobile/desktop use.
+- Accessibility considerations: high-contrast colours, legible fonts, and responsive design for mobile/desktop use.
 
 #### 3. Structure
 
@@ -75,7 +75,7 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 - **Hierarchy**:
   - Key interactions (inputs, operators, results) placed at the center of the screen for visibility.
   - Secondary elements (difficulty options, instructions) appear before gameplay begins, then fade to the background.
-  - Feedback messages styled to stand out (e.g., different color coding for success/error).
+  - Feedback messages styled to stand out (e.g., different colour coding for success/error).
 
 **User Flow**
 1. User lands on the homepage and reads a short introduction.
@@ -96,27 +96,27 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 
 ### Colour Scheme
 
-The color palette was designed to balance energy, clarity, and playfulness, supporting both usability and visual excitement for the player:
+The colour palette was designed to balance energy, clarity, and playfulness, supporting both usability and visual excitement for the player:
 
-Main Theme Color – #4d05f6 (Deep Purple/Blue)
+**Main Theme**<br> #4d05f6 (Deep Purple/Blue)
 This is used consistently for text, borders, and highlights. Purple is bold and energetic, while still being easy on the eyes. It provides strong contrast against the lighter background and gives the game a modern, tech-inspired aesthetic.
 
-Sub Theme Color – #ffef08 (Bright Yellow)
-This acts as the primary accent color. Yellow conveys urgency and draws attention, making it ideal for interactive elements like buttons, titles, and the console "PLAY?" prompt. It reinforces the game’s competitive and time-based nature by injecting vibrancy.
+**Sub Theme**<br> #ffef08 (Bright Yellow)
+This acts as the primary accent colour. Yellow conveys urgency and draws attention, making it ideal for interactive elements like buttons, titles, and the console "PLAY?" prompt. It reinforces the game’s competitive and time-based nature by injecting vibrancy.
 
-Feature Color – deeppink (Pink)
+**Feature**<br>deeppink (Pink)
 Pink is used sparingly for standout features and strike-through markers. This introduces variety and visual hierarchy, helping the player notice when numbers have been used. It also adds a playful, fun edge to balance the intensity of the purple and yellow.
 
-Calm Color – #ffffff (White)
-White provides a neutral balance to the bold theme and is used for backgrounds, ensuring that text and game elements remain legible. It keeps the interface clean and prevents the brighter colors from overwhelming the user.
+**Calm**<br> #ffffff (White)
+White provides a neutral balance to the bold theme and is used for backgrounds, ensuring that text and game elements remain legible. It keeps the interface clean and prevents the brighter colours from overwhelming the user.
 
-Background Gradient
+**Background Gradient**<br>
 The page background is styled with a linear gradient that flows from soft pastel pinks (#feddfc) into deep blues (#1717f6), vivid magentas (#f40590), and bright sky tones (#67dcf0). This gradient was chosen to create a sense of depth and progression, evoking the feeling of moving through different "levels" of the game. It also makes the environment more immersive and engaging, giving the interface a playful, almost arcade-like atmosphere while still keeping readability intact.
 
 Overall, the palette combines high contrast for readability, bright accents for engagement, and a gradient backdrop to establish a playful yet immersive mood. This ensures the game feels both exciting and approachable while keeping the focus on solving the puzzle. 
 
 
-I used [coolors.co](https://coolors.co/palette/4d05f6-ff1493-ffffff-ffef08) to generate my color palette.
+I used [coolors.co](https://coolors.co/palette/4d05f6-ff1493-ffffff-ffef08) to generate my colour palette.
 
 - `#4d05f6`  --main-theme-color.
 - `#ffef08`  --sub-theme-color.
@@ -209,7 +209,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Submit Answer | This is enabled by the user clicking the OK button on the built-in keyboard. It allows users to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
 | Random Number Generation | Six numbers are generated at random (four small, two large). This ensures variety, so each game feels unique and unpredictable. | ![screenshot](documentation/features/random-numbers.png) |
 | Target Number | A random target number is generated using only the numbers from the "6 random numbers generated in the previous step, and mathemateical operators to ensure the target number is realistic and achievable for players to reach. This provides a clear goal and challenge for each play. | ![screenshot](documentation/features/target-number.png) |
-| Built-in Keypad | An interactive customised to provide a simplistic and clean gameplay. This ensures accessibility on both desktop and mobile, while preventing invalid inputs.| ![screenshot](documentation/features/keypad-operators.png) |
+| Built-in Keypad | An interactive, customised keypad to provide a simplistic and clean gameplay. This ensures accessibility on both desktop and mobile, while preventing invalid inputs.| ![screenshot](documentation/features/keypad-operators.png) |
 | Equation Validation & Feedback | Equations are checked instantly. Correct inputs show results, while incorrect ones display error messages. This helps users learn and avoid repeated mistakes. | ![screenshot](documentation/features/equation-validation.png) |
 | Undo Feature | Players can undo their last equation. This allows experimentation without penalty, making the game more forgiving and user-friendly. | **Before Undo**![screenshot](documentation/features/undo-btn-before.png) **After Undo**![screenshot](documentation/features/undo-btn-used.png) |
 | Results Console | A console displays all previous equations and results. This lets users track their thinking process and reflect on strategies. | ![screenshot](documentation/features/console-play.png) |
@@ -232,14 +232,14 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - **Memory Functions**: Include memory functions (`M+`, `M-`, `MR`) so users can store, add to, and recall values during their calculations.
 - **Input Validation**: Provide real-time feedback for invalid inputs, such as attempting to divide by zero or using incorrect syntax.
 - **Dark Mode**: Add a dark mode option to enhance user experience and reduce eye strain during extended use.
-- **Customizable Themes**: Allow users to choose different themes, colors, or layouts for personalizing their experience.
+- **Customisable Themes**: Allow users to choose different themes, colours, or layouts for personalizing their experience.
 - **Calculation Explanations**: Display step-by-step explanations of how the solution is derived, useful for educational purposes or beginners.
 - **Statistical Functions**: Introduce basic statistical operations such as mean, median, mode, and standard deviation.
 - **Save & Share Calculations**: Allow users to save or share their results via a link or social media, especially for complex equations or useful outputs.
 - **Voice Input**: Add a voice input option for users to dictate their calculations instead of typing.
 - **Educational Quizzes**: Implement math-based quizzes or games to help users improve their arithmetic skills while using the app.
 - **Scoreboard / Leaderboard**: Implement a scoring system that tracks correct answers, speed, and streaks. Users can compare scores on a leaderboard, adding gamification elements. This motivates users to improve performance, encouraging repeated engagement and friendly competition.
-- **User Account / Login System**: Users can register, log in, and save their progress. Personalized accounts allow for tracking historical performance, customizing difficulty settings, and storing achievements. This adds a long-term engagement factor and supports consistent learning.
+- **User Account / Login System**: Users can register, log in, and save their progress. Personalised accounts allow for tracking historical performance, customising difficulty settings, and storing achievements. This adds a long-term engagement factor and supports consistent learning.
 - **Hints & Step-by-Step Solutions**:Provide optional hints or step-by-step solutions for complex problems. This helps users learn from mistakes, understand the process, and build confidence while practicing. This could be a feature that can be toggled on/off in the user account or game settings.
 - **Custom Difficulty Levels**:Allow users to adjust difficulty beyond presets, such as limiting the numbers, operations, or time allowed. This gives users control over their challenge and ensures the game remains appropriate for different skill levels.
 - **Progress Analytics / Stats Dashboard**:Track metrics such as accuracy, average completion time, and progress over time. Users can visually monitor improvement and identify areas for further practice, promoting data-driven learning.
