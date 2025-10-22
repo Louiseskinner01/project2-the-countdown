@@ -24,7 +24,6 @@ From a development perspective, this project serves as a practical application o
 
 
 **Site Mockups**
-[amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
 ![screenshot](documentation/images/site-mockup.png)
 
 source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=https://louiseskinner01.github.io/project2-the-countdown)
