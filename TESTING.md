@@ -204,7 +204,7 @@ Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lightho
  
 | Test                                                             | Result |
 | ---------------------------------------------------------------- | ------ |
-| The web app follows the WCAG (web content accessibility guidelines) 2.1 standards                          | ![](documentation/images/accessibility-fail.png)    |
+| The web app follows the WCAG (web content accessibility guidelines) 2.1 standards                          |  ✅     |
 | Text size and spacing adjustable                                 | ✅      |
 | Interactive elements clearly labeled and accessible via keyboard | ✅      |
 | ARIA labels provided for key game sections                       | ✅      |
