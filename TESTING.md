@@ -27,7 +27,7 @@ All tests were conducted manually using a combination of Google Chrome DevTools,
 
 ### Manual Tests (Defensive Programming)
 
-⚠️ NOTE ⚠️
+
 - Users cannot submit an empty form (add the `required` attribute)
 - Users must enter valid field types (ensure the correct input `type=""` is used)
 - Users cannot brute-force a URL to navigate to a restricted pages
@@ -194,7 +194,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Page | Mobile | Desktop |  Notes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | Home | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-index-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-index.png) |This is the first page that was tested so it's at this stage that the most effective changes were made. Meta tags were added to help improve SEO. The previous image that sat in the navbar was resized to help improve the page load, this had a positive impact but was minute. Aria labels were added to the footers where the social icons are. It is also at this stage that the fontawesome script tag was removed from html pages and replaced with a cdn link, speeding up the page load and improving the overall performance.|
-Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-satisfactory.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-instructions.png) | There were a few minor issues related to accessibility that had a negative impact on the performance. ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-poor.png) |
+Instructions | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-instructions-satisfactory.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-instructions.png) | There were a few minor issues related to accessibility that had a negative impact on the performance. |
 | Math Practice | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-practice-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-practice.png) | Testing was still showing that the image in the navbar could be smaller in size, plus feedback on the readability of the image initiated me to change the image completely. Once I created a new image, resized it using tinyPNG and committed it into the project, the performance improved, not only on this page but all previously tested pages. |
 | Virtual Events | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-registration-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-registration.png) | The first set of lighthouse tests for the mobile site came back with a performance of 84%. After changing the navbar image and adding a good alt description the performance improved. |
 | Form-submitted | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-good.png) | ![screenshot](documentation/lighthouse-performance/desktop/lighthouse-dt-form-submitted.png) | Due to the errors found and corrections made on previous pages, there wasn't anything major affecting this page, resulting in a good performance level. | ![screenshot](documentation/lighthouse-performance/mobile/lighthouse-form-submitted-poor.png)|
