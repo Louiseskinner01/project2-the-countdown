@@ -8,9 +8,12 @@ Developer: Louise Skinner ([Louiseskinner01](https://www.github.com/Louiseskinne
 [![badge](https://img.shields.io/badge/deployment-GitHub Pages-purple)](https://louiseskinner01.github.io/project2-the-countdown)
 
 ## The Countdown
-The Countdown Game is a web-based recreation of the classic British TV quiz show Countdown, designed for both desktop and mobile browsers. The game challenges players by generating a set of random numbers along with a target number. The player must use their arithmetic problem-solving skills to reach the target, using the given numbers and any results from calculation made. Numbers can only be used once unless the user undoes their previous equation making the number available to use again. It’s a time-based, single-player experience that combines fun with cognitive skill-building.
+The Countdown Game is a web-based recreation of the classic British Channel 4 TV quiz show Countdown. The Countdown is designed to play on both desktop and mobile browsers, and offers a clean but fun user experience. 
+The game challenges players by generating a set of random numbers along with a target number. 
 
-The project aims to deliver a sleek, responsive interface with an engaging user experience, complete with a real-time countdown timer, score tracking, and validation of answers. The game is ideal for casual play and educational purposes alike.
+The player must use their arithmetic problem-solving skills to solve the target, using the given set of random numbers and any results from calculations made during the game and numbers can only be used once! The user can however, undo their previous input and this will free up those numbers making them available to use again.<br>It’s a time-based, single-player experience that combines fun with cognitive skill-building.
+
+The project aims to deliver a sleek, responsive interface with an engaging user experience, complete with a real-time countdown timer, used number tracking, and validation of answers. The game is ideal for casual play and educational purposes alike.
 
 The rationale behind this project is to develop a browser-based game that encourages mental agility, problem-solving, and quick thinking — skills that are often underrepresented in typical casual games. Inspired by the enduring popularity of the Countdown show, this web app provides an accessible version of the game without requiring installation or login.
 
@@ -68,18 +71,18 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 
 **Information Architecture**
 - **Navigation Menu**:
-   - Navigation Menu: Minimalist navbar with clear links to Home, How to Play, and About.
+   - Navigation Menu: Minimalist navbar with clear links to Home, Instructions, Timestables Practice, and Virtual Events.
    - Main Game Console: Central focus with difficulty selection, number generation, and results area.
   - Supporting Elements: Timer display, user feedback (errors or successes), and controls positioned logically beneath the console.
 - **Hierarchy**:
-  - Key interactions (inputs, operators, results) placed at the center of the screen for visibility.
-  - Secondary elements (difficulty options, instructions) appear before gameplay begins, then fade to the background.
-  - Feedback messages styled to stand out (e.g., different colour coding for success/error).
+  - Key interactions (inputs, operators, results) placed across the center of the screen for visibility.
+  - Secondary elements (difficulty options, instructions) appear before gameplay.
+  - Feedback messages styled to stand out.
 
 **User Flow**
-1. User lands on the homepage and reads a short introduction.
-2. Clicks Play, chooses difficulty, and generates numbers.
-3. Works through equations using the keypad and inputs.
+1. User lands on the homepage and is presented with a screen rotate message or a clickable text "PLAY?" .
+2. Rotates/increases screen size or clicks Play?, chooses difficulty, and generates numbers.
+3. Works through equations using the set of random numbers, the keypad and the input.
 4. Instantly sees whether the attempt is correct or not.
 5. Timer runs out or target is met → user gets feedback and can restart.
 
@@ -97,17 +100,17 @@ source: [project2-the-countdown amiresponsive](https://ui.dev/amiresponsive?url=
 
 The colour palette was designed to balance energy, clarity, and playfulness, supporting both usability and visual excitement for the player:
 
-**Main Theme**<br> #4d05f6 (Deep Purple/Blue)
-This is used consistently for text, borders, and highlights. Purple is bold and energetic, while still being easy on the eyes. It provides strong contrast against the lighter background and gives the game a modern, tech-inspired aesthetic.
+**Main Theme**<br> #4d05f6 (Deep Purple/Blue) -
+This is used consistently for text and the keypad once in-play. Purple is bold and energetic, while still being easy on the eyes. It provides strong contrast against the lighter background and gives the game a modern, tech-inspired aesthetic.
 
-**Sub Theme**<br> #ffef08 (Bright Yellow)
+**Sub Theme**<br> #ffef08 (Bright Yellow) -
 This acts as the primary accent colour. Yellow conveys urgency and draws attention, making it ideal for interactive elements like buttons, titles, and the console "PLAY?" prompt. It reinforces the game’s competitive and time-based nature by injecting vibrancy.
 
-**Feature**<br>deeppink (Pink)
-Pink is used sparingly for standout features and strike-through markers. This introduces variety and visual hierarchy, helping the player notice when numbers have been used. It also adds a playful, fun edge to balance the intensity of the purple and yellow.
+**Feature**<br>deeppink (Deep Pink)-
+Pink is used sparingly for standout features such as headings and heading backgrounds. It's striking and goes well with the pinks in the bodies gradient background. 
 
-**Calm**<br> #ffffff (White)
-White provides a neutral balance to the bold theme and is used for backgrounds, ensuring that text and game elements remain legible. It keeps the interface clean and prevents the brighter colours from overwhelming the user.
+**Calm**<br> #ffffff (White) -
+White provides a neutral balance to the bold theme and is used for backgrounds, ensuring that text and game elements remain legible. This introduces variety and visual cleanliness. It also adds a playful, fun edge to balance the intensity of the purple and yellow.
 
 **Background Gradient**<br>
 The page background is styled with a linear gradient that flows from soft pastel pinks (#feddfc) into deep blues (#1717f6), vivid magentas (#f40590), and bright sky tones (#67dcf0). This gradient was chosen to create a sense of depth and progression, evoking the feeling of moving through different "levels" of the game. It also makes the environment more immersive and engaging, giving the interface a playful, almost arcade-like atmosphere while still keeping readability intact.
