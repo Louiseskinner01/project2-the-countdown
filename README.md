@@ -394,7 +394,7 @@ There are no remaining major differences between the local version when compared
 | [Bootstrap](https://getbootstrap.com) | Various components / responsive front-end framework |
 | [ChatGPT](https://chatgpt.com) | Help with code logic and explanations:<br>**Example 1** Initially, when I tried to copy an array, changes to the “copy” also changed the original — because they both referenced the same array in memory. I fixed this by creating a true copy using the _spread operator_:      `const originalArray = [1, 2, 3];`<br> `const copiedArray = [...originalArray];`<br>**Example 2** The undo function lets the user reverse their last action. I used chat to help me understand the logic and then to implement a function that saves the game state in an array before each change so when the user clicks “Undo”, the last saved state is restored, bringing everything back to how it was. This function is called `function undoEquation(result, usedNumbersJSON, input)` and can be found in the _workingout-grid.js_ file.<br>**Example 3** I was having some UX issues with onscreen keypads (mobile device) during game play so I had create a built-in keypad but needed some help with functionality. Clicking a button either deletes the last character (←), submits the input (OK), or adds a number/operator to the input. It keeps the input focused so the user can continue typing smoothly. This makes the keypad intuitive and responsive, like a real calculator. The code from Chat is inserted into the `function createKeypad()` and can be found in the _workingout-grid.js_ file.
 
- |
+ 
 
 ### Media
 - Image Compression
